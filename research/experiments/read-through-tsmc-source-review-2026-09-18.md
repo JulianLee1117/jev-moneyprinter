@@ -1,0 +1,11 @@
+# TSMC transcript capture for the frozen read-through census
+
+All seven TSMC earnings events in the frozen 13-event census now have original issuer-hosted transcript PDFs archived locally, together with the 2024Q3 predecessor. Eight ordinary HTTP requests succeeded without retries or access workarounds. The capture contains 157 pages, raw-byte hashes, complete page-level text extraction, source URLs and capture timestamps. No prices or model outputs were inspected for this capture.
+
+Private evidence is under `data/readthrough-financial-v1/tsmc-source-capture/`; `manifest.v1.json` inventories documents and `evidence-index.v1.json` verifies hashes and locates relevant pages. Copyrighted Refinitiv/LSEG source bodies remain outside the public repository. The public [event census](read-through-event-census.v1.json) preserves the seven current-period issuer URLs; the predecessor comes from [TSMC's 2024Q3 page](https://investor.tsmc.com/english/quarterly-results/2024/q3).
+
+These captures do not establish historical availability. Several transcripts expressly identify company additions after their calls. The [4Q25 transcript](https://investor.tsmc.com/english/quarterly-results/2025/q4) marks additions around the capex discussion. The [2Q26 transcript](https://investor.tsmc.com/english/quarterly-results/2026/q2) has embedded modification metadata dated August 28, although the call was July 16. Embedded dates are not independent publication evidence.
+
+The financial packet compiler must preserve those version warnings, reconcile intervening issuer announcements and verify dated supplier exposure. Annual spending totals, forecast revisions, construction, equipment purchases and tool-price inflation must remain distinct. No financial signal or profitability conclusion is assigned by this source-capture step.
+
+Subsequent work on the same research date verified [dated Lam annual disclosures and qualitative supplier relationships](read-through-lam-exposure.v1.json) for the frozen events. Customer-specific revenue weights and event-specific spending attribution remain unknown. This exposure audit does not resolve the transcript-version warnings or complete the intervening-source reconciliation.

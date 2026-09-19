@@ -1,0 +1,539 @@
+{
+  "schema_version": "read-through-lam-exposure-v1",
+  "created_at": "2026-09-19T03:59:34.450492+00:00",
+  "supplier_symbol": "LRCX",
+  "supplier_CIK": "0000707549",
+  "protocol_path": "research/experiments/read-through-financial-protocol.v1.json",
+  "protocol_canonical_sha256": "df475d3138c1a974de106287e6e87ce2e414b52d6cfdebfa835eb46ed378985f",
+  "census_path": "research/experiments/read-through-event-census.v1.json",
+  "census_canonical_sha256": "75d4f946f525b4e8580a04e238f8c8ffef862350d76df9a9cb3ee5d9e3e8dffb",
+  "status": "dated_qualitative_relationship_and_annual_mix_verified_quantitative_customer_mapping_unavailable",
+  "prices_requested": false,
+  "models_called": false,
+  "orders_placed": false,
+  "publication_policy": "Only metadata, hashes, reported numeric facts and analyst paraphrases are public. Source bodies, exact spans and provider/web extraction envelopes remain under ignored data/.",
+  "sources": [
+    {
+      "source_id": "lam-ir-2024",
+      "requested_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2024",
+      "capture_started_at": "2026-09-19T03:54:41.004583+00:00",
+      "status": 200,
+      "final_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2024",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": "Sat, 19 Sep 2026 03:56:26 GMT",
+      "body_path": "data/readthrough-financial-v1/exposure/lam-ir-2024-bc5e3046f06b.html",
+      "body_sha256": "bc5e3046f06bcde6fda0a5c6321d788838d0e0445564044d82a26325b6bea1f8",
+      "bytes": 402081,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-ir-2024-bc5e3046f06b.text.txt",
+      "text_sha256": "d8f9e7902cf28d0a7cc9ce57faa7c2059199869bf39c60c72370cfd482c3ea3c",
+      "capture_finished_at": "2026-09-19T03:56:26.507795+00:00",
+      "representation": "original_issuer_page",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    },
+    {
+      "source_id": "lam-ir-2025",
+      "requested_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2025",
+      "capture_started_at": "2026-09-19T03:54:41.005070+00:00",
+      "status": 200,
+      "final_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2025",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": "Sat, 19 Sep 2026 03:56:26 GMT",
+      "body_path": "data/readthrough-financial-v1/exposure/lam-ir-2025-3566545d9e45.html",
+      "body_sha256": "3566545d9e45fdeabedabb93d3dd4a5d08edf5c3fe33c6e74eab513bc79a3617",
+      "bytes": 402081,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-ir-2025-3566545d9e45.text.txt",
+      "text_sha256": "3f5e966bc7104572042ed0633925e35dbadafc1ed3c633473a2e87f3c917dcb5",
+      "capture_finished_at": "2026-09-19T03:56:26.528668+00:00",
+      "representation": "original_issuer_page",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    },
+    {
+      "source_id": "lam-2024-10k-official-mirror",
+      "requested_url": "https://app.quotemedia.com/data/downloadFiling?cdn=9f98c8aac70746964e5f4e23cba72251&companyName=Lam+Research+Corporation&dateFiled=2024-08-29&formType=10-K&ref=318562013&symbol=LRCX&type=HTML&webmasterId=101533",
+      "capture_started_at": "2026-09-19T03:54:41.005336+00:00",
+      "status": 200,
+      "final_url": "https://app.quotemedia.com/data/downloadFiling?cdn=9f98c8aac70746964e5f4e23cba72251&companyName=Lam+Research+Corporation&dateFiled=2024-08-29&formType=10-K&ref=318562013&symbol=LRCX&type=HTML&webmasterId=101533",
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified": null,
+      "body_path": "data/readthrough-financial-v1/exposure/lam-2024-10k-official-mirror-67910062dc20.html",
+      "body_sha256": "67910062dc203dfd24e312966c8e2fd31473b9dae58d7585f9c29e716f96f765",
+      "bytes": 2510696,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-2024-10k-official-mirror-67910062dc20.text.txt",
+      "text_sha256": "b5c0dec0a298ad7eb7242d64e52ef877f4a4944f2f4151274593ca0951055453",
+      "capture_finished_at": "2026-09-19T03:54:41.419798+00:00",
+      "representation": "full_HTML_from_official_issuer_linked_filing_mirror",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    },
+    {
+      "source_id": "lam-2025-10k-official-mirror",
+      "requested_url": "https://app.quotemedia.com/data/downloadFiling?cdn=6acc9d283d102aa753d3481945ca46eb&companyName=Lam+Research+Corporation&dateFiled=2025-08-11&formType=10-K&ref=319364858&symbol=LRCX&type=HTML&webmasterId=101533",
+      "capture_started_at": "2026-09-19T03:54:41.420131+00:00",
+      "status": 200,
+      "final_url": "https://app.quotemedia.com/data/downloadFiling?cdn=6acc9d283d102aa753d3481945ca46eb&companyName=Lam+Research+Corporation&dateFiled=2025-08-11&formType=10-K&ref=319364858&symbol=LRCX&type=HTML&webmasterId=101533",
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified": null,
+      "body_path": "data/readthrough-financial-v1/exposure/lam-2025-10k-official-mirror-094915844488.html",
+      "body_sha256": "094915844488230725c4a97d2eb04b872523790820f6b25f1d10de4c6ead6b8d",
+      "bytes": 2073251,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-2025-10k-official-mirror-094915844488.text.txt",
+      "text_sha256": "aa3336d57ef6318c06ab201d2c994aa14a0704eef2d5525e84cf3d812f80bd79",
+      "capture_finished_at": "2026-09-19T03:54:41.730126+00:00",
+      "representation": "full_HTML_from_official_issuer_linked_filing_mirror",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    },
+    {
+      "source_id": "lam-micron-halo-20250219",
+      "requested_url": "https://newsroom.lamresearch.com/2025-02-19-Lam-Research-Ushers-in-New-Era-of-Semiconductor-Metallization-with-ALTUS-R-Halo-for-Molybdenum-Atomic-Layer-Deposition",
+      "capture_started_at": "2026-09-19T03:54:41.730536+00:00",
+      "status": 200,
+      "final_url": "https://newsroom.lamresearch.com/2025-02-19-Lam-Research-Ushers-in-New-Era-of-Semiconductor-Metallization-with-ALTUS-R-Halo-for-Molybdenum-Atomic-Layer-Deposition",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": "Sat, 19 Sep 2026 03:56:27 GMT",
+      "body_path": "data/readthrough-financial-v1/exposure/lam-micron-halo-20250219-7c13dea149df.html",
+      "body_sha256": "7c13dea149df0b8d9f1b20a18c9409c7554267a6c5070f482a7f2632b8298752",
+      "bytes": 210683,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-micron-halo-20250219-7c13dea149df.text.txt",
+      "text_sha256": "0dad075252a757cd092c1e59ae6049437a9fcbc09409f2c81d88551d0dc0e2f3",
+      "capture_finished_at": "2026-09-19T03:56:27.192380+00:00",
+      "representation": "original_issuer_page",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    },
+    {
+      "source_id": "lam-micron-award-20251208",
+      "requested_url": "https://newsroom.lamresearch.com/lam-earns-2025-micron-top-supplier-award",
+      "capture_started_at": "2026-09-19T03:56:26.507833+00:00",
+      "status": 200,
+      "final_url": "https://newsroom.lamresearch.com/lam-earns-2025-micron-top-supplier-award",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": "Sat, 19 Sep 2026 03:58:11 GMT",
+      "body_path": "data/readthrough-financial-v1/exposure/lam-micron-award-20251208-340d11831972.html",
+      "body_sha256": "340d11831972fcd28817e8d561f848584160ef0a797d85c68f7f68a732b63d11",
+      "bytes": 168539,
+      "text_path": "data/readthrough-financial-v1/exposure/lam-micron-award-20251208-340d11831972.text.txt",
+      "text_sha256": "cf8c0e00ffcdaaf90ce03139af22640aea1a34dee267517b89831af81868f289",
+      "capture_finished_at": "2026-09-19T03:58:12.147902+00:00",
+      "representation": "original_issuer_page",
+      "byte_equality_with_SEC_original_verified": false,
+      "exact_historical_content_version_verified": false,
+      "source_text_included_in_public_artifact": false,
+      "decoded_replacement_characters": 0
+    }
+  ],
+  "filing_date_proof": {
+    "path": "data/readthrough-financial-v1/exposure/sec-filing-index-web-proof.v1.json",
+    "sha256": "1f03cd640a4d8db3768ecd1523886817ed0598397405775ad082409321476757",
+    "representation": "official SEC filing-index web-tool extraction; not original HTML"
+  },
+  "annual_exposure_versions": [
+    {
+      "exposure_version_id": "lam-fy2024",
+      "source_id": "lam-2024-10k-official-mirror",
+      "fiscal_period_end": "2024-06-30",
+      "filing_date": "2024-08-29",
+      "SEC_acceptance_as_displayed": "2024-08-29 14:10:55",
+      "SEC_acceptance_timezone": "not displayed in archived index; no intraday conversion used",
+      "SEC_accession": "0000707549-24-000106",
+      "original_SEC_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754924000106/lrcx-20240630.htm",
+      "SEC_index_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754924000106/0000707549-24-000106-index.html",
+      "official_issuer_filing_index_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2024",
+      "official_index_body_sha256": "bc5e3046f06bcde6fda0a5c6321d788838d0e0445564044d82a26325b6bea1f8",
+      "mirror_link_and_filing_date_verified_in_official_index_body": true,
+      "source_identity_checked": [
+        "issuer",
+        "fiscal period",
+        "form 10-K",
+        "filing date",
+        "issuer-linked mirror identifier"
+      ],
+      "usable_from_date_conservative": "2024-08-30",
+      "superseded_from_date_in_this_annual_pair": "2025-08-12",
+      "scope_limit": "Only the frozen 13 historical events; this is not a current or prospective supplier-state certification.",
+      "named_customer_relationships": {
+        "TSMC": {
+          "named_among_significant_customers": true,
+          "individual_revenue_share_pct": null
+        },
+        "Micron": {
+          "named_among_significant_customers": true,
+          "individual_revenue_share_pct": null
+        }
+      },
+      "customer_name_period_scope": "The customer list covers the three fiscal years in the filing, not a separately quantified current-year relationship.",
+      "unidentified_customer_total_revenue_shares_pct": [
+        17
+      ],
+      "named_customer_mapping_to_concentration_percentages_verified": false,
+      "revenue_USD": {
+        "systems": 8921643000,
+        "customer_support_and_other": 5983743000,
+        "total": 14905386000
+      },
+      "systems_share_of_total_calculated_pct": 59.855162,
+      "support_share_of_total_calculated_pct": 40.144838,
+      "market_revenue_mix_pct": {
+        "memory": 42,
+        "foundry": 40,
+        "logic_IDM": 18
+      },
+      "market_mix_denominator": "Leading-edge and mature equipment sales plus upgrades; not all Lam revenue and not new systems alone.",
+      "annual_DRAM_share_pct": null,
+      "annual_NAND_share_pct": null,
+      "annual_DRAM_NAND_split_disclosed_in_this_report": false,
+      "source_locators": [
+        "Item 1 Customers",
+        "Note 4 Revenue",
+        "Note 19 Segment, Geographic Information, and Major Customers"
+      ],
+      "evidence_span_ids": [
+        "lam-2024-10k-official-mirror:customer_names",
+        "lam-2024-10k-official-mirror:systems_revenue",
+        "lam-2024-10k-official-mirror:support_revenue",
+        "lam-2024-10k-official-mirror:systems_definition",
+        "lam-2024-10k-official-mirror:support_definition",
+        "lam-2024-10k-official-mirror:market_mix_denominator",
+        "lam-2024-10k-official-mirror:market_mix_memory",
+        "lam-2024-10k-official-mirror:market_mix_foundry",
+        "lam-2024-10k-official-mirror:market_mix_logic",
+        "lam-2024-10k-official-mirror:unnamed_customer_concentration"
+      ],
+      "interpretation": "Lam supplies chipmaking tools for deposition, etch and cleaning. Its support category also contains upgrades and mature-node tools, so that category cannot be treated as pure recurring service. Memory and foundry are both substantial equipment markets. The filing does not allocate Micron or TSMC spending to Lam orders or quantify supplier-specific earnings effects."
+    },
+    {
+      "exposure_version_id": "lam-fy2025",
+      "source_id": "lam-2025-10k-official-mirror",
+      "fiscal_period_end": "2025-06-29",
+      "filing_date": "2025-08-11",
+      "SEC_acceptance_as_displayed": "2025-08-11 16:35:11",
+      "SEC_acceptance_timezone": "not displayed in archived index; no intraday conversion used",
+      "SEC_accession": "0000707549-25-000075",
+      "original_SEC_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754925000075/lrcx-20250629.htm",
+      "SEC_index_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754925000075/0000707549-25-000075-index.htm",
+      "official_issuer_filing_index_url": "https://investor.lamresearch.com/sec-filings?cat=1&year=2025",
+      "official_index_body_sha256": "3566545d9e45fdeabedabb93d3dd4a5d08edf5c3fe33c6e74eab513bc79a3617",
+      "mirror_link_and_filing_date_verified_in_official_index_body": true,
+      "source_identity_checked": [
+        "issuer",
+        "fiscal period",
+        "form 10-K",
+        "filing date",
+        "issuer-linked mirror identifier"
+      ],
+      "usable_from_date_conservative": "2025-08-12",
+      "superseded_from_date_in_this_annual_pair": null,
+      "scope_limit": "Only the frozen 13 historical events; this is not a current or prospective supplier-state certification.",
+      "named_customer_relationships": {
+        "TSMC": {
+          "named_among_significant_customers": true,
+          "individual_revenue_share_pct": null
+        },
+        "Micron": {
+          "named_among_significant_customers": false,
+          "individual_revenue_share_pct": null
+        }
+      },
+      "customer_name_period_scope": "The customer list covers the three fiscal years in the filing, not a separately quantified current-year relationship.",
+      "unidentified_customer_total_revenue_shares_pct": [
+        17,
+        15
+      ],
+      "named_customer_mapping_to_concentration_percentages_verified": false,
+      "revenue_USD": {
+        "systems": 11491280000,
+        "customer_support_and_other": 6944311000,
+        "total": 18435591000
+      },
+      "systems_share_of_total_calculated_pct": 62.33204,
+      "support_share_of_total_calculated_pct": 37.66796,
+      "market_revenue_mix_pct": {
+        "memory": 42,
+        "foundry": 45,
+        "logic_IDM": 13
+      },
+      "market_mix_denominator": "Leading-edge and mature equipment sales plus upgrades; not all Lam revenue and not new systems alone.",
+      "annual_DRAM_share_pct": null,
+      "annual_NAND_share_pct": null,
+      "annual_DRAM_NAND_split_disclosed_in_this_report": false,
+      "source_locators": [
+        "Item 1 Customers",
+        "Note 4 Revenue",
+        "Note 19 Segment, Geographic Information, and Major Customers"
+      ],
+      "evidence_span_ids": [
+        "lam-2025-10k-official-mirror:customer_names",
+        "lam-2025-10k-official-mirror:systems_revenue",
+        "lam-2025-10k-official-mirror:support_revenue",
+        "lam-2025-10k-official-mirror:systems_definition",
+        "lam-2025-10k-official-mirror:support_definition",
+        "lam-2025-10k-official-mirror:market_mix_denominator",
+        "lam-2025-10k-official-mirror:market_mix_memory",
+        "lam-2025-10k-official-mirror:market_mix_foundry",
+        "lam-2025-10k-official-mirror:market_mix_logic",
+        "lam-2025-10k-official-mirror:unnamed_customer_concentration"
+      ],
+      "interpretation": "The later filing retains TSMC in its named-customer list and omits Micron. That omission does not establish lost business or a customer-specific revenue threshold. Aggregate memory and foundry exposure persists, but exact customer weights, DRAM/NAND percentages and incremental order conversion remain unavailable."
+    }
+  ],
+  "relationship_supplements": [
+    {
+      "source_id": "lam-micron-halo-20250219",
+      "displayed_publication_date": "2025-02-19",
+      "usable_from_date_conservative": "2025-02-20",
+      "paraphrase": "A named Micron NAND-development executive attributes molybdenum mass production to Lam ALTUS Halo. This is product-specific evidence of a Micron equipment relationship; it supplies no order value, revenue weight or new capex revision.",
+      "evidence_span_id": "lam-micron-halo-20250219:relationship"
+    },
+    {
+      "source_id": "lam-micron-award-20251208",
+      "displayed_publication_date": "2025-12-08",
+      "usable_from_date_conservative": "2025-12-09",
+      "paraphrase": "Lam reports a Micron front-end-equipment award and collaboration on NAND and DRAM. The article corroborates the relationship from its December publication date, not from the earlier award ceremony or earlier earnings events.",
+      "evidence_span_id": "lam-micron-award-20251208:relationship"
+    }
+  ],
+  "event_mapping": [
+    {
+      "event_id": "tsmc-2024-q4",
+      "issuer": "TSMC",
+      "release_date": "2025-01-16",
+      "annual_exposure_version_id": "lam-fy2024",
+      "dated_relationship_source_ids": [
+        "lam-2024-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2025-q2",
+      "issuer": "Micron",
+      "release_date": "2025-03-20",
+      "annual_exposure_version_id": "lam-fy2024",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2025-q1",
+      "issuer": "TSMC",
+      "release_date": "2025-04-17",
+      "annual_exposure_version_id": "lam-fy2024",
+      "dated_relationship_source_ids": [
+        "lam-2024-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2025-q3",
+      "issuer": "Micron",
+      "release_date": "2025-06-25",
+      "annual_exposure_version_id": "lam-fy2024",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2025-q2",
+      "issuer": "TSMC",
+      "release_date": "2025-07-17",
+      "annual_exposure_version_id": "lam-fy2024",
+      "dated_relationship_source_ids": [
+        "lam-2024-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2025-q4",
+      "issuer": "Micron",
+      "release_date": "2025-09-23",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2025-q3",
+      "issuer": "TSMC",
+      "release_date": "2025-10-16",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-2025-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2026-q1",
+      "issuer": "Micron",
+      "release_date": "2025-12-17",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219",
+        "lam-micron-award-20251208"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2025-q4",
+      "issuer": "TSMC",
+      "release_date": "2026-01-15",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-2025-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2026-q2",
+      "issuer": "Micron",
+      "release_date": "2026-03-18",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219",
+        "lam-micron-award-20251208"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2026-q1",
+      "issuer": "TSMC",
+      "release_date": "2026-04-16",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-2025-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "micron-fy2026-q3",
+      "issuer": "Micron",
+      "release_date": "2026-06-24",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-micron-halo-20250219",
+        "lam-micron-award-20251208"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    },
+    {
+      "event_id": "tsmc-2026-q2",
+      "issuer": "TSMC",
+      "release_date": "2026-07-16",
+      "annual_exposure_version_id": "lam-fy2025",
+      "dated_relationship_source_ids": [
+        "lam-2025-10k-official-mirror"
+      ],
+      "qualitative_historical_supplier_relationship_supported": true,
+      "dated_relevant_wafer_equipment_business_supported": true,
+      "customer_specific_revenue_weight_pct": null,
+      "incremental_spend_to_Lam_revenue_conversion": null,
+      "event_specific_spend_mapping_and_materiality_established_by_this_audit": false,
+      "exact_historical_version_availability_verified": false,
+      "no_later_filing_used_for_this_event": true
+    }
+  ],
+  "private_evidence": {
+    "path": "data/readthrough-financial-v1/exposure/evidence-spans.v1.json",
+    "sha256": "33bf4df698db4f10c1d4330bcc1c3c923931c44c65e15331d46c58e65ce39d02",
+    "span_count": 22
+  },
+  "decision_constraints": [
+    "Named-customer history supports a supplier relationship, not an order allocation, current market share, new signal or forecast.",
+    "Do not identify the unnamed concentrated customers from row order, geography or common knowledge.",
+    "Do not infer a Micron percentage, zero exposure or a sub-10-percent limit from omission in the later named list.",
+    "No filing or supplement is applied to an event before its documented publication date; the day after publication is the conservative boundary.",
+    "FY2025 numeric facts never populate the five events before August 2025.",
+    "Memory percentages combine products; missing annual DRAM and NAND fractions stay unknown.",
+    "Construction, packaging, clean-room facilities and grants do not automatically map to Lam front-end equipment purchases.",
+    "Supplier selection, process mix, equipment reuse, utilization, upgrades and shipment/acceptance timing can separate customer spending from Lam revenue.",
+    "Intervening Lam quarterly disclosures are not reconciled in this annual-only audit; it is not a complete historical supplier-state record.",
+    "Presently downloaded official mirrors are verified by issuer/form/period/date and key SEC facts, but exact byte identity with the original filing was not checked.",
+    "The existing financial protocol remains unchanged; complete source packets and predictions must still precede price collection."
+  ],
+  "research_contamination_note": "No market-data or event-return query was made. Broad web discovery incidentally returned unrelated stock-performance headlines; they were not used for source selection, exposure facts or event mapping. Historical research is diagnostic, not a pristine information-blind holdout."
+}
