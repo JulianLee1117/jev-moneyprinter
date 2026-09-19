@@ -8,7 +8,7 @@ Status: active experimental research, September 18, 2026. Objective: a repeatabl
 
 The registered primary engineering comparison threshold was met only as a narrow negative-claim filtering result. The secondary probability routing lost useful categorical specificity; its sole frozen positive reference was ambiguous. Do not claim native-probability benefit, opportunity detection or alpha. Close this particular aggregate-WFE rule/source combination instead of collecting more of the same pairs or weakening the rule after seeing zero opportunities.
 
-**Next bounded research direction:** one fixed 90-day cohort of issuer cash self-tenders, screened first for current operative terms, explicit odd-lot priority and plausible small-account economics. Use a $1,000 whole-share account model, minimum accepted tender price rather than hoped-for auction upside, documented deductions and a $20 conditional-surplus hurdle. Missing account holdings, broker deadline, eligibility or cancellation terms remain unresolved. Begin with the official filing census; do not build a platform or spend on model inference if the source/economic gate yields no plausible cases.
+**Next bounded research direction:** one fixed 90-day cohort of issuer cash self-tenders, screened first for current operative terms, explicit odd-lot priority and plausible small-account economics. The source/economic gate is recorded in [the tender feasibility protocol](research/experiments/tender-feasibility-protocol.v1.json). Use a $1,000 whole-share account model, minimum accepted tender price rather than hoped-for auction upside, documented deductions and a $20 conditional-surplus hurdle. Missing account holdings, broker deadline, eligibility or cancellation terms remain unresolved. The [complete published-index cohort](research/experiments/tender-census-index-review-2026-09-18.md) contains 155 initiation filings from 153 issuer CIKs; offer-level reconciliation and economic screening remain undone. Do not build a platform or spend on model inference if the source/economic gate yields no plausible cases.
 
 The initial ABUS check failed: a historical September 18 final-minute SIP ask of $5.01 implies a $0.99 loss on 99 shares at the conditional $5 tender floor, before deductions. The observed quote is not a current executable price. Reject this floor-spread candidate, preserving the terms and quote records privately. Other clearing prices remain speculative.
 
@@ -66,22 +66,22 @@ The ten-issuer section scout found no additional verified upcoming trade catalys
 
 ## Milestone 0: source, exposure and timing audit
 
-Estimated effort: 1–2 focused implementation/research days, conditional on source accessibility. Research is the first milestone of the build.
+Estimated effort: 1â€“2 focused implementation/research days, conditional on source accessibility. Research is the first milestone of the build.
 
-1. Enumerate candidate CORE documents, linking Federal Register, Commerce announcements, USITC/IDS and available public-inspection records. Cover 2015 onward; prioritize Korea/Taiwan and the 2024–2025 ten-country proceeding for initial dossiers.
+1. Enumerate candidate CORE documents, linking Federal Register, Commerce announcements, USITC/IDS and available public-inspection records. Cover 2015 onward; prioritize Korea/Taiwan and the 2024â€“2025 ten-country proceeding for initial dossiers.
 2. Form investigation and event-episode IDs. Preserve country/exporter details but group simultaneous announcements and dependent stages for statistical analysis. Keep irrelevant, unchanged and clerical records with exclusion reasons.
 3. Build approximately 20 chronological dossiers spanning new investigations, preliminary/final decisions, reviews, zero or changed rates, scope changes and no-change outcomes. Select without inspecting later prices.
 4. Capture exact evidence for issuer exposure, owned operations and period of validity. Petition participation supports relevance but does not quantify earnings sensitivity. Unknown exposure remains unknown.
 5. Audit publication evidence and earlier announcements. Store document date, public-inspection time, source-posted time if available, capture time, and earliest public evidence found. Never overwrite an original snapshot or infer first publication from current metadata updates.
 6. Decide whether enough material, timing-auditable event episodes exist to justify price-data work. Report the numerator and denominator, concentration by case, and excluded cases. Sparse evidence is a result, not a reason to turn documents into artificial samples.
 
-Deliverable: reproducible event census, source snapshots, evidence dossiers and a go/pivot note. A 30–50 episode target is a feasibility aspiration, not proof of statistical sufficiency. With fewer usable episodes, describe the project as case-study/prospective research until coverage expands.
+Deliverable: reproducible event census, source snapshots, evidence dossiers and a go/pivot note. A 30â€“50 episode target is a feasibility aspiration, not proof of statistical sufficiency. With fewer usable episodes, describe the project as case-study/prospective research until coverage expands.
 
 ## Milestone 1: reproducible extraction and event state
 
 Use a small Python command-line package, SQLite for metadata and state, and content-addressed files for raw source bytes and extracted passages. Use typed validation at input/output boundaries. Exact dependencies and compatible versions will be selected at implementation time. A provider adapter permits a stronger-model baseline without changing downstream schemas.
 
-Pipeline: discover documents → archive bytes and metadata → extract text/tables → link cases and prior state → select relevant passages → classify with Jev → validate evidence and numeric fields → produce a local research alert.
+Pipeline: discover documents â†’ archive bytes and metadata â†’ extract text/tables â†’ link cases and prior state â†’ select relevant passages â†’ classify with Jev â†’ validate evidence and numeric fields â†’ produce a local research alert.
 
 Core records:
 
@@ -118,7 +118,7 @@ Research requirement: take full advantage of Jev's capabilities for alpha discov
 
 In addition to the equal-evidence ablation below, require a **fixed-budget coverage experiment** before claiming Jev enables a worthwhile new strategy. Freeze one candidate universe and ordering, source availability, machine-cost allowance, elapsed-time allowance and reviewer-time allowance. Compare (a) deterministic retrieval/rules, (b) a capable conventional model, (c) Jev screening with explicit deeper-review routing. Include all acquisition, parsing, retry and review costs, not just model tokens. Measure correctly identified distinct economically relevant episodes, recall on adjudicated random samples (including rejects), false-alert load and observed end-to-end delay. A broader classifier result or lower token bill is not an alpha result; holdout post-alert net returns remain a separate gate.
 
-The proposed use of extra coverage is a document × known product/exposure × issuer economic-channel evaluation over a dated, evidence-backed candidate map. Parallel judgments test direct producers, affected importers and verified customers/competitors; code handles dependent stages and numbers. Do not generate thousands of unsupported ticker relationships or treat question/candidate counts as independent financial samples. CORE is the first calibration/rejection fixture. Expand to other registered trade-remedy families only when the exposure/data audit identifies credible opportunities. Do not launch a seven-feed platform to manufacture scale.
+The proposed use of extra coverage is a document Ã— known product/exposure Ã— issuer economic-channel evaluation over a dated, evidence-backed candidate map. Parallel judgments test direct producers, affected importers and verified customers/competitors; code handles dependent stages and numbers. Do not generate thousands of unsupported ticker relationships or treat question/candidate counts as independent financial samples. CORE is the first calibration/rejection fixture. Expand to other registered trade-remedy families only when the exposure/data audit identifies credible opportunities. Do not launch a seven-feed platform to manufacture scale.
 
 TypeSafe's architectural/speed claims motivate this comparison but are not our measurements, especially through OpenRouter. Full probability preservation is implemented; domain calibration, budget-matched coverage gains and improved trading outcomes remain untested. [TypeSafe model design](https://typesafe.ai/blog/introducing-system-one-models-and-jev), [parallel choice outputs](https://docs.typesafe.ai/primitives/choice).
 
@@ -133,7 +133,7 @@ Use a staged architecture:
 5. **Semantic state changes.** Maintain a versioned case history and compare each announcement to its prior public state. Changed legal treatment and surprise relative to market expectations are distinct fields. Market expectations stay unknown unless independently supported. Code computes numeric rate deltas and date comparisons; Jev evaluates whether passages and applicability justify that comparison.
 6. **Information-gain routing.** Reserve deeper model/human work for cases with substantive new evidence, credible exposure or unresolved material ambiguity. Do not discard every low-confidence case: ambiguity can be economically important. Keep a sampled audit of rejected candidates to estimate missed opportunities.
 
-The full panel becomes an auditable semantic dataset. Initial return analysis uses only a few prespecified aggregate concepts—substantive change, conditional economic direction and supported issuer exposure—rather than fitting 28 coefficients to a handful of events. The two issuer reactions, country rows, document chunks and questions associated with one announcement are dependent observations from that episode.
+The full panel becomes an auditable semantic dataset. Initial return analysis uses only a few prespecified aggregate conceptsâ€”substantive change, conditional economic direction and supported issuer exposureâ€”rather than fitting 28 coefficients to a handful of events. The two issuer reactions, country rows, document chunks and questions associated with one announcement are dependent observations from that episode.
 
 Required ablation, using the **same documents, prior-state evidence, exposure map and entry timing**:
 
@@ -146,7 +146,7 @@ Compare correct material-change detection, missed events, false alerts, inferenc
 
 ## Milestone 2: market-data decision and event study
 
-The user has no paid intraday feed. Milestones 0–1 work with public documents and do not require one. EOD data can support a limited daily diagnostic, but cannot establish an intraday opportunity or an executable entry price. Do not silently substitute a daily close for a quote available at the alert time.
+The user has no paid intraday feed. Milestones 0â€“1 work with public documents and do not require one. EOD data can support a limited daily diagnostic, but cannot establish an intraday opportunity or an executable entry price. Do not silently substitute a daily close for a quote available at the alert time.
 
 After timestamp and event-count gates pass, compare providers for a small event-window purchase: historical coverage, adjusted/unadjusted prices, corporate actions, exchange timestamps, bid/ask availability, use rights and total quote. Choose the minimum adequate dataset. No subscription is assumed or purchased by this plan.
 

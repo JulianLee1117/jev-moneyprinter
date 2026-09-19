@@ -1,0 +1,62 @@
+{
+  "schema_version": "tender-feasibility-protocol-v1",
+  "recorded_at": "2026-09-19T04:56:59.037148+00:00",
+  "scope": "Finite opportunity-supply audit before another Jev model experiment. A filing cohort is not a list of all current offers or an authorization to trade.",
+  "prior_information": "Earlier ABUS/WIX/BRRN scouts were already seen. ABUS had a historical indicative ask above the conditional floor. These observations motivated the hypothesis; this is not a blinded discovery claim.",
+  "cohort": {
+    "initial_form": "SC TO-I",
+    "amendment_form": "SC TO-I/A",
+    "filing_date_start": "2026-06-21",
+    "filing_date_end": "2026-09-18",
+    "inclusive_days": 90,
+    "source": "SEC 2026 QTR2 and QTR3 master indexes",
+    "unit": "one offer, not each amendment, filing, clause or hypothetical account variant",
+    "limitation": "Initiations before the window are out of cohort even if still open. A complete index is only a filing enumeration; offering terms and amendment linkage remain required."
+  },
+  "candidate_scope": "Exchange-listed common-share issuer cash self-tenders with documented beneficial-owner odd-lot priority. Reject fund redemptions, option exchanges, debt offers, issuer-security mismatches and speculative reverse-split rounding from this hypothesis, preserving counts and reasons.",
+  "data_gate": [
+    "complete dated index coverage for cohort",
+    "initiation and all linked operative amendments, current completion/withdrawal/status",
+    "original payable terms, security, beneficial-owner threshold, all-holdings rule and acquisition/eligibility dates",
+    "documented broker deadline/handling and relevant tax/withholding requirements before an executable claim"
+  ],
+  "economic_gate": {
+    "account_capital_usd": 1000,
+    "holdings": "Actual existing beneficial holdings across accounts unknown; use explicitly hypothetical new-holder scenarios until verified. Never assume eligibility from a single account balance.",
+    "shares": "Whole shares subject to budget and offer-wide beneficial-owner limits; do not automatically assume every offer allows 99.",
+    "payout": "Lowest contractually permitted accepted cash price, conditional on completion and acceptance; never substitute upper auction price.",
+    "minimum_conditional_surplus_usd": 20,
+    "deductions": "Include documented transaction/corporate-action costs and cash withholding or deductions; unresolved treatment cannot silently become zero for eligibility. A negative gross spread can be rejected without completing deductions.",
+    "entry": "Timestamped ask with adequate quoted size after a fixed 30-minute manual-response allowance; historical/off-hours observations are screening evidence only, not executable fills. Recheck status and broker deadline before any prospective paper entry.",
+    "failure_branch": "Retain cancellation, invalid tender, failed settlement and market-value exposure; conditional cash floor is not guaranteed proceeds or expected value."
+  },
+  "jev_experiment_only_after_survival": {
+    "input": "Identical original offer/amendment passages and separately verified account/broker facts, with labels excluded.",
+    "decisions": [
+      "operative amendment",
+      "security identity",
+      "beneficial versus record ownership",
+      "aggregated holdings",
+      "acquisition dates",
+      "threshold eligibility",
+      "all-shares condition",
+      "tender-price election",
+      "certification",
+      "proration and exceptions",
+      "completion conditions",
+      "broker deadline",
+      "withholding documentation"
+    ],
+    "native_test": "Parallel atomic decisions with full distributions and predeclared review/abstention logic; compare same outputs with categorical-only routing and an identical-evidence capable conventional model. Freeze exact question panel, labels, thresholds, model identity and cost allowance before calls.",
+    "arithmetic": "Code computes holdings, dates, cash branches and costs. Do not multiply semantic probabilities or treat them as offer-completion probabilities.",
+    "outcome": "Correct eligible/rejected/unresolved decisions, missed valid opportunities, false eligibility and useful review routing; not token cost alone."
+  },
+  "stop_rules": [
+    "If no candidate survives source and conservative economic gates, stop this family build and record the denominator.",
+    "One survivor justifies at most one prospective paper case; fewer than two independent offers cannot support a repeatable opportunity-supply claim.",
+    "Hypothetical account variants are rule tests, not independent financial opportunities.",
+    "If Jev does not improve consequential decisions against controls, do not claim a Jev-specific mechanism even if ordinary tender screening remains useful.",
+    "No outcome-based threshold changes, live orders or unrequested background monitoring."
+  ],
+  "status": "index enumeration in progress; no full offer cohort screened, no new Jev calls or profitable opportunity established"
+}
