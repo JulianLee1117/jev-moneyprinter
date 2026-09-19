@@ -1,0 +1,614 @@
+{
+  "schema_version": "read-through-event-census-v1",
+  "frozen_at": "2026-09-19T03:41:52.035001+00:00",
+  "protocol_sha256": "df475d3138c1a974de106287e6e87ce2e414b52d6cfdebfa835eb46ed378985f",
+  "selection": "All scheduled TSMC/Micron quarterly announcements with displayed release date Jan1 2025 through Sep18 2026; no event-return inspection or content-based selection",
+  "event_count": 13,
+  "events": [
+    {
+      "event_id": "tsmc-2024-q4",
+      "issuer": "TSMC",
+      "fiscal_period": "2024Q4",
+      "release_date": "2025-01-16",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2024/q4",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/244ed7a603f240c2aaf09c21b22e9356beec897d/4Q24%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/2d8b2bb6fc3b5887d24ae0635f639c1cdca834f3/4Q24ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/cc4e1dec3474f69109d5455fbf8939c3e3cd5a71/4Q24EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/84aeb15bbe33894365d33f52e027c5268ba95dcf/TSMC%204Q24%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2025-q2",
+      "issuer": "Micron",
+      "fiscal_period": "FY2025Q2",
+      "release_date": "2025-03-20",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2025-03-20-2025/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q2-release-3b7b6eba7fe1.html",
+        "body_sha256": "3b7b6eba7fe18cc38e6315b5ac0c62c615bd5ba2f76995e6c5849a1386d90ac9",
+        "first_capture_started_at": "2026-09-19T03:38:34.746356+00:00",
+        "first_capture_at": "2026-09-19T03:39:22.597619+00:00",
+        "displayed_date": "March 20, 2025",
+        "raw_body_char_start": 365888,
+        "raw_body_char_end_exclusive": 365902,
+        "quote": "March 20, 2025"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q2/Micron_Q2_25_Earnings_Deck-1.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q2/Micron_FY25_Q2_Prepared_Remarks_2-1.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2025-03-20-2025/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q2-release-3b7b6eba7fe1.html",
+          "body_sha256": "3b7b6eba7fe18cc38e6315b5ac0c62c615bd5ba2f76995e6c5849a1386d90ac9",
+          "first_capture_at": "2026-09-19T03:39:22.597619+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q2/0000723125-25-000009.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2025-q1",
+      "issuer": "TSMC",
+      "fiscal_period": "2025Q1",
+      "release_date": "2025-04-17",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2025/q1",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/ee52288ce5bd516a6346a4129eb00d1aac300beb/1Q25%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/8e7d27fd8fb010c689d221dc3b8450095bbfc7e2/1Q25ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/6580235c47b7b8f1056b071faa44d958c2c3ba04/1Q25EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/7630274eecc1197a4e3ea6a415f44a47204fe10a/TSMC%201Q25%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2025-q3",
+      "issuer": "Micron",
+      "fiscal_period": "FY2025Q3",
+      "release_date": "2025-06-25",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Third-Quarter-of-Fiscal-2025-06-25-2025/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q3-release-58a6fc7029d5.html",
+        "body_sha256": "58a6fc7029d5c17f7964be438039d90439fed5aad90de01e51aebd5d995cee32",
+        "first_capture_started_at": "2026-09-19T03:38:34.746690+00:00",
+        "first_capture_at": "2026-09-19T03:39:22.657884+00:00",
+        "displayed_date": "June 25, 2025",
+        "raw_body_char_start": 365878,
+        "raw_body_char_end_exclusive": 365891,
+        "quote": "June 25, 2025"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q3/Micron_Q3-25-Earnings-Deck.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q3/Micron_FY25_Q3_Prepared_Remarks.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Third-Quarter-of-Fiscal-2025-06-25-2025/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q3-release-58a6fc7029d5.html",
+          "body_sha256": "58a6fc7029d5c17f7964be438039d90439fed5aad90de01e51aebd5d995cee32",
+          "first_capture_at": "2026-09-19T03:39:22.657884+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q3/0000723125-25-000021.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2025-q2",
+      "issuer": "TSMC",
+      "fiscal_period": "2025Q2",
+      "release_date": "2025-07-17",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2025/q2",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/21137c0bdddbdbe5f466d593015ad85db52bbb3e/2Q25%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1fec9df3de99e6e9f190e1eda7179449381ce6d8/2Q25ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/d9d294ed46ca22c560a17eb060373bc35f2d464a/2Q25EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC%202Q25%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2025-q4",
+      "issuer": "Micron",
+      "fiscal_period": "FY2025Q4",
+      "release_date": "2025-09-23",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Fourth-Quarter-and-Full-Year-of-Fiscal-2025-09-23-2025/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q4-release-31d09bf5f59b.html",
+        "body_sha256": "31d09bf5f59bd58041f7f5965cf8128624e8375be72d8504ce9f8f0a80283514",
+        "first_capture_started_at": "2026-09-19T03:38:34.786524+00:00",
+        "first_capture_at": "2026-09-19T03:39:18.114035+00:00",
+        "displayed_date": "September 23, 2025",
+        "raw_body_char_start": 365989,
+        "raw_body_char_end_exclusive": 366007,
+        "quote": "September 23, 2025"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q4/Q4-25-Earnings-Deck.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q4/Q4-2025-Prepared-Remarks-1.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Fourth-Quarter-and-Full-Year-of-Fiscal-2025-09-23-2025/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q4-release-31d09bf5f59b.html",
+          "body_sha256": "31d09bf5f59bd58041f7f5965cf8128624e8375be72d8504ce9f8f0a80283514",
+          "first_capture_at": "2026-09-19T03:39:18.114035+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q4/0000723125-25-000028.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2025-q3",
+      "issuer": "TSMC",
+      "fiscal_period": "2025Q3",
+      "release_date": "2025-10-16",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2025/q3",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-10/e2bc3d3489511b11699eed2c65c4ad22162270e3/3Q25%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-10/90cb476be2e8406ba477c417a552d36d632db5c3/3Q25ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-10/ff1cf977182dad2178b6d158e61d375ac98ff517/3Q25EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2026-q1",
+      "issuer": "Micron",
+      "fiscal_period": "FY2026Q1",
+      "release_date": "2025-12-17",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-First-Quarter-of-Fiscal-2026-12-17-2025/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2026-q1-release-dd5a3167cdc4.html",
+        "body_sha256": "dd5a3167cdc4325662eea04b5ceb276a6d0c17792d01784ed6af7fbd51a23173",
+        "first_capture_started_at": "2026-09-19T03:38:34.745262+00:00",
+        "first_capture_at": "2026-09-19T03:39:18.123598+00:00",
+        "displayed_date": "December 17, 2025",
+        "raw_body_char_start": 365896,
+        "raw_body_char_end_exclusive": 365913,
+        "quote": "December 17, 2025"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q1/Micron-Q1-26-Earnings-Deck_R.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q1/Micron_Q1-2026-Prepared-Remarks.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-First-Quarter-of-Fiscal-2026-12-17-2025/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2026-q1-release-dd5a3167cdc4.html",
+          "body_sha256": "dd5a3167cdc4325662eea04b5ceb276a6d0c17792d01784ed6af7fbd51a23173",
+          "first_capture_at": "2026-09-19T03:39:18.123598+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q1/0000723125-25-000046.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2025-q4",
+      "issuer": "TSMC",
+      "fiscal_period": "2025Q4",
+      "release_date": "2026-01-15",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2025/q4",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/bb5dd5e3537d7661e694fa2588e7a29f7c0410e6/4Q25%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/00fe50f72b38d74e6b9b066398f020f337cd4e9d/4Q25%20Management%20Report.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/3e49621566a3ca53bdf8aee2586929b666c17fd6/4Q25EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2026-q2",
+      "issuer": "Micron",
+      "fiscal_period": "FY2026Q2",
+      "release_date": "2026-03-18",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2026-q2-release-a5211ffd6603.html",
+        "body_sha256": "a5211ffd6603a7ec58e2c70bee57b98c9738789a95b8d9c0a2df3f38a8baae7e",
+        "first_capture_started_at": "2026-09-19T03:38:34.745699+00:00",
+        "first_capture_at": "2026-09-19T03:39:18.147517+00:00",
+        "displayed_date": "March 18, 2026",
+        "raw_body_char_start": 365892,
+        "raw_body_char_end_exclusive": 365906,
+        "quote": "March 18, 2026"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q2/Q2-2026-Earnings-Deck.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2026-q2-release-a5211ffd6603.html",
+          "body_sha256": "a5211ffd6603a7ec58e2c70bee57b98c9738789a95b8d9c0a2df3f38a8baae7e",
+          "first_capture_at": "2026-09-19T03:39:18.147517+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q2/0000723125-26-000006.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2026-q1",
+      "issuer": "TSMC",
+      "fiscal_period": "2026Q1",
+      "release_date": "2026-04-16",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2026/q1",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/a7e3abe65a3fbc342aa55f9f53a5490dd621c1ac/1Q26%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/5508a9df8981f587c73dbfaf9f577f142e22bbb1/1Q26ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/e85216eea8dccd8ca75d7e040e8d57be3ccd618b/1Q26%20EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "micron-fy2026-q3",
+      "issuer": "Micron",
+      "fiscal_period": "FY2026Q3",
+      "release_date": "2026-06-24",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx",
+        "body_path": "data/readthrough-prospective-v1/sources/mu-fy26-q3-release-61454a185985.html",
+        "body_sha256": "61454a185985b2843ff5d0c046cfa325db8b1e1b43a5f4fb654546384fc5da1e",
+        "first_capture_started_at": "2026-09-19T03:26:35.940569+00:00",
+        "first_capture_at": "2026-09-19T03:27:18.460649+00:00",
+        "displayed_date": "June 24, 2026",
+        "raw_body_char_start": 366171,
+        "raw_body_char_end_exclusive": 366184,
+        "quote": "June 24, 2026"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q3/Micron_Q3_26_Earnings_Deck.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q3/Q3-FY26-Prepared-Remarks.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-prospective-v1/sources/mu-fy26-q3-release-61454a185985.html",
+          "body_sha256": "61454a185985b2843ff5d0c046cfa325db8b1e1b43a5f4fb654546384fc5da1e",
+          "first_capture_at": "2026-09-19T03:27:18.460649+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q3/0000723125-26-000015.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    },
+    {
+      "event_id": "tsmc-2026-q2",
+      "issuer": "TSMC",
+      "fiscal_period": "2026Q2",
+      "release_date": "2026-07-16",
+      "date_provenance": "official release PDF web extraction L0; archived proof; raw PDF transfer failed",
+      "source_index_url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "documents": [
+        {
+          "title": "Presentation Material",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/0e4d9625c9ef46521afd54002f835e45a9035043/2Q26%20Presentation%20%28E%29.pdf"
+        },
+        {
+          "title": "Management Report",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf"
+        },
+        {
+          "title": "Earnings Release",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf"
+        },
+        {
+          "title": "Earnings Conference Transcript",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    }
+  ],
+  "outside_window_prior_sources": [
+    {
+      "event_id": "micron-fy2025-q1",
+      "issuer": "Micron",
+      "fiscal_period": "FY2025Q1",
+      "release_date": "2024-12-18",
+      "date_provenance": {
+        "url": "https://investors.micron.com/news/press-release/2024/Micron-Technology-Inc--Reports-Results-for-the-First-Quarter-of-Fiscal-2025-12-18-2024/default.aspx",
+        "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q1-release-d7298b91dbd8.html",
+        "body_sha256": "d7298b91dbd810e53d4e58c44725bd511460fbf8a89be7fb7540e0b5cf3363bb",
+        "first_capture_started_at": "2026-09-19T03:38:34.746061+00:00",
+        "first_capture_at": "2026-09-19T03:39:22.663228+00:00",
+        "displayed_date": "December 18, 2024",
+        "raw_body_char_start": 365875,
+        "raw_body_char_end_exclusive": 365892,
+        "quote": "December 18, 2024"
+      },
+      "source_index_url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+      "documents": [
+        {
+          "title": "Earnings presentation",
+          "role": "earnings_presentation",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q1/Q1-25-Earnings-Deck.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Prepared remarks",
+          "role": "prepared_remarks",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q1/FY25-Q1-Prepared-Remarks.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        },
+        {
+          "title": "Press release",
+          "role": "earnings_release",
+          "url": "https://investors.micron.com/news/press-release/2024/Micron-Technology-Inc--Reports-Results-for-the-First-Quarter-of-Fiscal-2025-12-18-2024/default.aspx",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": true,
+          "body_path": "data/readthrough-census-v1/sources/micron-fy2025-q1-release-d7298b91dbd8.html",
+          "body_sha256": "d7298b91dbd810e53d4e58c44725bd511460fbf8a89be7fb7540e0b5cf3363bb",
+          "first_capture_at": "2026-09-19T03:39:22.663228+00:00",
+          "http_status": 200
+        },
+        {
+          "title": "Form 10-Q / 10K",
+          "role": "periodic_filing",
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2025/q1/0000723125-24-000047.pdf",
+          "link_provenance": "official_index_embedded_documentCategoryData",
+          "body_fetched_for_this_census": false
+        }
+      ],
+      "exact_historical_body_availability_verified": false,
+      "point_in_time_supplier_exposure_verified": false,
+      "source_packet_status": "not_yet_complete"
+    }
+  ],
+  "additional_predecessor_required": "TSMC2024Q3 and any intervening comparable guidance beforeJan162025; uncollected does not remove first event",
+  "source_capture_hashes": {
+    "tsmc_indexes": "58cbfead409d811e917f585f1373e9860211286c6baafd81fda93419dac7849e",
+    "micron_indexes": "1d93fecbd6483ee03547ef7b35faf5eeb3c5e57fcd30916bb455291664c7f9bf",
+    "tsmc_web_release_extract": "2690b9af1c49ea5697c313b58ccfea3eb71aa38f79ee9f6119abd747f78add29",
+    "tsmc_web_release_extract_2026": "9c7629e8eb9e1fb7f92ba936ed3aa85812d59350a545a7ba1dbaa31f0fd25c68"
+  },
+  "prices_used": false,
+  "signals_frozen": false,
+  "ready_for_price_collection": false,
+  "limitations": [
+    "Source index/date census is complete; original signal packets and intervening guidance reconciliation are not.",
+    "Current-version bodies and migrated-site metadata do not establish historical executable timing.",
+    "13 clustered events are a diagnostic, not sufficient independent evidence of alpha."
+  ]
+}

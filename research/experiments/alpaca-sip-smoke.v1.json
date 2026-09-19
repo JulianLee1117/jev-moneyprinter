@@ -1,0 +1,10 @@
+{
+  "symbol": "SPY", "kind": "quotes", "feed": "sip", "currency": "USD",
+  "start": "2026-09-17T14:00:00Z", "end": "2026-09-17T14:01:00Z",
+  "asof": "2026-09-17", "limit": 1000, "max_pages": 2,
+  "calendar": {
+    "name": "XNYS", "timezone": "America/New_York", "date": "2026-09-17",
+    "open": "2026-09-17T09:30:00-04:00", "close": "2026-09-17T16:00:00-04:00",
+    "source_url": "https://www.nyse.com/trade/hours-calendars"
+  }
+}

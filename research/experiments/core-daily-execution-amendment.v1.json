@@ -1,0 +1,10 @@
+{
+  "registered_at": "2026-09-19T00:57:04.072604+00:00",
+  "protocol_sha256": "57b77834fbecf99ccc6946f2f431ac0d9258f2a153869f079c68e4606374e91c",
+  "prior_signals_sha256": "e8e47dd4254e67ed151960a96d8667036138cc19418e5fabf541afc360ea2df5",
+  "prices_requested": false,
+  "change": "Continue remaining independent requests while preserving all existing completed and failed signals unchanged. Invalid model completions stay unknown; never retry them to obtain valid judgments. Finalized signals may contain failures; affected full-cohort aggregate remains inconclusive. Transport/budget failures still halt new calls.",
+  "reason": "A safely archived baseline completion for2019-12609 chose partial while absent had greater probability; measured invalid output, not transport failure.",
+  "prior_diagnostic_retry": "2015-28455 baseline original failure had no archived response. One explicit diagnostic retry succeeded before this amendment; original uncertain cost retained. This deviation limits first-attempt comparative interpretation.",
+  "cohort_requests_threshold_costs_and_horizon_changed": false
+}

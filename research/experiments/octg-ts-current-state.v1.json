@@ -1,0 +1,464 @@
+{
+  "schema_version": "octg-ts-current-state-v1",
+  "experiment_id": "OCTG-TS-cashflow-v1",
+  "recorded_at": "2026-09-19T00:24:03Z",
+  "as_of_local_date": "2026-09-18",
+  "as_of_timezone": "America/Los_Angeles",
+  "scope": "Bounded primary-source state review; no price series, event returns, paid inference, orders, or schedules.",
+  "economic_conclusion": "A direct company deposit/cost/refund channel is documented. Materiality of the pending Mexico increment and post-alert return information are unproved.",
+  "issuer": {
+    "issuer_id": "sec-cik-0001190723",
+    "name": "Tenaris S.A.",
+    "symbol": "TS",
+    "security": "NYSE ADS",
+    "economic_roles": [
+      "Owner of TAMSA and Siderca",
+      "Importer paying antidumping deposits",
+      "U.S. pipe manufacturer with potentially offsetting protection benefits"
+    ]
+  },
+  "dated_exposure": [
+    {
+      "subsidiary": "Tubos de Acero de Mexico, S.A. and subsidiaries",
+      "alias": "TAMSA",
+      "country": "Mexico",
+      "product": "Seamless steel pipes",
+      "ownership_percent": 100,
+      "ownership_precision": "Rounded as reported",
+      "reported_period_end": "2024-12-31",
+      "valid_from": "2025-04-02T00:00:00-04:00",
+      "valid_from_semantics": "Conservative information availability, not acquisition or operation start",
+      "source_ids": [
+        "ts-fy2024-ownership",
+        "ts-fy2024-index"
+      ],
+      "usable_before_may_2026": true,
+      "continuity_to_event_requires_update_check": true
+    },
+    {
+      "subsidiary": "Siderca Sociedad Anonima Industrial y Comercial and subsidiaries",
+      "alias": "Siderca",
+      "country": "Argentina",
+      "product": "Seamless steel pipes",
+      "ownership_percent": 100,
+      "ownership_precision": "Rounded as reported",
+      "reported_period_end": "2024-12-31",
+      "valid_from": "2025-04-02T00:00:00-04:00",
+      "valid_from_semantics": "Conservative information availability, not acquisition or operation start",
+      "source_ids": [
+        "ts-fy2024-ownership",
+        "ts-fy2024-index"
+      ],
+      "usable_before_may_2026": true,
+      "continuity_to_event_requires_update_check": true
+    }
+  ],
+  "issuer_deposit_evidence": {
+    "available_before_may_2026": true,
+    "conservative_available_at": "2026-04-01T00:00:00-04:00",
+    "source_ids": [
+      "ts-fy2025-index",
+      "ts-fy2025-20f",
+      "ts-fy2025-financial-statements"
+    ],
+    "facts": [
+      "Tenaris reports paying Argentine and Mexican antidumping deposits and reflecting them in costs.",
+      "It describes Mexican deposit reduction to 26.10% and continuing appeals preventing liquidation of first-review entries.",
+      "It describes Argentine 6.76% final rate and refunds following liquidation instructions."
+    ],
+    "evidence_uses": {
+      "pending_may_2026_mexico_context": "Allowed because issuer filing was public before the preliminary candidate.",
+      "june_2025_argentina_prediction": "Disallowed: FY2025 filing and later refund gain are future information relative to that decision."
+    },
+    "magnitude_usd": null,
+    "unknown_fields": [
+      "TAMSA covered U.S. entered value for the pending review",
+      "Company importer-specific assessment base and outstanding deposits by review period",
+      "Recurring future covered import value",
+      "Net domestic pricing offset",
+      "Tax, litigation, timing and cash collection effects"
+    ]
+  },
+  "primary_candidate": {
+    "episode_id": "A-201-856_REV_2023-11-01_2024-10-31",
+    "case_number": "A-201-856",
+    "country": "Mexico",
+    "exporter": "Tubos de Acero de Mexico, S.A.",
+    "period_of_review": {
+      "start": "2023-11-01",
+      "end": "2024-10-31"
+    },
+    "legal_state": "Preliminary results located; final not found in reviewed published/public-inspection/ACCESS notice indexes.",
+    "prior_operative_reference": {
+      "percent": 26.1,
+      "source_id": "mx-final-2022-23",
+      "different_review_period": {
+        "start": "2022-05-11",
+        "end": "2023-10-31"
+      },
+      "legal_effect": "Forward cash-deposit baseline from prior completed review, not an assessment rate for all later entries.",
+      "current_cbp_instructions_verified": false
+    },
+    "preliminary": {
+      "percent": 1.62,
+      "source_id": "mx-prelim-2023-24",
+      "published_date": "2026-05-13",
+      "access_date_candidate": "2026-05-08",
+      "status": "proposal",
+      "changes_tamsa_forward_deposit_now": false
+    },
+    "arithmetic": {
+      "proposed_minus_prior_operative_percentage_points": -24.48,
+      "final_minus_same_review_preliminary_percentage_points": null,
+      "operative_rate_change_from_preliminary_percentage_points": 0,
+      "interpretation": "0 denotes no TAMSA forward-deposit change made by this preliminary notice; it does not mean zero economic information or zero effect for other exporters."
+    },
+    "partial_rescission": {
+      "exporters": [
+        "Siderca S.A.I.C.",
+        "Vallourec Oil & Gas Mexico, S.A. de C.V."
+      ],
+      "reason": "No reviewable suspended entries",
+      "does_not_rescind_tamsa": true
+    },
+    "clocks": {
+      "access_publication_candidate_date": "2026-05-08",
+      "access_unpublished_notice_barcode": "4919491-01",
+      "access_preliminary_decision_memo_barcode": "4919491-02",
+      "public_inspection_at": "2026-05-12T08:45:00-04:00",
+      "fr_published_date": "2026-05-13",
+      "first_public_intraday_verified": false,
+      "prospective_deposit_trigger": "Publication of final results; applicable exporter/manufacturer rules and any subsequent legal instructions must be verified.",
+      "retrospective_refund_trigger": "Importer-specific final assessment, valid liquidation instructions, absence or resolution of applicable legal blocks, and actual payment are separate."
+    },
+    "next_date": {
+      "candidate_date": "2026-11-03",
+      "kind": "Final Results Announcement",
+      "source_id": "access-mx-calendar",
+      "source_period_start": "2023-11-01",
+      "source_period_end": "2024-10-31",
+      "source_extension_days_remaining": 7,
+      "status": "Changeable official calendar candidate; not verified final issuance/publication date.",
+      "extension_memo_verified": false,
+      "original_notice_nominal_120_day_arithmetic_date": "2026-09-10",
+      "nominal_date_is_current_deadline": false,
+      "automation_created": false
+    },
+    "next_review_excluded_from_same_episode": {
+      "period_start": "2024-11-01",
+      "period_end": "2025-10-31",
+      "candidate_preliminary_date": "2026-12-11",
+      "source_extension_days_remaining": 21,
+      "source_id": "access-mx-calendar"
+    },
+    "economic_channels": [
+      {
+        "channel": "Forward import deposits",
+        "conditional_direction_if_final_is_lower": "Lower cash outflow on covered future imports",
+        "magnitude_usd": null
+      },
+      {
+        "channel": "Past entries",
+        "conditional_direction_if_assessment_falls": "Potential refund or lower assessment; liquidation and appeals matter",
+        "magnitude_usd": null
+      },
+      {
+        "channel": "U.S. manufacturing",
+        "conditional_direction": "Potential pricing/protection offset; sign and size unquantified",
+        "magnitude_usd": null
+      }
+    ],
+    "trade_eligible": false,
+    "paper_signal_eligible_now": false,
+    "blocking_gaps": [
+      "No new final decision yet located",
+      "Current importer-specific denominators and net materiality unknown",
+      "Earlier-public source and full intervening case state need verification",
+      "CBP implementation and litigation state not fully reconciled"
+    ]
+  },
+  "historical_development_only": [
+    {
+      "episode_id": "A-201-856_REV_2022-05-11_2023-10-31",
+      "case_number": "A-201-856",
+      "period_start": "2022-05-11",
+      "period_end": "2023-10-31",
+      "prior_operative_percent": 44.93,
+      "preliminary_percent": 30.38,
+      "final_percent": 26.1,
+      "final_minus_preliminary_percentage_points": -4.28,
+      "final_minus_prior_operative_percentage_points": -18.83,
+      "source_ids": [
+        "mx-prelim-2022-23",
+        "mx-final-2022-23",
+        "ts-fy2025-20f"
+      ],
+      "earlier_intervening_document": {
+        "access_filed_date": "2025-07-22",
+        "title": "Post-Prelim Analysis",
+        "barcode": "4798346-01",
+        "content_reviewed": false
+      },
+      "timing_warning": "Post-preliminary analysis may have signaled the final change before September. Do not label final-minus-preliminary as market surprise without it.",
+      "holdout": false
+    },
+    {
+      "episode_id": "A-357-824_REV_2022-05-11_2023-10-31",
+      "case_number": "A-357-824",
+      "period_start": "2022-05-11",
+      "period_end": "2023-10-31",
+      "prior_operative_percent": 78.3,
+      "preliminary_percent": 6.8,
+      "final_percent": 6.76,
+      "final_minus_preliminary_percentage_points": -0.04,
+      "final_minus_prior_operative_percentage_points": -71.54,
+      "source_ids": [
+        "ar-prelim-2022-23",
+        "ar-final-2022-23",
+        "ts-fy2025-20f"
+      ],
+      "direct_cashflow_mechanism": "Tenaris paid deposits through its imports; a lower final assessment may release excess deposits after liquidation; lower forward rate reduces cash outflow. Neither is an equity-return estimate.",
+      "later_financial_gain_feature_allowed_for_original_decision": false,
+      "holdout": false
+    }
+  ],
+  "unresolved_conflicts": [
+    {
+      "conflict_id": "mx-2025-effective-date",
+      "sources": [
+        "mx-final-2022-23",
+        "ts-fy2025-20f",
+        "ts-fy2025-financial-statements"
+      ],
+      "official_fr_deposit_effective_date": "2025-09-05",
+      "issuer_described_deposit_effective_date": "2025-09-15",
+      "resolution": null,
+      "required_evidence": "Applicable CBP instructions and any amendments; do not silently choose one date."
+    },
+    {
+      "conflict_id": "ar-2025-issue-date",
+      "sources": [
+        "ar-final-2022-23",
+        "ts-fy2025-20f"
+      ],
+      "notice_signed_date": "2025-06-05",
+      "issuer_described_issue_date": "2025-06-06",
+      "fr_publication_date": "2025-06-12",
+      "resolution": null,
+      "required_evidence": "Earliest publicly available announcement or ACCESS record; signature and issuer wording do not establish exact information time."
+    }
+  ],
+  "current_search_checks": {
+    "published_query": {
+      "source_id": "fr-case-query-2026",
+      "coverage_end": "2026-09-18",
+      "count": 3,
+      "contains_2023_24_final": false,
+      "complete_for_query": true,
+      "complete_for_all_relevant_public_sources": false
+    },
+    "public_inspection": {
+      "source_id": "fr-public-inspection-sep18",
+      "issue_date": "2026-09-18",
+      "count": 79,
+      "regular_updated_at": "2026-09-18T08:45:00-04:00",
+      "special_updated_at": "2026-09-18T16:15:00-04:00",
+      "case_or_tamsa_or_tubular_metadata_matches": 0
+    },
+    "access_notice_index": {
+      "source_id": "access-mx-notices",
+      "count": 24,
+      "all_rows_visible": true,
+      "latest_notice_publication": "2026-05-13",
+      "latest_unpublished_notice_filed": "2026-05-08",
+      "contains_2023_24_final": false,
+      "contains_2023_24_final_extension": false,
+      "full_registered_user_docket_reviewed": false
+    },
+    "conclusion": "No new Mexico 2023–24 final located as of the reviewed September 18 sources; official calendar points to November 3. This is qualified search evidence, not a guarantee that no earlier public disclosure exists."
+  },
+  "price_outcomes": {
+    "requested": false,
+    "downloaded": false,
+    "opened": false,
+    "experiment_returns_computed": false,
+    "contamination_note": "Earlier broad research/issuer disclosures incidentally exposed unrelated quoted prices or repurchase information. No event-window TS price/return series was requested or used; historical cases are development, not pristine holdouts."
+  },
+  "sources": [
+    {
+      "source_id": "ts-fy2024-index",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000155485525000262/0001554855-25-000262-index.htm",
+      "kind": "SEC filing acceptance index",
+      "publication_date": "2025-04-01",
+      "accepted_at_local": "2025-04-01T15:49:22",
+      "timezone": "America/New_York",
+      "public_available_no_later_than": "2025-04-02T00:00:00-04:00"
+    },
+    {
+      "source_id": "ts-fy2024-ownership",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000155485525000262/ex81_2.htm",
+      "kind": "SEC 20-F Exhibit 8.1",
+      "publication_date": "2025-04-01",
+      "availability_evidence": "ts-fy2024-index",
+      "public_available_no_later_than": "2025-04-02T00:00:00-04:00",
+      "section": "Principal subsidiaries; ownership at December 31, 2024, 2023 and 2022"
+    },
+    {
+      "source_id": "ts-fy2025-index",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000155485526000490/0001554855-26-000490-index.htm",
+      "kind": "SEC filing acceptance index",
+      "publication_date": "2026-03-31",
+      "accepted_at_local": "2026-03-31T16:27:57",
+      "timezone": "America/New_York",
+      "public_available_no_later_than": "2026-04-01T00:00:00-04:00"
+    },
+    {
+      "source_id": "ts-fy2025-20f",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000155485526000490/ts-20251231.htm",
+      "kind": "SEC 20-F",
+      "publication_date": "2026-03-31",
+      "availability_evidence": "ts-fy2025-index",
+      "public_available_no_later_than": "2026-04-01T00:00:00-04:00",
+      "section": "U.S. antidumping duty proceedings; Note 27",
+      "access_note": "Large SEC document was available in prior search retrieval; current direct raw download did not complete. Financial-statement PDF supplies directly readable matching Note 27 text."
+    },
+    {
+      "source_id": "ts-fy2025-financial-statements",
+      "url": "https://ir.tenaris.com/static-files/44c99156-114a-45d0-a82e-0dcad89fb3ac",
+      "kind": "Issuer consolidated financial statements",
+      "publication_date": null,
+      "public_available_no_later_than": null,
+      "section": "Note 27, U.S. antidumping duty proceedings, printed pages 67-68",
+      "availability_evidence": "Content cross-check for ts-fy2025-20f; this undated file URL does not independently establish its first public posting.",
+      "short_literal_excerpt": "The amount of such deposits was reflected in Tenaris’s costs."
+    },
+    {
+      "source_id": "ts-fy2025-ownership",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000155485526000490/ex81_3.htm",
+      "kind": "SEC 20-F Exhibit 8.1",
+      "publication_date": "2026-03-31",
+      "availability_evidence": "ts-fy2025-index",
+      "public_available_no_later_than": "2026-04-01T00:00:00-04:00"
+    },
+    {
+      "source_id": "mx-prelim-2022-23",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28476.htm",
+      "kind": "Federal Register official notice",
+      "document_number": "2024-28476",
+      "publication_date": "2024-12-05",
+      "access_filed_date_candidate": "2024-12-02",
+      "access_barcode": "4672608-01",
+      "intraday_first_public_at": null
+    },
+    {
+      "source_id": "mx-final-2022-23",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-09-05/html/2025-17071.htm",
+      "kind": "Federal Register official notice",
+      "document_number": "2025-17071",
+      "publication_date": "2025-09-05",
+      "signed_date": "2025-09-02",
+      "public_inspection_at": "2025-09-04T08:45:00-04:00",
+      "access_filed_date_candidate": "2025-09-03",
+      "access_barcode": "4820095-01",
+      "intraday_first_public_at": null
+    },
+    {
+      "source_id": "mx-prelim-2023-24",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-05-13/html/2026-09464.htm",
+      "kind": "Federal Register official notice",
+      "document_number": "2026-09464",
+      "publication_date": "2026-05-13",
+      "signed_date": "2026-05-07",
+      "public_inspection_at": "2026-05-12T08:45:00-04:00",
+      "access_filed_date_candidate": "2026-05-08",
+      "access_barcode": "4919491-01",
+      "intraday_first_public_at": null
+    },
+    {
+      "source_id": "ar-prelim-2022-23",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-12-09/html/2024-28859.htm",
+      "kind": "Federal Register official notice",
+      "document_number": "2024-28859",
+      "publication_date": "2024-12-09",
+      "intraday_first_public_at": null
+    },
+    {
+      "source_id": "ar-final-2022-23",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-12/html/2025-10654.htm",
+      "kind": "Federal Register official notice",
+      "document_number": "2025-10654",
+      "publication_date": "2025-06-12",
+      "signed_date": "2025-06-05",
+      "public_inspection_at": "2025-06-11T08:45:00-04:00",
+      "intraday_first_public_at": null
+    },
+    {
+      "source_id": "access-mx-notices",
+      "url": "https://access.trade.gov/frnotices",
+      "kind": "Commerce public notices and decision memorandum index",
+      "observed_on_local_date": "2026-09-18",
+      "retrieval_method": "Browser UI; Advanced Search; Case Number A-201-856; all 24 matching rows visible",
+      "publication_date": null,
+      "limitations": "Filed Date is date-only index metadata, not verified first-public intraday time. This index does not expose every general docket memorandum."
+    },
+    {
+      "source_id": "access-mx-calendar",
+      "url": "https://beta.trade.gov/adcvd?adcvdcase=A-201-856",
+      "kind": "Commerce official AD/CVD case detail reached from ACCESS search",
+      "observed_on_local_date": "2026-09-18",
+      "retrieval_method": "Browser UI; ACCESS AD/CVD search exact case then case-detail link",
+      "publication_date": null,
+      "short_literal_excerpt": "Final Results Announcement: 11/3/2026",
+      "limitations": "Live changeable announcement calendar; no historical posting timestamp or supporting extension memorandum verified.",
+      "browser_observation_capture": {
+        "case_number": "A-201-856",
+        "country": "Mexico",
+        "product": "OCTG",
+        "upcoming_announcements": [
+          {
+            "type": "Final Results Announcement",
+            "display_date": "11/3/2026",
+            "period_covered": "11/1/2023 – 10/31/2024",
+            "extension_days_remaining": 7
+          },
+          {
+            "type": "Preliminary Results Announcement",
+            "display_date": "12/11/2026",
+            "period_covered": "11/1/2024 – 10/31/2025",
+            "extension_days_remaining": 21
+          }
+        ],
+        "observation_kind": "Transcribed from rendered official page, not a full page-content archive",
+        "first_historical_posting_time_verified": false
+      }
+    },
+    {
+      "source_id": "fr-case-query-2026",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1000&conditions%5Bterm%5D=%22A-201-856%22&conditions%5Bpublication_date%5D%5Bgte%5D=2026-01-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-09-18&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=publication_date&fields%5B%5D=html_url",
+      "kind": "Federal Register API exact-case discovery",
+      "observed_on_local_date": "2026-09-18",
+      "local_snapshot": "data/octg-mexico-case-latest-2026-09-18.json",
+      "count": 3,
+      "total_pages": 1,
+      "matching_document_numbers": [
+        "2026-09464",
+        "2026-04124",
+        "2026-01602"
+      ],
+      "local_snapshot_sha256": "1dc78fcd910d549ca6a0147067a421eb5f3e8210a78afec7b7827b565186154f",
+      "local_snapshot_tracking": "Local capture; data/ is ignored by git."
+    },
+    {
+      "source_id": "fr-public-inspection-sep18",
+      "url": "https://www.federalregister.gov/api/v1/public-inspection-documents.json?conditions%5Bavailable_on%5D=2026-09-18&per_page=1000",
+      "kind": "Federal Register public-inspection issue",
+      "observed_on_local_date": "2026-09-18",
+      "local_snapshot": "data/public-inspection-issue-2026-09-18.json",
+      "count": 79,
+      "matching_case_or_tamsa_or_tubular_records": 0,
+      "limitations": "Checked returned record metadata, not each attachment's full text.",
+      "local_snapshot_sha256": "c0e9aed41bd0312a1773f0df772145fb78d48f2bf160047059934ac55da97333",
+      "local_snapshot_tracking": "Local capture; data/ is ignored by git."
+    }
+  ]
+}

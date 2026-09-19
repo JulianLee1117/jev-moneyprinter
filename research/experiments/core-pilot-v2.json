@@ -1,0 +1,215 @@
+{
+  "schema_version": "selection-v2",
+  "created_at": "2026-09-18T23:25:51.661853+00:00",
+  "family": "CORE",
+  "seed": "core-pilot-v1",
+  "requested_count": 20,
+  "selected_count": 20,
+  "universe_count": 207,
+  "universe_sha256": "b8fda5d31d7d4011c186bec0c2eb0acbf8cdf18242b21c9b25c04deb9de287e8",
+  "selection_method": "Price-blind stage round robin; within stage, year round robin alternating newest/oldest; SHA256 seed/document ordering within year. Title heuristics only.",
+  "price_data_used": false,
+  "interpretation": "A rejection-test sample, not a representative return sample or frozen trading rule.",
+  "selected": [
+    {
+      "document_number": "2015-16067",
+      "html_url": "https://www.federalregister.gov/documents/2015/06/30/2015-16067/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-india-italy-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2015-06-30/pdf/2015-16067.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2015-16067.pdf?1435582035",
+      "publication_date": "2015-06-30",
+      "title": "Certain Corrosion-Resistant Steel Products From the People's Republic of China, India, Italy, the Republic of Korea, and Taiwan: Initiation of Countervailing Duty Investigations",
+      "type": "Notice",
+      "stage_hint": "initiation"
+    },
+    {
+      "document_number": "2015-18125",
+      "html_url": "https://www.federalregister.gov/documents/2015/07/24/2015-18125/certain-corrosion-resistant-steel-products-from-china-india-italy-korea-and-taiwan",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2015-07-24/pdf/2015-18125.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2015-18125.pdf?1437655568",
+      "publication_date": "2015-07-24",
+      "title": "Certain Corrosion-Resistant Steel Products From China, India, Italy, Korea, and Taiwan",
+      "type": "Notice",
+      "stage_hint": "other"
+    },
+    {
+      "document_number": "2015-28455",
+      "html_url": "https://www.federalregister.gov/documents/2015/11/06/2015-28455/countervailing-duty-investigation-of-certain-corrosion-resistant-steel-products-from-taiwan",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2015-11-06/pdf/2015-28455.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2015-28455.pdf?1446731215",
+      "publication_date": "2015-11-06",
+      "title": "Countervailing Duty Investigation of Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Negative Countervailing Duty Determination",
+      "type": "Notice",
+      "stage_hint": "preliminary"
+    },
+    {
+      "document_number": "2015-29721",
+      "html_url": "https://www.federalregister.gov/documents/2015/11/20/2015-29721/countervailing-duty-investigations-of-certain-corrosion-resistant-steel-products-from-india-italy",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2015-11-20/pdf/2015-29721.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2015-29721.pdf?1447940852",
+      "publication_date": "2015-11-20",
+      "title": "Countervailing Duty Investigations of Certain Corrosion-Resistant Steel Products From India, Italy, the People's Republic of China, the Republic of Korea, and Taiwan: Alignment of Final Countervailing Duty Determinations With Final Antidumping Duty Determinations",
+      "type": "Notice",
+      "stage_hint": "final"
+    },
+    {
+      "document_number": "2016-17557",
+      "html_url": "https://www.federalregister.gov/documents/2016/07/25/2016-17557/certain-corrosion-resistant-steel-products-from-india-italy-the-peoples-republic-of-china-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2016-07-25/pdf/2016-17557.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2016-17557.pdf?1469191784",
+      "publication_date": "2016-07-25",
+      "title": "Certain Corrosion-Resistant Steel Products From India, Italy, the People's Republic of China, the Republic of Korea and Taiwan: Amended Final Affirmative Antidumping Determination for India and Taiwan, and Antidumping Duty Orders",
+      "type": "Notice",
+      "stage_hint": "amended"
+    },
+    {
+      "document_number": "2016-20429",
+      "html_url": "https://www.federalregister.gov/documents/2016/08/25/2016-20429/certain-corrosion-resistant-steel-products-from-india-italy-the-peoples-republic-of-china-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2016-08-25/pdf/2016-20429.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2016-20429.pdf?1472042779",
+      "publication_date": "2016-08-25",
+      "title": "Certain Corrosion-Resistant Steel Products From India, Italy, the People's Republic of China, the Republic of Korea, and Taiwan: Notice of Correction to the Antidumping Duty Orders",
+      "type": "Notice",
+      "stage_hint": "order"
+    },
+    {
+      "document_number": "2016-27327",
+      "html_url": "https://www.federalregister.gov/documents/2016/11/14/2016-27327/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-initiation-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2016-11-14/pdf/2016-27327.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2016-27327.pdf?1478785588",
+      "publication_date": "2016-11-14",
+      "title": "Certain Corrosion-Resistant Steel Products From the People's Republic of China: Initiation of Anti-Circumvention Inquiries on the Antidumping Duty and Countervailing Duty Orders",
+      "type": "Notice",
+      "stage_hint": "circumvention"
+    },
+    {
+      "document_number": "2017-01272",
+      "html_url": "https://www.federalregister.gov/documents/2017/01/23/2017-01272/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-rescission-of-countervailing",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2017-01-23/pdf/2017-01272.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2017-01272.pdf?1484833548",
+      "publication_date": "2017-01-23",
+      "title": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Rescission of Countervailing Duty Expedited Review; 2014",
+      "type": "Notice",
+      "stage_hint": "rescission"
+    },
+    {
+      "document_number": "2019-12609",
+      "html_url": "https://www.federalregister.gov/documents/2019/06/14/2019-12609/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-opening-of-scope-segment-and",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2019-06-14/pdf/2019-12609.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2019-12609.pdf?1560429926",
+      "publication_date": "2019-06-14",
+      "title": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Opening of Scope Segment and Opportunity to Comment",
+      "type": "Notice",
+      "stage_hint": "scope"
+    },
+    {
+      "document_number": "2020-13642",
+      "html_url": "https://www.federalregister.gov/documents/2020/06/24/2020-13642/corrosion-resistant-steel-products-from-italy-and-the-peoples-republic-of-china-notice-of-court",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2020-06-24/pdf/2020-13642.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2020-13642.pdf?1592916346",
+      "publication_date": "2020-06-24",
+      "title": "Corrosion-Resistant Steel Products From Italy and the People's Republic of China: Notice of Court Decision Not in Harmony With Final Scope Ruling and Notice of Amended Final Scope Ruling Pursuant to Court Decision",
+      "type": "Notice",
+      "stage_hint": "scope"
+    },
+    {
+      "document_number": "2021-17793",
+      "html_url": "https://www.federalregister.gov/documents/2021/08/19/2021-17793/certain-corrosion-resistant-steel-products-from-the-peoples-republic-of-china-final-results-of-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2021-08-19/pdf/2021-17793.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2021-17793.pdf?1629290727",
+      "publication_date": "2021-08-19",
+      "title": "Certain Corrosion-Resistant Steel Products From the People's Republic of China: Final Results of the Expedited Five-Year Sunset Review of the Countervailing Duty Order",
+      "type": "Notice",
+      "stage_hint": "sunset"
+    },
+    {
+      "document_number": "2021-26341",
+      "html_url": "https://www.federalregister.gov/documents/2021/12/06/2021-26341/certain-corrosion-resistant-steel-products-from-china-india-italy-korea-and-taiwan-notice-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2021-12-06/pdf/2021-26341.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2021-26341.pdf?1638539123",
+      "publication_date": "2021-12-06",
+      "title": "Certain Corrosion-Resistant Steel Products From China, India, Italy, Korea, and Taiwan; Notice of Commission Determination To Conduct Full Five-Year Reviews",
+      "type": "Notice",
+      "stage_hint": "sunset"
+    },
+    {
+      "document_number": "2024-10643",
+      "html_url": "https://www.federalregister.gov/documents/2024/05/15/2024-10643/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-notice-of-initiation-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2024-05-15/pdf/2024-10643.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2024-10643.pdf?1715690730",
+      "publication_date": "2024-05-15",
+      "title": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Notice of Initiation of Countervailing Duty Changed Circumstances Review",
+      "type": "Notice",
+      "stage_hint": "initiation"
+    },
+    {
+      "document_number": "2025-08163",
+      "html_url": "https://www.federalregister.gov/documents/2025/05/09/2025-08163/certain-corrosion-resistant-steel-products-from-the-republic-of-trkiye-amended-preliminary",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-05-09/pdf/2025-08163.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-08163.pdf?1746708321",
+      "publication_date": "2025-05-09",
+      "title": "Certain Corrosion-Resistant Steel Products From the Republic of Türkiye: Amended Preliminary Determination of Sales at Less Than Fair Value",
+      "type": "Notice",
+      "stage_hint": "amended"
+    },
+    {
+      "document_number": "2025-21761",
+      "html_url": "https://www.federalregister.gov/documents/2025/12/02/2025-21761/corrosion-resistant-steel-products-from-australia-brazil-canada-mexico-netherlands-south-africa",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-12-02/pdf/2025-21761.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-21761.pdf?1764596709",
+      "publication_date": "2025-12-02",
+      "title": "Corrosion-Resistant Steel Products From Australia, Brazil, Canada, Mexico, Netherlands, South Africa, Taiwan, Turkey, United Arab Emirates, and Vietnam; Determinations",
+      "type": "Notice",
+      "stage_hint": "other"
+    },
+    {
+      "document_number": "2025-23430",
+      "html_url": "https://www.federalregister.gov/documents/2025/12/19/2025-23430/certain-corrosion-resistant-steel-products-from-brazil-canada-mexico-and-the-socialist-republic-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-12-19/pdf/2025-23430.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-23430.pdf?1766065524",
+      "publication_date": "2025-12-19",
+      "title": "Certain Corrosion-Resistant Steel Products From Brazil, Canada, Mexico, and the Socialist Republic of Vietnam: Countervailing Duty Orders",
+      "type": "Notice",
+      "stage_hint": "order"
+    },
+    {
+      "document_number": "2026-00191",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/08/2026-00191/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-preliminary-results-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-08/pdf/2026-00191.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-00191.pdf?1767793517",
+      "publication_date": "2026-01-08",
+      "title": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Preliminary Results of Antidumping Duty Administrative Review; 2023-2024",
+      "type": "Notice",
+      "stage_hint": "preliminary"
+    },
+    {
+      "document_number": "2026-00193",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/08/2026-00193/certain-corrosion-resistant-steel-products-from-taiwan-preliminary-results-and-rescission-in-part-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-08/pdf/2026-00193.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-00193.pdf?1767793517",
+      "publication_date": "2026-01-08",
+      "title": "Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Results and Rescission, In Part, of Antidumping Duty Administrative Review; 2023-2024",
+      "type": "Notice",
+      "stage_hint": "rescission"
+    },
+    {
+      "document_number": "2026-06449",
+      "html_url": "https://www.federalregister.gov/documents/2026/04/02/2026-06449/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-initiation-of-circumvention",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-04-02/pdf/2026-06449.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-06449.pdf?1775047522",
+      "publication_date": "2026-04-02",
+      "title": "Certain Corrosion-Resistant Steel Products from the Republic of Korea: Initiation of Circumvention Inquiry on the Antidumping and Countervailing Duty Orders",
+      "type": "Notice",
+      "stage_hint": "circumvention"
+    },
+    {
+      "document_number": "2026-09903",
+      "html_url": "https://www.federalregister.gov/documents/2026/05/18/2026-09903/certain-corrosion-resistant-steel-products-from-taiwan-final-results-of-the-antidumping-duty",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-05-18/pdf/2026-09903.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-09903.pdf?1778849124",
+      "publication_date": "2026-05-18",
+      "title": "Certain Corrosion-Resistant Steel Products From Taiwan: Final Results of the Antidumping Duty Administrative Review; 2023-2024",
+      "type": "Notice",
+      "stage_hint": "final"
+    }
+  ]
+}

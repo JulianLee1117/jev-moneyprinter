@@ -1,0 +1,58 @@
+{
+  "schema_version": "read-through-financial-protocol-v1",
+  "registered_date_local": "2026-09-18",
+  "status": "registered_before_prices_not_yet_run",
+  "objective": "Discover incremental financially useful capex-composition information with Jev; cheaper inference is not a pass criterion.",
+  "hypothesis": "New, comparable increases in wafer-fabrication equipment spending can affect suppliers differently from total capex headlines; some effect may remain after a manual-entry delay.",
+  "models": {"jev": "typesafe/jev-1.13", "conventional": "openai/gpt-5.4-mini"},
+  "development": {
+    "selection": "Three purposive pre-2025 interpretation challenges: TSMC Jul-Oct 2022, Micron Jun-Sep 2023, Intel Apr-Jul 2022.",
+    "purpose": "Debug decomposition, source fidelity, unchanged-information detection, gross/net comparability and uncertainty handling.",
+    "model_phase_cap_usd": 2,
+    "not_evidence_of": ["held-out accuracy", "domain calibration", "incremental alpha", "profitability"]
+  },
+  "historical_diagnostic": {
+    "issuers": ["TSMC", "Micron"],
+    "selection": "All scheduled quarterly earnings announcements dated 2025-01-01 through 2026-09-18 inclusive, in chronological order; no content, model-score or return filter.",
+    "source_missingness": "Retain every scheduled event even if original evidence is unavailable; unknown is not unchanged or a negative label.",
+    "prior_state": "Previous public guidance for the same forecast period and accounting basis plus all intervening issuer revisions; compare new-year guidance separately from same-year revisions.",
+    "source_versions": "Archive exact source bodies, hashes and first-observed times. Today's historical transcript version is not assumed available on its displayed date.",
+    "independent_unit": "Customer earnings episode; supplier stocks, questions and passages are dependent observations.",
+    "supplier_symbols": ["LRCX", "AMAT", "KLAC"],
+    "primary_tradable_symbol": "LRCX",
+    "benchmark_symbol": "SOXX",
+    "controls": ["cash", "always-long LRCX during identical event windows", "total-capex numeric rule", "conventional identical-evidence atomic panel", "Jev argmax panel without uncertainty routing"],
+    "primary_entry": "09:35 America/New_York on the second full US trading session after the source release date, excluding release date; later if independently verified document availability requires it.",
+    "timing_limit": "A fixed delay does not prove historical availability. Unverified exact-version availability is diagnostic-only, excluded from executable-P&L claims.",
+    "primary_exit": "09:35 America/New_York five exchange sessions after entry.",
+    "secondary_horizon": "One exchange session after entry, reported as secondary without choosing the better horizon.",
+    "data": "Historical SIP ask entry and bid exit, quote quality and displayed size checked. Adjust or exclude splits/dividends explicitly. No fill claim from a quote.",
+    "missing_quote_rule": "Use the first valid noncrossed positive quote within 60 seconds after the target time. If missing, exclude that price observation with a reason, never move the entry date to improve returns.",
+    "modeled_capital_usd": 1000,
+    "positions": "Long-only whole-share LRCX or cash, no leverage/options/shorts. Overlapping signals share one capital ledger; never spend the same dollars twice.",
+    "costs": "Bid-ask plus 10 basis points adverse movement each side, applicable regulatory fees, research/model expense separately and in project net P&L. Show 25 basis points each-side sensitivity without retuning signals.",
+    "economic_rule": "Long only for a supported increase in new WFE spending versus comparable prior disclosed guidance, attributable to relevant equipment demand; all critical comparison/mapping conditions resolved. Cash otherwise. A positive YoY number already guided is not a new revision.",
+    "jev_threshold": 0.8,
+    "uncertainty": "Native distributions assess atomic interpretation only. Never multiply them into trade probabilities. False conditions prune a path even if another condition is unknown. Missing critical evidence abstains.",
+    "pre_price_requirements": "Freeze the complete event census, source packets, exposure provenance, code version, model requests, outputs and all arm signals before collecting any event prices.",
+    "success_limit": "A small historical diagnostic can reject the method or justify prospective testing. It cannot establish profitable alpha; model memory and source-version hindsight remain possible. No post-result threshold, universe or horizon tuning within v1."
+  },
+  "prospective": {
+    "first_named_event": "Micron fiscal Q4 2026 earnings call",
+    "scheduled_call_at": "2026-09-30T14:30:00-06:00",
+    "schedule_source": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx",
+    "prior_capture_started": "2026-09-18",
+    "availability": "Save exact observed source snapshots and arm outputs before eligible paper entry; prospective entry no earlier than next regular-session 09:35 and 30 minutes after the completed observation/decision, whichever is later.",
+    "readiness": "Not yet ready: requires complete prior-state reconciliation, source capture and dated supplier exposure; unresolved prior guidance may force abstention.",
+    "new_fiscal_year": "Do not mistake initial FY2027 guidance for a revision to FY2026. Compare it with earlier explicit FY2027 commentary where comparable; unknown numerical bounds remain unknown.",
+    "automation_created": false,
+    "orders_enabled": false,
+    "capital_authorized_by_this_protocol": 0
+  },
+  "project_continuation": {
+    "method_requirement": "Correctly identify economically material distinctions or avoid financially consequential errors beyond both numeric rules and the conventional model on withheld cases. Native probability routing must also be compared with categorical Jev outputs.",
+    "financial_requirement": "Measure delayed net returns, benchmark-relative returns, capital use and drawdowns prospectively across independent episodes. Stop or reconsider if no signal variation, no incremental correct information, no remaining net return, or realistic expense consumes the edge.",
+    "cost_advantage_alone_counts_as_success": false,
+    "nonunique_capability_disclosure": "Native typed probability output is a new interface/training approach; it is not evidence of exclusive information or superior financial reasoning. Older models can implement the same decomposition and must remain a strong control."
+  }
+}

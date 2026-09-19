@@ -1,0 +1,12 @@
+{
+  "registered_at": "2026-09-19T02:39:59.765617+00:00",
+  "operating_profile": "paid-software-operating-changes-v1",
+  "operating_profile_sha256": "650e5857cbd0976e748dc67b11605103bdb61c3b16a0c03578c0cb2a1f84448d",
+  "semantic_profile": "operating-semantic-top-fifth-v1",
+  "semantic_profile_sha256": "ed806f8703013da10c80bfce8265d9c3d4410afdc8ded3fad73689ab5706d95a",
+  "semantic_model_pin": "qwen3-rerank-4b",
+  "model_answers_opened": false,
+  "policy": "Use the same profile for development and evaluation. No source-based tuning; all independent reviews remain feasibility labels, not returns.",
+  "planned_judgment_dimensions": 12,
+  "alpha_proven": false
+}

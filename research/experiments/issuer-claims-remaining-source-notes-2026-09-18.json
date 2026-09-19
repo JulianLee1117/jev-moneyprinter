@@ -1,0 +1,339 @@
+{
+  "schema_version": "issuer-claims-source-scout-v1",
+  "recorded_at": "2026-09-19T01:04:52.768757+00:00",
+  "as_of_local_date": "2026-09-18",
+  "classification": "source_scouting_not_registered_cohort_ground_truth",
+  "protocol": "issuer-claims-protocol.v1.json",
+  "selection": "Remaining five fixed industry-comparison issuers; no replacement or price selection",
+  "source_read_coverage": "Relevant complete notes/selected MD&A passages and targeted web-text searches, not complete paired-document census",
+  "original_body_archive_created_by_this_scout": false,
+  "filing_dates_source": "Frozen protocol SEC submissions metadata",
+  "first_public_intraday_verified": false,
+  "paid_calls": 0,
+  "price_series_used": false,
+  "orders": 0,
+  "issuers": [
+    {
+      "symbol": "NUE",
+      "scoped_result": "unquantified_audits_and_generic_legal_contingencies",
+      "claims": [
+        {
+          "id": "NUE-tax-audits",
+          "mechanism": "income-tax examination",
+          "claim_amount_usd": null,
+          "latest_state": "Canadian Rebar Fabrication Group 2015-2021 returns under CRA examination; U.S. 2022-2024 open; no quantified dispute or decision date in reviewed note",
+          "prior_state": "same named CRA examination and U.S. open years",
+          "future_trigger_date": null,
+          "cash_or_refund_direction_unverified": true
+        }
+      ],
+      "scope_limit": "Notes 7/11 do not support a quantified near-term cash claim; this is not an issuer-wide absence label.",
+      "source_ids": [
+        "NUE-latest",
+        "NUE-prior"
+      ],
+      "future_signal_eligible": false,
+      "complete_document_negative_label": false
+    },
+    {
+      "symbol": "STLD",
+      "scoped_result": "generic_legal_contingencies_only_in_reviewed_sections",
+      "claims": [],
+      "scope_limit": "Note 7 and MD&A tax passages contain no named quantified disputed claim; all other passages remain unlabelled.",
+      "source_ids": [
+        "STLD-latest",
+        "STLD-prior"
+      ],
+      "future_signal_eligible": false,
+      "complete_document_negative_label": false
+    },
+    {
+      "symbol": "CLF",
+      "scoped_result": "recognized_aggregate_obligations_without_case_level_trigger",
+      "claims": [
+        {
+          "id": "CLF-environmental-reserve",
+          "prior_recognized_obligation_usd": 117000000,
+          "latest_recognized_obligation_usd": 115000000,
+          "prior_current_portion_usd": 13000000,
+          "latest_current_portion_usd": 14000000,
+          "case_level_administrative_trigger_located": false,
+          "reserve_drop_is_cash_refund": false,
+          "reserve_drop_cause_verified": false
+        },
+        {
+          "id": "CLF-asset-retirement",
+          "prior_recognized_obligation_usd": 605000000,
+          "latest_recognized_obligation_usd": 611000000,
+          "ytd_accretion_expense_usd": 17000000,
+          "ytd_remediation_payments_usd": 5000000,
+          "ytd_revision_estimated_cash_flows_usd": 0,
+          "case_level_administrative_trigger_located": false
+        }
+      ],
+      "scope_limit": "Aggregates are booked liabilities, not $726m of tradable litigation surprise. Tax benefit is not an identified refund right.",
+      "source_ids": [
+        "CLF-latest",
+        "CLF-prior"
+      ],
+      "future_signal_eligible": false,
+      "complete_document_negative_label": false
+    },
+    {
+      "symbol": "BCC",
+      "scoped_result": "named_government_case_resolved_and_cash_paid",
+      "claims": [
+        {
+          "id": "BCC-Lacey",
+          "mechanism": "DOJ Lacey Act fine for plywood imports",
+          "fine_usd_approx": 6400000,
+          "charge_recognized_period": "2025-Q4",
+          "plea_and_court_acceptance_date": "2026-04-27",
+          "probation_years": 5,
+          "prior_filing_state": "resolution already disclosed after quarter-end",
+          "latest_cash_state": "fine paid in 2026-Q2",
+          "pending_fine_cash_amount_usd": 0,
+          "residual_probation_is_new_refund": false
+        },
+        {
+          "id": "BCC-Florien-fire",
+          "recognized_estimated_retained_insurance_loss_usd": 1800000,
+          "recognition_period": "2026-Q1",
+          "government_claim": false,
+          "uncollected_insurance_receivable_verified": false
+        }
+      ],
+      "scope_limit": "The fine is a completed cash outflow. Generic contingencies and ordinary net tax payments do not establish new claims.",
+      "source_ids": [
+        "BCC-latest",
+        "BCC-prior"
+      ],
+      "future_signal_eligible": false,
+      "complete_document_negative_label": false
+    },
+    {
+      "symbol": "BLDR",
+      "scoped_result": "newly_reported_completed_tax_settlement_and_unquantified_construction_claims",
+      "claims": [
+        {
+          "id": "BLDR-IRS-RD",
+          "mechanism": "settlement of prior-year research and development expense treatment",
+          "latest_discrete_tax_expense_usd_approx": 43900000,
+          "settlement_period": "2026-Q2",
+          "current_period_settlement_cash_payment_usd": 0,
+          "reason_no_current_payment": "prior tax cash remittances exceeded amounts claimed and ultimately due",
+          "pending_refund_amount_usd": null,
+          "prior_note_named_claim_located": false,
+          "future_legal_trigger_for_this_settlement": null,
+          "do_not_interpret_expense_as_cash_liability_or_refund": true
+        },
+        {
+          "id": "BLDR-construction-defect",
+          "claim_amount_usd": null,
+          "prior_and_latest_state": "known and threatened claims; discovery and uncertain outcomes; loss range not estimable",
+          "insurance_offsets": "generally insured above deductible; net exposure not quantified",
+          "supporting_letters_of_credit_usd": 76000000,
+          "letter_of_credit_is_claim_estimate": false,
+          "future_trigger_date": null
+        }
+      ],
+      "scope_limit": "Completed settlement expense, insured unquantified litigation, and general enacted tax-policy benefits fail the outstanding quantified unresolved-claim test.",
+      "source_ids": [
+        "BLDR-latest",
+        "BLDR-prior"
+      ],
+      "future_signal_eligible": false,
+      "complete_document_negative_label": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "NUE-latest",
+      "issuer": "NUE",
+      "role": "latest",
+      "cik": "0000073309",
+      "form": "10-Q",
+      "accession": "0001193125-26-345891",
+      "filing_date": "2026-08-12",
+      "report_date": "2026-07-04",
+      "sec_acceptance_datetime": "2026-08-12T13:21:28.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm",
+      "section_reviewed": "Notes 7 Contingencies and 11 Income Taxes; targeted term searches",
+      "section_locator": "pp. 7, 9; web lines 463-465, 554-559",
+      "short_excerpt": "Nucor has concluded U.S. federal income tax matters for the tax years through 2021.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "NUE-prior",
+      "issuer": "NUE",
+      "role": "prior",
+      "cik": "0000073309",
+      "form": "10-Q",
+      "accession": "0001193125-26-220778",
+      "filing_date": "2026-05-13",
+      "report_date": "2026-04-04",
+      "sec_acceptance_datetime": "2026-05-13T13:44:46.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526220778/nue-20260404.htm",
+      "section_reviewed": "Notes 7 Contingencies and 11 Income Taxes; targeted term searches",
+      "section_locator": "pp. 7, 9; web lines 434-436, 518-525",
+      "short_excerpt": "The resolution of these audits is not expected to have a material impact",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "STLD-latest",
+      "issuer": "STLD",
+      "role": "latest",
+      "cik": "0001022671",
+      "form": "10-Q",
+      "accession": "0001104659-26-087414",
+      "filing_date": "2026-07-28",
+      "report_date": "2026-06-30",
+      "sec_acceptance_datetime": "2026-07-28T15:59:42.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926087414/stld-20260630x10q.htm",
+      "section_reviewed": "Note 7 Commitments and Contingencies; MD&A income-tax expense; targeted term searches",
+      "section_locator": "Note 7; web lines 632-634; MD&A 946, 958",
+      "short_excerpt": "none of which are expected to have a material impact",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "STLD-prior",
+      "issuer": "STLD",
+      "role": "prior",
+      "cik": "0001022671",
+      "form": "10-Q",
+      "accession": "0001104659-26-049415",
+      "filing_date": "2026-04-27",
+      "report_date": "2026-03-31",
+      "sec_acceptance_datetime": "2026-04-27T20:00:40.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926049415/stld-20260331x10q.htm",
+      "section_reviewed": "Note 7 Commitments and Contingencies; MD&A income-tax expense; targeted term searches",
+      "section_locator": "Note 7; web lines 591-593; MD&A 851",
+      "short_excerpt": "including administrative and regulatory proceedings",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "CLF-latest",
+      "issuer": "CLF",
+      "role": "latest",
+      "cik": "0000764065",
+      "form": "10-Q",
+      "accession": "0000764065-26-000100",
+      "filing_date": "2026-07-23",
+      "report_date": "2026-06-30",
+      "sec_acceptance_datetime": "2026-07-23T20:08:50.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000100/clf-20260630.htm",
+      "section_reviewed": "Notes 10, 11, 18 and 19; targeted term searches",
+      "section_locator": "pp. 18, 23-24; web lines 884-927, 1132-1163",
+      "short_excerpt": "the ultimate costs of these environmental matters may be higher",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "CLF-prior",
+      "issuer": "CLF",
+      "role": "prior",
+      "cik": "0000764065",
+      "form": "10-Q",
+      "accession": "0000764065-26-000070",
+      "filing_date": "2026-04-21",
+      "report_date": "2026-03-31",
+      "sec_acceptance_datetime": "2026-04-21T20:43:08.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000070/clf-20260331.htm",
+      "section_reviewed": "Notes 10, 11, 18 and 19; targeted term searches",
+      "section_locator": "pp. 15, 20-21; web lines 800-843, 1047-1079",
+      "short_excerpt": "The following is a summary of our environmental obligations:",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BCC-latest",
+      "issuer": "BCC",
+      "role": "latest",
+      "cik": "0001328581",
+      "form": "10-Q",
+      "accession": "0001328581-26-000027",
+      "filing_date": "2026-08-03",
+      "report_date": "2026-06-30",
+      "sec_acceptance_datetime": "2026-08-03T20:40:50.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000027/bcc-20260630.htm",
+      "section_reviewed": "Notes 3, 12, 13; fire-loss references; targeted term searches",
+      "section_locator": "pp. 12, 22-23; web lines 580-583, 985-1006",
+      "short_excerpt": "was paid during the second quarter of 2026.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BCC-prior",
+      "issuer": "BCC",
+      "role": "prior",
+      "cik": "0001328581",
+      "form": "10-Q",
+      "accession": "0001328581-26-000016",
+      "filing_date": "2026-05-04",
+      "report_date": "2026-03-31",
+      "sec_acceptance_datetime": "2026-05-04T20:31:16.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000016/bcc-20260331.htm",
+      "section_reviewed": "Notes 3, 12; fire-loss references; targeted term searches",
+      "section_locator": "pp. 12, 22-23; web lines 577-579, 988-995",
+      "short_excerpt": "the matter concluded on the same day.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BLDR-latest",
+      "issuer": "BLDR",
+      "role": "latest",
+      "cik": "0001316835",
+      "form": "10-Q",
+      "accession": "0001193125-26-325451",
+      "filing_date": "2026-07-30",
+      "report_date": "2026-06-30",
+      "sec_acceptance_datetime": "2026-07-30T16:33:14.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526325451/bldr-20260630.htm",
+      "section_reviewed": "Notes 10 Income Taxes and 11 Commitments and Contingencies; targeted term searches",
+      "section_locator": "pp. 13-14; web lines 628-663",
+      "short_excerpt": "The settlement agreement did not result in a current period cash payment",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BLDR-prior",
+      "issuer": "BLDR",
+      "role": "prior",
+      "cik": "0001316835",
+      "form": "10-Q",
+      "accession": "0001193125-26-195140",
+      "filing_date": "2026-04-30",
+      "report_date": "2026-03-31",
+      "sec_acceptance_datetime": "2026-04-30T15:10:06.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526195140/bldr-20260331.htm",
+      "section_reviewed": "Notes 10 Income Taxes and 11 Commitments and Contingencies; targeted term searches",
+      "section_locator": "pp. 12-13; web lines 580-610",
+      "short_excerpt": "there is a reasonable possibility of loss that is not able to be estimated",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool, original SEC URL; no raw SEC curl download",
+      "comprehensive_document_review": false
+    }
+  ],
+  "recommendation": "These five add no currently quantified unresolved case with a located decision trigger in the reviewed passages. Do not expand paid inference or proceed to price testing on this evidence alone. Full-passage capture/review can audit omissions, but has not earned an alpha-opportunity claim. Preserve all five as unknown outside reviewed scope.",
+  "limitations": [
+    "Search term absence is not full-document absence; web find returned no refund match even where BCC text says refunds received, demonstrating why search alone is insufficient.",
+    "No external court/administrative docket or postfiling status refresh was added because the registered manifest allows no extra context documents.",
+    "Existing reserves, guarantees and letters of credit are not the same thing as uncertain incremental claimant cash.",
+    "Recognition dates, settlement dates and payment dates are distinct.",
+    "Source notes are human-agent feasibility evidence and cannot become blinded labels or prospective signals retroactively."
+  ]
+}

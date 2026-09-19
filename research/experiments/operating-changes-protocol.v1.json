@@ -1,0 +1,53 @@
+{
+  "schema_version": "operating-changes-protocol-v1",
+  "experiment_id": "operating-changes-v1",
+  "registered_on": "2026-09-18",
+  "objective": "Test whether Jev adds useful source-supported evidence of paid software operating changes at lower total research cost; this is a feasibility experiment, not an alpha backtest.",
+  "use_case": "technical_evaluation_only",
+  "source_mode": "scry",
+  "source_license": {
+    "status": "production_use_unresolved",
+    "research_context": "Private bounded technical evaluation of source access and model interpretation. Do not deploy a commercial Scry dependency or export a substantial corpus.",
+    "pricing_url": "https://scry.io/#pricing",
+    "terms_url": "https://scry.io/legal/terms",
+    "production_fallback": "Permitted original public APIs and original linked engineering posts. No bulk reconstruction of Scry's corpus."
+  },
+  "window": {"start": "2026-06-20T00:00:00Z", "end_exclusive": "2026-09-19T00:00:00Z"},
+  "vendors": [
+    {"vendor_id": "ddog", "name": "Datadog", "candidate_symbol": "DDOG", "aliases": ["datadog"]},
+    {"vendor_id": "mdb", "name": "MongoDB", "candidate_symbol": "MDB", "aliases": ["mongodb", "mongo"]},
+    {"vendor_id": "snow", "name": "Snowflake", "candidate_symbol": "SNOW", "aliases": ["snowflake"]},
+    {"vendor_id": "estc", "name": "Elastic", "candidate_symbol": "ESTC", "aliases": ["elastic", "elasticsearch"]},
+    {"vendor_id": "net", "name": "Cloudflare", "candidate_symbol": "NET", "aliases": ["cloudflare"]},
+    {"vendor_id": "dt", "name": "Dynatrace", "candidate_symbol": "DT", "aliases": ["dynatrace"]},
+    {"vendor_id": "gtlb", "name": "GitLab", "candidate_symbol": "GTLB", "aliases": ["gitlab"]},
+    {"vendor_id": "docn", "name": "DigitalOcean", "candidate_symbol": "DOCN", "aliases": ["digitalocean"]}
+  ],
+  "subreddits": ["devops", "sysadmin", "programming", "databases", "mongodb", "snowflake", "dataengineering", "kubernetes", "aws", "webdev"],
+  "sources": ["hackernews", "reddit"],
+  "max_per_vendor": 125,
+  "source_quotas": {"hackernews": 63, "reddit": 62},
+  "max_records": 1000,
+  "selection_seed": "jev-operating-changes-v1-2026-09-18",
+  "selection": "Deterministic hash order of source-native IDs within vendor/source/date strata; product mentions only, no action-word or score filter. Merge duplicate native IDs and exact normalized bodies. Keep unfilled source/vendor quotas without substitutions.",
+  "development_fraction": 0.2,
+  "split_unit": "Connected components sharing a source thread or exact normalized body; deterministic component hash assigns development or evaluation before model calls.",
+  "question_profile": "paid-software-operating-changes-v1",
+  "models": {"jev": "typesafe/jev-1.13", "baseline": "openai/gpt-5.4-mini"},
+  "review": {"origin": "independent_agent_review", "reject_sample_size": 80, "reject_seed": "operating-reject-audit-v1", "all_selected": true, "human_gold": false},
+  "feasibility_gate": {"minimum_distinct_qualifying_episodes": 20, "minimum_vendors": 4, "requires_source_timing": true, "requires_business_link": true, "requires_incremental_evidence_or_cost_advantage": true},
+  "budget": {"total_usd": 15.0, "scry_usd": 5.0, "model_usd": 10.0, "initial_query_ceiling_usd": 0.10, "automatic_retries": 0},
+  "controls": ["keyword", "semantic_retrieval", "efficient_chat", "jev_panel"],
+  "historical_alpha_eligible": false,
+  "production_allowed": false,
+  "trade_eligible": false,
+  "capital_usd": 1000,
+  "execution": "Research and paper accounting only. Future manual Schwab tickets require a separately frozen financial protocol and verified security mappings. No order API.",
+  "interpretation_limits": [
+    "A source-supported report is not independent verification of the author's claim or vendor revenue.",
+    "Source creation time does not prove the current text existed at that time; date-only capture metadata cannot justify an intraday entry.",
+    "Reddit's partial live tail is not volume-comparable to its reconciled historical archive.",
+    "Many records, comments or questions about one customer migration remain one economic episode.",
+    "No stock-return forecasts, current ticker eligibility claims, or calibrated trade probabilities follow from this screen."
+  ]
+}

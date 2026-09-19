@@ -1,0 +1,61 @@
+{
+  "registered_at": "2026-09-19T01:07:28.661112+00:00",
+  "scope": "One issuer pair all extracted visible text development omission/coverage audit, selected because official paired source capture succeeded. Not prospective, not fullcase labels, no prices. Does not satisfy tenissuer sourcebreadthgate.",
+  "parent_protocol_sha256": "446a5892c395414603cd3b7d9e8d6f25b6b1ad45971f989275a79352580d0bad",
+  "source_capture_sha256": "029c5b6dbba6e7c4433a861e8f336466a5da6f056898f211f2fde57b47c52fee",
+  "documents": [
+    {
+      "role": "latest",
+      "packet_sha256": "2eadaa062d5774301010a5a1c79daa9312da9b03c7d4bebdad6420a0c1169cec",
+      "body_sha256": "7b184d37bf7afad6e9ddfb27e870b364a43d9c1e37d255c7fde973b493ce6a21",
+      "plan_path": "data\\issuer-claims-v1\\plans\\UFPI-latest.json",
+      "plan_sha256": "4b07205d72a8f8ef9ce06a6abc2e58f8cecc8a5367511516cc9c4d54634e0bee",
+      "passages": 1202,
+      "questions": 4808,
+      "chunks": 135,
+      "jev_conservative_estimated_usd": 1.069749912,
+      "keyword_control_sha256": "d5e22cefb049066a0fc2b85ab52715362d46b9dc81b16bba8aff5ebb480fe8c7",
+      "keyword_selected_passages": 38,
+      "known_development_support": [
+        "p00706"
+      ]
+    },
+    {
+      "role": "prior_comparable",
+      "packet_sha256": "47d2ea32947906f694681a349139add35cd7ee217865d21be65d5213e4a760af",
+      "body_sha256": "d6371f466a28cd202895cfde63c3d0e56cd192a3becf392057076bcbc38a01da",
+      "plan_path": "data\\issuer-claims-v1\\plans\\UFPI-prior_comparable.json",
+      "plan_sha256": "fa2f9f53f80c91b28f444ccfdf7c1aee8d8865e57bc6f903fda7db6d13fe5be5",
+      "passages": 999,
+      "questions": 3996,
+      "chunks": 113,
+      "jev_conservative_estimated_usd": 0.8909034960000001,
+      "keyword_control_sha256": "b85d3b11de242eb6c828e029b8a863e6063f2d6ae05c1b94136544738689a8a7",
+      "keyword_selected_passages": 44,
+      "known_development_support": [
+        "p00608"
+      ]
+    }
+  ],
+  "model": "typesafe/jev-1.13",
+  "dimensions": [
+    "claim_lifecycle",
+    "explicit_amount",
+    "cash_offset",
+    "subsequent_update"
+  ],
+  "selection": {
+    "cutoff": 0.2,
+    "neighbor_radius": 1,
+    "no_calibration_claim": true
+  },
+  "execution": {
+    "workers": 4,
+    "cumulative_archive_cost_reservation_guard_usd": 5,
+    "automatic_retries": false,
+    "transport_failure": "Stop new batches; retain failed and unattempted text",
+    "safe_invalid_completions": "Preserve unknown and alltext, continue independentbatches"
+  },
+  "comparator": "Frozen keyword-neighbor rule on same all-text inputs; no conventional all-corpus model claim. Known IEEPA support checks are development examples, not full recall.",
+  "decision": "Report every failure, all source characters, retained review burden, known-support retention and new candidate evidence if any. A cheap classifier that merely duplicates obvious keyword hits does not earn an alpha or comparative advantage claim."
+}

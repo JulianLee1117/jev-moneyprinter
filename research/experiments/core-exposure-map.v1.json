@@ -1,0 +1,667 @@
+{
+  "schema_version": "dated-issuer-exposure-candidates-v1",
+  "created_on": "2026-09-18",
+  "purpose": "Historical source-grounded candidate exposures for CORE research. Not a forecast or a validated security selection rule.",
+  "selection_policy": {
+    "as_of": "Choose only the issuer version with valid_from <= decision_time < valid_to_exclusive when an end exists; reject absent or stale versions.",
+    "validity_meaning": "Pipeline knowledge availability windows, not operational start/end dates. All source information must itself be available before decision time.",
+    "pre_2024": "No exposure version available. Historical episodes before these first valid_from values must abstain until older filings are separately researched.",
+    "no_backfill": "Never apply FY2025 facts to 2024/2025 events. Annual report dates differ from report-period dates.",
+    "latest_update": "Annual snapshots only; intervening 10-Q, 8-K and IR disclosures still need per-event review.",
+    "unknown_policy": "Unknown effect or quantity is not zero exposure, no offset, or proof of immateriality."
+  },
+  "source_records": [
+    {
+      "source_id": "nue_2023_10k",
+      "issuer_symbol": "NUE",
+      "document_type": "10-K",
+      "period_end": "2023-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000095017024021195/nue-20231231.htm",
+      "public_date": "2024-02-27",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/73309/000095017024021195/",
+      "acceptance_time_as_displayed": null,
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": "data/exposure-sources/nue-2023.html",
+      "raw_sha256": "616f22b98d804c28d5b57d30165f0ac7ee984fe6071da305fd3d1312da20f3d0",
+      "archive_status": "raw_html_saved"
+    },
+    {
+      "source_id": "nue_2024_10k",
+      "issuer_symbol": "NUE",
+      "document_type": "10-K",
+      "period_end": "2024-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000095017025028427/nue-20241231.htm",
+      "public_date": "2025-02-27",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/73309/",
+      "acceptance_time_as_displayed": null,
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": "data/exposure-sources/nue-2024.html",
+      "raw_sha256": "929542a5516df0d18d1d656e9e09c3630c29ec301ec65d1c74f99bb4e2d1932d",
+      "archive_status": "raw_html_saved"
+    },
+    {
+      "source_id": "nue_2025_10k",
+      "issuer_symbol": "NUE",
+      "document_type": "10-K",
+      "period_end": "2025-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526071575/nue-20251231.htm",
+      "public_date": "2026-02-25",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526071575/0001193125-26-071575-index.htm",
+      "acceptance_time_as_displayed": "2026-02-25 16:13:00",
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": null,
+      "raw_sha256": null,
+      "archive_status": "primary_SEC_web_text_reviewed_raw_capture_pending"
+    },
+    {
+      "source_id": "stld_2023_10k",
+      "issuer_symbol": "STLD",
+      "document_type": "10-K",
+      "period_end": "2023-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837024002152/stld-20231231x10k.htm",
+      "public_date": "2024-02-29",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837024002152/0001558370-24-002152-index.html",
+      "acceptance_time_as_displayed": "2024-02-29 13:35:31",
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": "data/exposure-sources/stld-2023.html",
+      "raw_sha256": "bb5f96d6d1f7702a76916c471961d664ca7cd42146cdd683d3c0ec18e89a995d",
+      "archive_status": "raw_html_saved"
+    },
+    {
+      "source_id": "stld_2024_10k",
+      "issuer_symbol": "STLD",
+      "document_type": "10-K",
+      "period_end": "2024-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837025001886/stld-20241231x10k.htm",
+      "public_date": "2025-02-28",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837025001886/0001558370-25-001886-index.htm",
+      "acceptance_time_as_displayed": "2025-02-28 08:07:32",
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": "data/exposure-sources/stld-2024.html",
+      "raw_sha256": "338f344f85e6810b737a2f4120b8c3c5238f1db9086a1327a6ff8cd13d97cfbe",
+      "archive_status": "raw_html_saved"
+    },
+    {
+      "source_id": "stld_2025_10k",
+      "issuer_symbol": "STLD",
+      "document_type": "10-K",
+      "period_end": "2025-12-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926021395/stld-20251231x10k.htm",
+      "public_date": "2026-02-27",
+      "availability_evidence_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926021395/0001104659-26-021395-index.html",
+      "acceptance_time_as_displayed": "2026-02-27 13:06:49",
+      "availability_precision": "filing_day_only_for_event_eligibility",
+      "availability_note": "Use next calendar day in America/New_York. Filing acceptance is not a measured dissemination timestamp or a claim of first disclosure. Nucor FY2023/FY2024 dates corroborated by SEC archive directory modification dates; intraday acceptance not verified.",
+      "retrieved_on": "2026-09-18",
+      "raw_local_path": null,
+      "raw_sha256": null,
+      "archive_status": "primary_SEC_web_text_reviewed_raw_capture_pending"
+    }
+  ],
+  "issuer_exposures": [
+    {
+      "exposure_version_id": "nue_2023_10k_exposure",
+      "issuer_id": "SEC:0000073309",
+      "symbol": "NUE",
+      "valid_from": "2024-02-28T00:00:00-05:00",
+      "valid_to_exclusive": "2025-02-28T00:00:00-05:00",
+      "source_ids": [
+        "nue_2023_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Six sheet mills including 51%-controlled California Steel Industries; all six have galvanizing lines.",
+        "51%-owned Nucor-JFE galvanized plant in central Mexico."
+      ],
+      "literal_supporting_excerpt": "All of our sheet mills are equipped with galvanizing lines",
+      "source_locator": "Item 1, Sheet mills; Note 22, Net sales by product",
+      "reported_metrics": [
+        {
+          "metric": "sheet_mill_capacity",
+          "value": 14600000,
+          "unit": "tons_per_year",
+          "denominator": "all_sheet_products",
+          "period": "2023",
+          "qualification": "Not CORE output, revenue, or affected volume."
+        },
+        {
+          "metric": "sheet_sales_contract_share",
+          "value": 80,
+          "unit": "percent",
+          "denominator": "sheet_sales",
+          "period": "2023",
+          "qualification": "Greater than 80%; value is lower bound."
+        },
+        {
+          "metric": "NJSM_ownership",
+          "value": 51,
+          "unit": "percent",
+          "denominator": "Nucor_JFE_Steel_Mexico",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "NJSM_capacity",
+          "value": 400000,
+          "unit": "tons_per_year",
+          "denominator": "Mexican_galvanized_plant",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "sheet_external_revenue",
+          "value": 9146676000,
+          "unit": "USD",
+          "denominator": "sheet_external_revenue",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "consolidated_revenue",
+          "value": 34713501000,
+          "unit": "USD",
+          "denominator": "total_company_revenue",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "mills_shipments_internal_share",
+          "value": 20,
+          "unit": "percent",
+          "denominator": "steel_mills_shipments",
+          "period": "2023",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption",
+          "evidence": "Steel products businesses consume steel; internal transfer pricing cannot be treated as incremental consolidated profit.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "foreign_production",
+          "evidence": "NJSM targets Mexican automotive demand; evidence does not establish imports from NJSM into the United States.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "contract_repricing_lag",
+          "evidence": "Sheet contracts generally adjust monthly or quarterly using indices or raw-material costs; typical terms six to twelve months.",
+          "event_effect": "timing_and_pass_through_unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing CORE imports could improve domestic price or volume; the sign and consolidated magnitude require more evidence."
+      }
+    },
+    {
+      "exposure_version_id": "nue_2024_10k_exposure",
+      "issuer_id": "SEC:0000073309",
+      "symbol": "NUE",
+      "valid_from": "2025-02-28T00:00:00-05:00",
+      "valid_to_exclusive": "2026-02-26T00:00:00-05:00",
+      "source_ids": [
+        "nue_2024_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Six sheet mills including 51%-controlled California Steel Industries; all six have galvanizing lines.",
+        "51%-owned Nucor-JFE galvanized plant in central Mexico."
+      ],
+      "literal_supporting_excerpt": "All of our sheet mills are equipped with galvanizing lines",
+      "source_locator": "Item 1, Sheet mills; Note 22, Net sales by product",
+      "reported_metrics": [
+        {
+          "metric": "sheet_mill_capacity",
+          "value": 14600000,
+          "unit": "tons_per_year",
+          "denominator": "all_sheet_products",
+          "period": "2024",
+          "qualification": "Not CORE output, revenue, or affected volume."
+        },
+        {
+          "metric": "sheet_sales_contract_share",
+          "value": 80,
+          "unit": "percent",
+          "denominator": "sheet_sales",
+          "period": "2024",
+          "qualification": "Greater than 80%; value is lower bound."
+        },
+        {
+          "metric": "NJSM_ownership",
+          "value": 51,
+          "unit": "percent",
+          "denominator": "Nucor_JFE_Steel_Mexico",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "NJSM_capacity",
+          "value": 400000,
+          "unit": "tons_per_year",
+          "denominator": "Mexican_galvanized_plant",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "sheet_external_revenue",
+          "value": 9248000000,
+          "unit": "USD",
+          "denominator": "sheet_external_revenue",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "consolidated_revenue",
+          "value": 30734000000,
+          "unit": "USD",
+          "denominator": "total_company_revenue",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "mills_shipments_internal_share",
+          "value": 20,
+          "unit": "percent",
+          "denominator": "steel_mills_shipments",
+          "period": "2024",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption",
+          "evidence": "Steel products businesses consume steel; internal transfer pricing cannot be treated as incremental consolidated profit.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "foreign_production",
+          "evidence": "NJSM targets Mexican automotive demand; evidence does not establish imports from NJSM into the United States.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "contract_repricing_lag",
+          "evidence": "Sheet contracts generally adjust monthly or quarterly using indices or raw-material costs; typical terms six to twelve months.",
+          "event_effect": "timing_and_pass_through_unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing CORE imports could improve domestic price or volume; the sign and consolidated magnitude require more evidence."
+      }
+    },
+    {
+      "exposure_version_id": "nue_2025_10k_exposure",
+      "issuer_id": "SEC:0000073309",
+      "symbol": "NUE",
+      "valid_from": "2026-02-26T00:00:00-05:00",
+      "valid_to_exclusive": null,
+      "source_ids": [
+        "nue_2025_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Six sheet mills including 51%-controlled California Steel Industries; all six have galvanizing lines.",
+        "51%-owned Nucor-JFE galvanized plant in central Mexico."
+      ],
+      "literal_supporting_excerpt": "All of our sheet mills are equipped with galvanizing lines",
+      "source_locator": "Item 1, Sheet mills",
+      "reported_metrics": [
+        {
+          "metric": "sheet_mill_capacity",
+          "value": 14500000,
+          "unit": "tons_per_year",
+          "denominator": "all_sheet_products",
+          "period": "2025",
+          "qualification": "Not CORE output, revenue, or affected volume."
+        },
+        {
+          "metric": "sheet_sales_contract_share",
+          "value": 85,
+          "unit": "percent",
+          "denominator": "sheet_sales",
+          "period": "2025",
+          "qualification": "Approximately 85%"
+        },
+        {
+          "metric": "NJSM_ownership",
+          "value": 51,
+          "unit": "percent",
+          "denominator": "Nucor_JFE_Steel_Mexico",
+          "period": "2025",
+          "qualification": null
+        },
+        {
+          "metric": "NJSM_capacity",
+          "value": 400000,
+          "unit": "tons_per_year",
+          "denominator": "Mexican_galvanized_plant",
+          "period": "2025",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption",
+          "evidence": "Steel products businesses consume steel; internal transfer pricing cannot be treated as incremental consolidated profit.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "foreign_production",
+          "evidence": "NJSM targets Mexican automotive demand; evidence does not establish imports from NJSM into the United States.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "contract_repricing_lag",
+          "evidence": "Sheet contracts generally adjust monthly or quarterly using indices or raw-material costs; typical terms six to twelve months.",
+          "event_effect": "timing_and_pass_through_unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing CORE imports could improve domestic price or volume; the sign and consolidated magnitude require more evidence."
+      }
+    },
+    {
+      "exposure_version_id": "stld_2023_10k_exposure",
+      "issuer_id": "SEC:0001022671",
+      "symbol": "STLD",
+      "valid_from": "2024-03-01T00:00:00-05:00",
+      "valid_to_exclusive": "2025-03-01T00:00:00-05:00",
+      "source_ids": [
+        "stld_2023_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Butler, Columbus, Sinton; The Techs and Heartland downstream coating."
+      ],
+      "literal_supporting_excerpt": "We have annual flat roll galvanizing capability of 4.8 million tons",
+      "source_locator": "Item 1, Steel Operations Segment and Sheet Steel Products",
+      "reported_metrics": [
+        {
+          "metric": "galvanizing_capability",
+          "value": 4800000,
+          "unit": "tons_per_year",
+          "denominator": "flat_roll_galvanizing",
+          "period": "2023",
+          "qualification": "Maximum estimated capability; not output or legally in-scope CORE volume."
+        },
+        {
+          "metric": "sheet_revenue_share",
+          "value": 68,
+          "unit": "percent",
+          "denominator": "steel_operations_net_sales",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "steel_revenue_share",
+          "value": 67,
+          "unit": "percent",
+          "denominator": "consolidated_net_sales",
+          "period": "2023",
+          "qualification": null
+        },
+        {
+          "metric": "steel_export_share",
+          "value": 8,
+          "unit": "percent",
+          "denominator": "steel_segment_net_sales",
+          "period": "2023",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption_and_distribution",
+          "evidence": "Fabrication and processing coexist with steel production; price pass-through and external input volumes must be reviewed.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "export_sales",
+          "evidence": "Foreign steel customers create demand and policy exposure. Export share is not the share of imports or foreign manufacture.",
+          "event_effect": "unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing coated imports could benefit domestic steel operations; mixed downstream channels prevent an automatic equity sign."
+      }
+    },
+    {
+      "exposure_version_id": "stld_2024_10k_exposure",
+      "issuer_id": "SEC:0001022671",
+      "symbol": "STLD",
+      "valid_from": "2025-03-01T00:00:00-05:00",
+      "valid_to_exclusive": "2026-02-28T00:00:00-05:00",
+      "source_ids": [
+        "stld_2024_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Butler, Columbus, Sinton; The Techs and Heartland downstream coating."
+      ],
+      "literal_supporting_excerpt": "We have annual flat roll galvanizing capability of 5.5 million tons",
+      "source_locator": "Item 1, Steel Operations Segment and Sheet Steel Products",
+      "reported_metrics": [
+        {
+          "metric": "galvanizing_capability",
+          "value": 5500000,
+          "unit": "tons_per_year",
+          "denominator": "flat_roll_galvanizing",
+          "period": "2024",
+          "qualification": "Maximum estimated capability; not output or legally in-scope CORE volume."
+        },
+        {
+          "metric": "sheet_revenue_share",
+          "value": 72,
+          "unit": "percent",
+          "denominator": "steel_operations_net_sales",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "steel_revenue_share",
+          "value": 69,
+          "unit": "percent",
+          "denominator": "consolidated_net_sales",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "steel_export_share",
+          "value": 6,
+          "unit": "percent",
+          "denominator": "steel_segment_net_sales",
+          "period": "2024",
+          "qualification": null
+        },
+        {
+          "metric": "fabrication_sheet_supplied_internally",
+          "value": 64,
+          "unit": "percent",
+          "denominator": "sheet_used_by_steel_fabrication",
+          "period": "2024",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption_and_distribution",
+          "evidence": "Fabrication and processing coexist with steel production; price pass-through and external input volumes must be reviewed.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "export_sales",
+          "evidence": "Foreign steel customers create demand and policy exposure. Export share is not the share of imports or foreign manufacture.",
+          "event_effect": "unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing coated imports could benefit domestic steel operations; mixed downstream channels prevent an automatic equity sign."
+      }
+    },
+    {
+      "exposure_version_id": "stld_2025_10k_exposure",
+      "issuer_id": "SEC:0001022671",
+      "symbol": "STLD",
+      "valid_from": "2026-02-28T00:00:00-05:00",
+      "valid_to_exclusive": null,
+      "source_ids": [
+        "stld_2025_10k"
+      ],
+      "economic_role": "domestic_coated_flat_rolled_steel_producer_with_offsetting_channels",
+      "product_overlap": "galvanized_sheet_product_evidence; exact_CORE_scope_match_requires_event_specific_dimensions_and_exclusions",
+      "evidence_status": "agent_reviewed_primary_source",
+      "review_scope": "annual_business_snapshot_not_exhaustive_filing_history",
+      "stale_after_days": 370,
+      "trade_eligible": false,
+      "facility_links": [
+        "Butler, Columbus, Sinton; The Techs and Heartland downstream coating."
+      ],
+      "literal_supporting_excerpt": "we had annual flat roll galvanizing capability of 5.5 million tons",
+      "source_locator": "Item 1, Steel Operations Segment and Sheet Steel Products",
+      "reported_metrics": [
+        {
+          "metric": "galvanizing_capability",
+          "value": 5500000,
+          "unit": "tons_per_year",
+          "denominator": "flat_roll_galvanizing",
+          "period": "2025",
+          "qualification": "Maximum estimated capability; not output or legally in-scope CORE volume."
+        },
+        {
+          "metric": "sheet_revenue_share",
+          "value": 64,
+          "unit": "percent",
+          "denominator": "steel_operations_net_sales",
+          "period": "2025",
+          "qualification": null
+        },
+        {
+          "metric": "steel_revenue_share",
+          "value": 72,
+          "unit": "percent",
+          "denominator": "consolidated_net_sales",
+          "period": "2025",
+          "qualification": null
+        },
+        {
+          "metric": "steel_export_share",
+          "value": 4,
+          "unit": "percent",
+          "denominator": "steel_segment_net_sales",
+          "period": "2025",
+          "qualification": null
+        },
+        {
+          "metric": "fabrication_sheet_supplied_internally",
+          "value": 62,
+          "unit": "percent",
+          "denominator": "sheet_used_by_steel_fabrication",
+          "period": "2025",
+          "qualification": null
+        }
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption_and_distribution",
+          "evidence": "Fabrication and processing coexist with steel production; price pass-through and external input volumes must be reviewed.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "export_sales",
+          "evidence": "Foreign steel customers create demand and policy exposure. Export share is not the share of imports or foreign manufacture.",
+          "event_effect": "unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing coated imports could benefit domestic steel operations; mixed downstream channels prevent an automatic equity sign."
+      }
+    }
+  ],
+  "additional_context": [
+    {
+      "source_id": "stld_2024q2_ir",
+      "source_url": "https://ir.steeldynamics.com/steel-dynamics-reports-second-quarter-2024-results/",
+      "public_date": "2024-07-17",
+      "valid_from": "2024-07-18T00:00:00-04:00",
+      "literal_supporting_excerpt": "a significant increase in steel imports, especially within coated flat rolled steel products",
+      "finding": "Issuer contemporaneously identified coated-import competition, strengthening product relevance without quantifying remedy-specific earnings.",
+      "event_effect": "unknown"
+    }
+  ],
+  "not_added": {
+    "second_order_issuers": [],
+    "reason": "No additional listed firm has a sufficient dated CORE-specific purchase, scope, materiality, and pass-through evidence bundle in this bounded review. Unknown, not evidence of absence."
+  },
+  "research_hygiene": {
+    "event_return_series_inspected": false,
+    "incidental_price_content": "Unrequested general search snippets and filing repurchase tables contained price information; those were not used for selection or inference. This is not a fully blinded human study.",
+    "no_trade_directions_assigned": true
+  },
+  "unresolved": [
+    "Exact CORE scope/product mapping per episode",
+    "Subject-country and producer competition volumes",
+    "Importer-of-record and exporter offsets",
+    "Incremental realized cash-flow sensitivity",
+    "Earliest public regulatory disclosure and prior market expectations",
+    "Intervening issuer disclosures and snapshot staleness"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "octg-ts-protocol-v1",
+  "experiment_id": "OCTG-TS-cashflow-v1",
+  "registered_at": "2026-09-19T00:24:03Z",
+  "status": "registered_evidence_first_not_trading",
+  "source_state": "research/experiments/octg-ts-current-state.v1.json",
+  "prior_family": "CORE pilot retained as development extraction benchmark",
+  "rationale": "Issuer-paid deposits make OCTG-to-Tenaris cash-flow attribution more direct than competitor restrictions-to-domestic steel pricing. This selects a causal mechanism before event-window returns, not a proven profitable strategy.",
+  "primary_hypothesis": "Dense Jev relevance/state judgments can identify company-specific operative cash-flow changes and exceptions from legal/issuer documents more accurately or cheaply than matched conventional baselines.",
+  "financial_hypothesis": "Only a material, not-already-public increment with auditable latency could contain post-alert TS return information. The study must be allowed to conclude none exists.",
+  "bounded_universe": {
+    "issuer_id": "sec-cik-0001190723",
+    "symbol": "TS",
+    "countries": [
+      "Mexico",
+      "Argentina"
+    ],
+    "case_numbers": [
+      "A-201-856",
+      "A-357-824"
+    ],
+    "primary_prospective_episode": "A-201-856_REV_2023-11-01_2024-10-31",
+    "development_episodes": [
+      "A-201-856_REV_2022-05-11_2023-10-31",
+      "A-357-824_REV_2022-05-11_2023-10-31"
+    ],
+    "max_case_episodes": 3,
+    "max_selected_decision_increments": 12,
+    "max_context_documents": 60,
+    "selection_rule": "Include every relevant legal increment located within these frozen episodes, including null/procedural results; cap overflow is an explicit protocol amendment before prices.",
+    "out_of_scope": "Mechanical-pipe scope decisions, other countries, other issuers and next Mexico POR require a separate pre-return registration or versioned amendment."
+  },
+  "holdout_policy": {
+    "development": "All pre-registration documents and reviewed historical outcomes are development-only.",
+    "prospective": "Only a genuinely new legal increment first made public after registration can become the prospective observation. Earlier-but-later-found documents must be marked contaminated retrospective development.",
+    "mexico_pending_final": "Candidate only; if located with earlier first-public availability, remove prospective designation.",
+    "independence": "Questions, passages, country rows, related legal stages and two stocks on one event are not independent returns; here the prospective target is one episode, insufficient to estimate reliable alpha."
+  },
+  "source_policy": {
+    "allowed": [
+      "Commerce ACCESS public notices, memoranda and case calendar",
+      "Federal Register public inspection and official GovInfo editions",
+      "Official CBP deposit/assessment instructions",
+      "Public court documents",
+      "SEC filings and dated issuer releases"
+    ],
+    "required_metadata": [
+      "URL",
+      "content hash if captured",
+      "local first_seen_at",
+      "official source date and precision",
+      "earliest_public_at or unknown",
+      "case number",
+      "exact review period",
+      "exporter/producer/importer identity",
+      "source effective date distinct from information date"
+    ],
+    "as_of_rule": "Every feature must be available no later than the simulated/actual decision. FY2025 disclosure and realized Argentine refund gains cannot enter a June 2025 prediction.",
+    "calendar_rule": "November 3, 2026 is the observed official candidate final announcement date for Mexico 2023–24, changeable and not an automation instruction.",
+    "first_public_rule": "Check ACCESS unpublished notice/memo, Commerce announcement, issuer release and FR public inspection before using FR publication. Date-only or conflicting timestamps make intraday diagnostics ineligible."
+  },
+  "jev_experiment": {
+    "calls_authorized_in_this_registration_step": 0,
+    "future_run_gate": "Use existing project's approved provider guardrails and an explicit finite run budget before inference; this file creates no paid call or account charge.",
+    "input": "New decision plus as-of prior proposal, operative state, intervening memoranda, issuer ownership/import role and timing metadata; market returns excluded.",
+    "dense_question_families": [
+      "Which passages concern the exact case, exporter and review period?",
+      "Which establish a new proposal, binding operative state, partial rescission, scope result or merely historical context?",
+      "Which apply to forward deposits versus retrospective assessments and refunds?",
+      "Which exceptions change exporter/manufacturer applicability or liquidation?",
+      "Which evidence binds TAMSA/Siderca to Tenaris as of the event?",
+      "Which facts indicate importer cost effects, U.S. producer offsets, denominator or legal uncertainty?",
+      "Which evidence was public earlier, contradicts the alert or leaves materiality unknown?"
+    ],
+    "evidence_contract": "Every positive judgment retains source span, document identity, as-of availability and supporting/contradicting evidence. Preserve ambiguous exceptions for deeper review.",
+    "code_only_fields": [
+      "Rate arithmetic",
+      "Date arithmetic and trading-session alignment",
+      "Denominator-based cash bounds",
+      "Eligibility, uncertainty and cost accounting"
+    ],
+    "probability_policy": "Do not multiply answer confidences or equate a Jev question score with a trading probability.",
+    "expensive_reasoner_policy": "Route only materially unresolved cases; capture total model and human review cost for comparison."
+  },
+  "comparators": [
+    {
+      "id": "A",
+      "name": "Deterministic baseline",
+      "input": "Same source corpus and metadata",
+      "method": "Case/exporter matching, section-aware rate extraction and explicit proposal/operative rules."
+    },
+    {
+      "id": "B",
+      "name": "Conventional model baseline",
+      "input": "Same source corpus, prior states and review budget",
+      "method": "Existing cheap conventional model with identical required output and no prices."
+    },
+    {
+      "id": "C",
+      "name": "Dense Jev screen plus bounded review",
+      "input": "Same source corpus",
+      "method": "Parallel typed passage questions, uncertainty routing, deterministic arithmetic."
+    }
+  ],
+  "evaluation_before_prices": {
+    "labels": "Independent human/agent adjudication grounded in primary spans; disagreements remain unresolved rather than force-labeled.",
+    "critical_fields": [
+      "Exact exporter/case/POR",
+      "New operative versus proposal change",
+      "Final-minus-same-review-prior proposal versus prior operative difference",
+      "Forward deposit versus past-entry liquidation",
+      "Issuer cash-flow link",
+      "First-public timestamp and precision",
+      "Conflicting or missing evidence"
+    ],
+    "metrics": [
+      "Critical-field correctness",
+      "Recall of operative increments",
+      "False material alerts",
+      "Evidence citation correctness",
+      "Abstention and coverage",
+      "Wall latency",
+      "Total inference plus review cost"
+    ],
+    "economic_gate": [
+      "Primary issuer/importer link available as of event",
+      "Fresh legal increment after all known earlier disclosure",
+      "Importer-specific base or defensible public cash-flow bound",
+      "Forward cash and historical refund channels separated",
+      "Legal blocks and effective-date conflicts resolved enough for the asserted effect",
+      "Auditable first-public and first-seen timestamps"
+    ],
+    "no_signal_rule": "Unknown net materiality, earlier-public information, unresolved applicability or timing causes abstention. A large rate percentage alone is not a material equity signal.",
+    "historical_selection_rule": "Report all frozen episode results and nulls. Do not use the later $34m Argentine gain to choose successful historical trades or assert a June 2025 surprise.",
+    "extraction_success_is_not_profit_evidence": true
+  },
+  "conditional_paper_diagnostic": {
+    "activated": false,
+    "reason": "Evidence gate not yet met; price data remains unopened.",
+    "pre_price_lock": "Before any prospective event's outcome is opened, freeze an immutable signal card with channels, side or abstention, denominator bounds, prior expectation, source timestamps, latency, eligibility and full reject rationale.",
+    "allowed_instrument": "TS ADS; one unlevered fixed-unit paper observation; no order routing.",
+    "direction_rule": "Only net issuer cash benefit/adverse effect supported by the as-of worksheet may assign long/short direction. If offsets prevent a defensible direction, abstain. Short remains hypothetical and requires obtainable borrow/cost evidence before feasibility claims.",
+    "information_delay_minutes": 15,
+    "entry": "First observable executable regular-session quote at least 15 minutes after the later of source first-seen and completed signal processing. If no auditable quote is available, no executable-return observation.",
+    "exit": "Following regular-session close using the correct exchange calendar; no optimized alternate exit.",
+    "costs": "Use contemporaneous spread, fee and slippage assumptions fixed before return inspection. No mid-price fill claims or invented cost estimates.",
+    "benchmark": "Report raw and broad-market-relative paper returns; one episode supports only a diagnostic, not a reliable alpha or Sharpe estimate.",
+    "controls": [
+      "Corporate actions and ADS currency consistency",
+      "Oil/energy sector and market moves as confounds",
+      "Earnings or other simultaneous issuer releases",
+      "After-hours information versus regular-session eligibility",
+      "No look-ahead publication timestamps",
+      "No changing side, horizon, universe or exclusions after observing returns"
+    ]
+  },
+  "stop_or_amend_rules": [
+    "If the frozen corpus cannot establish auditable exposure, timing and materiality, stop at an evidence/extraction result without buying price data.",
+    "If no relevant future increment occurs, record zero prospective observations; do not turn documents into events.",
+    "If C supplies no useful accuracy/coverage/cost improvement versus A/B, do not claim Jev-specific advantage.",
+    "Any extension to other cases, products, thresholds or horizons is versioned before return inspection and reported as additional research."
+  ],
+  "actions_performed": {
+    "paid_inference_calls": 0,
+    "price_requests": 0,
+    "orders": 0,
+    "subscriptions": 0,
+    "automations": 0
+  },
+  "profitability_claim": "Unproved. No observed event-window returns or profit estimate is contained in this registration."
+}

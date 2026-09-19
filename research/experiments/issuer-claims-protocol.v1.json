@@ -1,0 +1,639 @@
+{
+  "schema_version": "issuer-claims-protocol-v1",
+  "experiment_id": "issuer-direct-cash-claims-v1",
+  "registered_at": "2026-09-19T00:56:25.237339+00:00",
+  "status": "registered_read_only_source_feasibility_not_alpha",
+  "source_cutoff_at": "2026-09-18T20:00:00Z",
+  "objective": "Determine whether broad parallel semantic screening can find correctly attributed, currently outstanding quantified cash claims with unresolved legal or administrative triggers across a fixed issuer cohort, including claim-negative and inaccessible observations.",
+  "novelty_hypothesis": "Jev may lower the cost of screening every relevant passage across issuers, legal claim attributes and prior states while retaining uncertainty and contradictions. This is a coverage-economics hypothesis, not a capability exclusive to Jev or a return-probability model.",
+  "cohort_selection": {
+    "fixed_symbols": [
+      "TS",
+      "MBC",
+      "BXC",
+      "NUE",
+      "STLD",
+      "CLF",
+      "LPX",
+      "UFPI",
+      "BCC",
+      "BLDR"
+    ],
+    "maximum_issuers": 10,
+    "known_example_count": 3,
+    "industry_comparison_count": 7,
+    "rationale": "Purposive industry feasibility cohort: known trade-duty mechanisms plus current wood/building-material and steel operating issuers selected for industry/date without screening current claim outcomes or prices. Not random, representative or survivorship-safe historical sampling.",
+    "negative_controls": "The seven industry comparisons are candidates for negative controls, not preassigned negatives. Only full paired-document review can assign no qualifying disclosed claim. Claim-positive, no-claim, unquantified, inaccessible and unresolved cases all remain in the denominator. If none are negative, report that failure rather than replace issuers.",
+    "frozen_before": "New current-claim content labels and price-outcome inspection; registration incorporates prior seed knowledge and metadata/date verification.",
+    "no_replacement": "No replacing missing, uninteresting, acquired or claim-negative issuers. Changes require versioned amendment before further label/price inspection.",
+    "listing_rule": "Current SEC submissions exchange/ticker metadata verifies the proposed prospective symbol universe. Historical listing/market-cap/price filters are not inferred from current tickers.",
+    "american_woodmark": "AMWD is historical seed context, not an independent current trading target. MasterBrand MBC is the current listed successor candidate. Consolidation, legal liability and claim ownership must be sourced explicitly, and MBC prior/current financials may not be comparable due to the merger."
+  },
+  "filing_selection": {
+    "latest_rule": "Latest original full periodic financial statement filing accepted by cutoff for the issuer. Domestic issuers: 10-Q or 10-K; for Tenaris the latest 6-K containing full consolidated condensed interim financial statements is eligible, excluding press releases and management-only reports.",
+    "prior_rule": "Immediately preceding full financial-period report of the same issuer, selected by report-period ordering and accepted before latest. Prior comparable means sequential outstanding-balance/legal-state comparison, not same-quarter-year-over-year cash-flow comparison.",
+    "ties": "For duplicate same-period documents select the original full financial statements with notes. Later corrections/amendments are a separate flagged source state; do not silently overwrite or treat as an independent event.",
+    "max_core_documents": 20,
+    "max_context_documents_without_amendment": 0,
+    "context_rule": "Existing seed research is provenance/context only. It cannot supply an unobserved current amount. Additional third documents required to resolve ambiguity are recorded as follow-up needs; adding them to model evidence requires an explicit versioned manifest amendment.",
+    "corpus_status": "Every selected source predates registration and is development/feasibility-only. It cannot become a prospective information event by being discovered now.",
+    "prospective_rule": "Only newly public evidence after registration can be a future paper event, under a separately frozen collection and timing manifest. This file does not schedule monitoring."
+  },
+  "cohort": [
+    {
+      "symbol": "TS",
+      "cik": "0001190723",
+      "name": "TENARIS SA",
+      "selection_role": "known_example",
+      "selection_reason": "Steel/tubular goods; pre-existing TAMSA/Siderca claim mechanism.",
+      "claim_label_before_screening": "unknown",
+      "sic": "3312",
+      "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+      "current_exchange_metadata": [
+        "NYSE",
+        "OTC"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001190723.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001190723.json",
+      "submissions_sha256": "4060c204a24116b1b9c0d7cee995e34461d9048c861af91ddbceb3f8799c8a79",
+      "filings": [
+        {
+          "accessionNumber": "0001171843-26-005340",
+          "filingDate": "2026-08-07",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-08-07T11:16:04.000Z",
+          "form": "6-K",
+          "primaryDocument": "f6k_080526.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326005340/f6k_080526.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326005340/0001171843-26-005340-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001171843-26-003164",
+          "filingDate": "2026-05-07",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-05-07T20:57:47.000Z",
+          "form": "6-K",
+          "primaryDocument": "f6k_050626fs.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326003164/f6k_050626fs.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326003164/0001171843-26-003164-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "MBC",
+      "cik": "0001941365",
+      "name": "MasterBrand, Inc.",
+      "selection_role": "known_example_successor_candidate",
+      "selection_reason": "Wood cabinetry; current listed parent following American Woodmark merger. No automatic assignment of predecessor claim.",
+      "claim_label_before_screening": "unknown",
+      "sic": "2511",
+      "sic_description": "Wood Household Furniture, (No Upholstered)",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001941365.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001941365.json",
+      "submissions_sha256": "1d9291db61783d25a82a36ac7c2a5c6c6eca24b6107c88f8bb0810f2694bd3e2",
+      "filings": [
+        {
+          "accessionNumber": "0001941365-26-000072",
+          "filingDate": "2026-08-05",
+          "reportDate": "2026-06-28",
+          "acceptanceDateTime": "2026-08-05T17:40:03.000Z",
+          "form": "10-Q",
+          "primaryDocument": "mbc-20260628.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000072/mbc-20260628.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000072/0001941365-26-000072-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001941365-26-000056",
+          "filingDate": "2026-05-06",
+          "reportDate": "2026-03-29",
+          "acceptanceDateTime": "2026-05-06T15:29:39.000Z",
+          "form": "10-Q",
+          "primaryDocument": "mbc-20260329.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000056/mbc-20260329.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000056/0001941365-26-000056-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Merger changes consolidation perimeter; an AMWD claim is not assigned to MBC without explicit source evidence."
+    },
+    {
+      "symbol": "BXC",
+      "cik": "0001301787",
+      "name": "BlueLinx Holdings Inc.",
+      "selection_role": "known_example",
+      "selection_reason": "Wood/building products distribution; historical refunds already surfaced.",
+      "claim_label_before_screening": "unknown",
+      "sic": "5031",
+      "sic_description": "Wholesale-Lumber, Plywood, Millwork & Wood Panels",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001301787.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001301787.json",
+      "submissions_sha256": "5c41d7530529cdfeb6339906d84df4bdb345874b797d8ef1b65d0577043bb35b",
+      "filings": [
+        {
+          "accessionNumber": "0001628280-26-052605",
+          "filingDate": "2026-08-04",
+          "reportDate": "2026-07-04",
+          "acceptanceDateTime": "2026-08-04T20:18:57.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bxc-20260704.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026052605/bxc-20260704.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026052605/0001628280-26-052605-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001628280-26-030607",
+          "filingDate": "2026-05-05",
+          "reportDate": "2026-04-04",
+          "acceptanceDateTime": "2026-05-05T20:23:02.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bxc-20260404.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026030607/bxc-20260404.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026030607/0001628280-26-030607-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "NUE",
+      "cik": "0000073309",
+      "name": "NUCOR CORP",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Steel producer, selected by product/industry; previous CORE exposure research known, current direct-claim status not screened.",
+      "claim_label_before_screening": "unknown",
+      "sic": "3312",
+      "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0000073309.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0000073309.json",
+      "submissions_sha256": "717173c6bb895a21937a558a09a31d911e6a08e49726b76252ed4fa02fae8bfd",
+      "filings": [
+        {
+          "accessionNumber": "0001193125-26-345891",
+          "filingDate": "2026-08-12",
+          "reportDate": "2026-07-04",
+          "acceptanceDateTime": "2026-08-12T13:21:28.000Z",
+          "form": "10-Q",
+          "primaryDocument": "nue-20260704.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/0001193125-26-345891-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001193125-26-220778",
+          "filingDate": "2026-05-13",
+          "reportDate": "2026-04-04",
+          "acceptanceDateTime": "2026-05-13T13:44:46.000Z",
+          "form": "10-Q",
+          "primaryDocument": "nue-20260404.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526220778/nue-20260404.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526220778/0001193125-26-220778-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "STLD",
+      "cik": "0001022671",
+      "name": "STEEL DYNAMICS INC",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Steel producer, selected by product/industry; previous CORE exposure research known, current direct-claim status not screened.",
+      "claim_label_before_screening": "unknown",
+      "sic": "3312",
+      "sic_description": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+      "current_exchange_metadata": [
+        "Nasdaq"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001022671.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001022671.json",
+      "submissions_sha256": "02734eaac6e54cb69bfc721cdc36abaa1c4b4d9c8f5aad96a6ed6aa1e99238c3",
+      "filings": [
+        {
+          "accessionNumber": "0001104659-26-087414",
+          "filingDate": "2026-07-28",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-07-28T15:59:42.000Z",
+          "form": "10-Q",
+          "primaryDocument": "stld-20260630x10q.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926087414/stld-20260630x10q.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926087414/0001104659-26-087414-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001104659-26-049415",
+          "filingDate": "2026-04-27",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-04-27T20:00:40.000Z",
+          "form": "10-Q",
+          "primaryDocument": "stld-20260331x10q.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926049415/stld-20260331x10q.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926049415/0001104659-26-049415-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "CLF",
+      "cik": "0000764065",
+      "name": "CLEVELAND-CLIFFS INC.",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Steel/metals operating company selected by product/industry, not by claims or price outcomes.",
+      "claim_label_before_screening": "unknown",
+      "sic": "1000",
+      "sic_description": "Metal Mining",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0000764065.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0000764065.json",
+      "submissions_sha256": "82dc0a9254f2cea2a92007c2e9f1772a11c70999be0f4a75bd60f8467bd35585",
+      "filings": [
+        {
+          "accessionNumber": "0000764065-26-000100",
+          "filingDate": "2026-07-23",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-07-23T20:08:50.000Z",
+          "form": "10-Q",
+          "primaryDocument": "clf-20260630.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000100/clf-20260630.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000100/0000764065-26-000100-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0000764065-26-000070",
+          "filingDate": "2026-04-21",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-04-21T20:43:08.000Z",
+          "form": "10-Q",
+          "primaryDocument": "clf-20260331.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000070/clf-20260331.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000070/0000764065-26-000070-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "LPX",
+      "cik": "0000060519",
+      "name": "LOUISIANA-PACIFIC CORP",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Wood-products operating company selected by product/industry, not by claims or price outcomes.",
+      "claim_label_before_screening": "unknown",
+      "sic": "2400",
+      "sic_description": "Lumber & Wood Products (No Furniture)",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0000060519.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0000060519.json",
+      "submissions_sha256": "48b3e835edf2a71209889ea0e20a642f48681ee6bb4cab7fd372de3dc84e5708",
+      "filings": [
+        {
+          "accessionNumber": "0000060519-26-000036",
+          "filingDate": "2026-08-05",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-08-05T18:20:16.000Z",
+          "form": "10-Q",
+          "primaryDocument": "lpx-20260630.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000036/lpx-20260630.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000036/0000060519-26-000036-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0000060519-26-000021",
+          "filingDate": "2026-05-06",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-05-06T18:31:39.000Z",
+          "form": "10-Q",
+          "primaryDocument": "lpx-20260331.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000021/lpx-20260331.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000021/0000060519-26-000021-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "UFPI",
+      "cik": "0000912767",
+      "name": "UFP INDUSTRIES INC",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Wood-products operating company selected by product/industry, not by claims or price outcomes.",
+      "claim_label_before_screening": "unknown",
+      "sic": "2421",
+      "sic_description": "Sawmills & Planting Mills, General",
+      "current_exchange_metadata": [
+        "Nasdaq"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0000912767.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0000912767.json",
+      "submissions_sha256": "d8ee4b5f7b97ad96643a75ea9a83f5a9fc611221cde7b26f958f9a962b96467f",
+      "filings": [
+        {
+          "accessionNumber": "0001104659-26-090859",
+          "filingDate": "2026-08-05",
+          "reportDate": "2026-06-27",
+          "acceptanceDateTime": "2026-08-05T15:42:51.000Z",
+          "form": "10-Q",
+          "primaryDocument": "ufpi-20260627x10q.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926090859/ufpi-20260627x10q.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926090859/0001104659-26-090859-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001104659-26-056076",
+          "filingDate": "2026-05-06",
+          "reportDate": "2026-03-28",
+          "acceptanceDateTime": "2026-05-06T16:51:39.000Z",
+          "form": "10-Q",
+          "primaryDocument": "ufpi-20260328x10q.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926056076/ufpi-20260328x10q.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926056076/0001104659-26-056076-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "BCC",
+      "cik": "0001328581",
+      "name": "BOISE CASCADE Co",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Wood/building-products operating company selected by product/industry, not by claims or price outcomes.",
+      "claim_label_before_screening": "unknown",
+      "sic": "5030",
+      "sic_description": "Wholesale-Lumber & Other Construction Materials",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001328581.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001328581.json",
+      "submissions_sha256": "9dc165e0b3118c84ffb2f50a4121403c5a3607380a0223c2e55943b1321ab38a",
+      "filings": [
+        {
+          "accessionNumber": "0001328581-26-000027",
+          "filingDate": "2026-08-03",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-08-03T20:40:50.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bcc-20260630.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000027/bcc-20260630.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000027/0001328581-26-000027-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001328581-26-000016",
+          "filingDate": "2026-05-04",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-05-04T20:31:16.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bcc-20260331.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000016/bcc-20260331.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1328581/000132858126000016/0001328581-26-000016-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    },
+    {
+      "symbol": "BLDR",
+      "cik": "0001316835",
+      "name": "Builders FirstSource, Inc.",
+      "selection_role": "industry_comparison",
+      "selection_reason": "Building-materials operating company selected by product/industry, not by claims or price outcomes.",
+      "claim_label_before_screening": "unknown",
+      "sic": "5211",
+      "sic_description": "Retail-Lumber & Other Building Materials Dealers",
+      "current_exchange_metadata": [
+        "NYSE"
+      ],
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001316835.json",
+      "submissions_capture_path": "data/issuer-claims-v1/CIK0001316835.json",
+      "submissions_sha256": "9cbfe938380ad3d8c2f0a9f7cde5d892c7a8cea5285f0227153aaf5c2c81c6ec",
+      "filings": [
+        {
+          "accessionNumber": "0001193125-26-325451",
+          "filingDate": "2026-07-30",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-07-30T16:33:14.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bldr-20260630.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526325451/bldr-20260630.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526325451/0001193125-26-325451-index.html",
+          "role": "latest",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        },
+        {
+          "accessionNumber": "0001193125-26-195140",
+          "filingDate": "2026-04-30",
+          "reportDate": "2026-03-31",
+          "acceptanceDateTime": "2026-04-30T15:10:06.000Z",
+          "form": "10-Q",
+          "primaryDocument": "bldr-20260331.htm",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526195140/bldr-20260331.htm",
+          "index_url": "https://www.sec.gov/Archives/edgar/data/1316835/000119312526195140/0001193125-26-195140-index.html",
+          "role": "prior_comparable",
+          "original_body_capture_status": "not_captured_in_registration",
+          "body_hash": null,
+          "earliest_public_at": null,
+          "timing_status": "SEC metadata only; issuer/local first-public times unverified"
+        }
+      ],
+      "comparability_caveat": "Compare outstanding balances and legal states, not unadjusted three-versus-six-month cash-flow totals."
+    }
+  ],
+  "claim_scope": {
+    "include": [
+      "Customs/antidumping/countervailing duty cash deposits, refund rights, assessments or disputed obligations.",
+      "Specific tax, regulatory or litigation/arbitration cash claims or payment obligations with an identified unresolved adjudication/administrative trigger."
+    ],
+    "exclude": [
+      "Refund or recovery entirely received/settled before the current reporting date.",
+      "Ordinary recurring trade receivables, generic tax balances, warranties or accruals without an identified unresolved external trigger.",
+      "Generic tariff/pricing sentiment, competitor benefits, historical gains or rate arithmetic without an issuer-paid or issuer-receivable cash link.",
+      "Unquantified upside, an alleged maximum with no documented applicability, or ordinary financing availability."
+    ],
+    "qualifying_case_requires": [
+      "Named issuer or sourced consolidated subsidiary as direct payer/beneficiary.",
+      "Explicit current outstanding amount or source-bounded amount with currency, units, reporting date and gross/net status.",
+      "Unresolved legal/administrative trigger identified as of the current filing.",
+      "Prior state compared; current amount is not merely previously received cash or historical recognized income.",
+      "Supporting source spans and conflicting/qualifying passages retained."
+    ],
+    "units": "Issuer x underlying legal/administrative case x affected period. Repeated footnotes, paragraphs, subsidiaries under one case and revisions of the same claim are not independent opportunities.",
+    "materiality": "Compute claim/net-cash bounds relative to filed cash, equity and relevant operating measures when available. No equity-price denominator in this phase. A filed book value or deposit amount is not an expected cash receipt or equity-value estimate."
+  },
+  "source_access": {
+    "metadata": "Ten current SEC submissions JSON files captured successfully; hashes and exact paired filing URLs above.",
+    "original_bodies": "Registration resolves URLs only. Direct SEC Archive tests in prior audit returned403 although web research could read originals. Full reproducible body capture is an unmet gate.",
+    "identity": "Use existing configured truthful SEC collector identity; this protocol changes no header, identity, credential or user setting. Missing contact details must be resolved through normal configuration before scaled collection.",
+    "rate": "Global maximum10 requests/second per SEC guidance; pilot target at most 1 request/second, one bounded pass with cache. No auto-retry on 403/429.",
+    "allowed_sources": [
+      "SEC originals",
+      "Issuer investor-relations-hosted copies explicitly linked to the same filing/accession and report period"
+    ],
+    "fallback_rule": "An official issuer copy may be captured with separate URL/hash/provenance and compared to SEC indexing; never mark it original SEC bytes. Search snippets are not full-document coverage. A 403 remains a recorded failure; no proxy or identity rotation.",
+    "crawl_plan": [
+      "Reuse the10 metadata files; verify report/accession/form identities and amendments.",
+      "Attempt20 specified original full financial documents under existing identity. Capture request/response/local receipt times, headers, content type and SHA256; stop on host-level access denial.",
+      "For blocked documents record access failure and, if an explicitly linked official issuer copy exists, capture it with distinct provenance.",
+      "Parse HTML without losing tables, currency/scale, negative signs, redlines or footnote links. Preserve all paragraphs with stable offsets and hashes.",
+      "Review all financial-statement notes, legal proceedings and liquidity context, not keyword hits alone. Keyword hits support the baseline and human review; reject audit samples test recall."
+    ]
+  },
+  "model_and_evaluation": {
+    "paid_calls_in_registration": 0,
+    "future_live_calls": "Separate finite budgeted manifest required under existing project provider guards. No live model calls are authorized by this protocol file alone.",
+    "question_families": [
+      "Passage relates to direct cash claim versus indirect market exposure.",
+      "Claimant/payer/beneficiary and subsidiary link.",
+      "Outstanding versus received/paid versus contingent/unquantified.",
+      "Amount, currency, units, gross/net, interest, recognized income versus cash.",
+      "Legal case or agency and unresolved decision/liquidation/refund trigger.",
+      "Prior/current change and whether already disclosed.",
+      "Exceptions,offsetting obligations,uncertain attribution or contradictory evidence."
+    ],
+    "comparators": [
+      "Deterministic keywords + section-aware extraction/prior diffs",
+      "Cheap conventional model on the same source documents",
+      "Jev dense passage questions plus bounded reasoner review"
+    ],
+    "cost_rule": "Equal total cost comparisons count discovery, parsing, all model stages, rejected passages and manual/agent review; do not compare Jev question count to a tiny retrieved baseline as pure interpretation accuracy.",
+    "labels": "Source-grounded agent review is development labeling, not human gold. Independently adjudicate candidate positives and a deterministic sample of rejected spans. Disagreement stays unresolved.",
+    "metrics": [
+      "All10-issuer disposition counts and all 20document access/parse coverage",
+      "Correct direct-current-quantified-unresolved case recall/precision and citation fidelity",
+      "Unknown and unsupported-absence rates",
+      "Incremental cases versus prior quarter and duplicate-case count",
+      "Total cost/time per fully reviewed issuer and independently verified case"
+    ],
+    "probabilities": "Preserve raw probability outputs and calibration errors; answer probabilities are not probabilities of profit and are not multiplied into a trade probability."
+  },
+  "decision_gates": {
+    "source_gate": "At least8of10complete paired documents, with all 10 remaining in denominator and no silent exclusions, before interpreting cross-issuer yield. Below this threshold solve access or stop.",
+    "economic_gate": "Every qualifying case must pass current outstanding amount + direct issuer link + unresolved trigger. Unknown net economics remains unknown, never forced positive.",
+    "breadth_gate": "To justify a broader claim-specific build, target at least3 distinct qualifying cases across3 issuers including at least2 industry-comparison issuers. This is an operational pilot gate, not statistical evidence of alpha. If missed, report sparse yield and consider the financing fallback without revising thresholds after seeing outcomes.",
+    "negative_control_gate": "Report whether at least2 industry-comparison issuers are independently reviewed as no qualifying disclosed claim. If not, do not fabricate negatives; future expansion requires a new industry/date sampling protocol.",
+    "model_gate": "Do not claim Jev advantage unless it improves cost-adjusted full-case coverage against both comparators with matched evidence and review effort.",
+    "price_gate": "No prices or returns in this registration. Any next price test requires frozen source-time, decision, position/execution/cost and event-grouping rules, separate from source labels.",
+    "stop_conditions": [
+      "Current disclosures only describe completed historical cash receipts.",
+      "Amounts cannot be attributed or bounded at issuer level.",
+      "No reliable original/official full-document capture.",
+      "All apparent cases are one reused mechanism or duplicated quarterly balances."
+    ]
+  },
+  "candidate_frequency": {
+    "known_at_registration": "10 paired issuer reviews and20 core filings. Eligible currentclaimyield is unknown and may be zero. Three known seeds are not an estimate of prevalence.",
+    "source_refresh_rough_scale": "For this10-issuer cohort, roughly 40 periodic financial updates/year is an operating-workload scale if quarterly reporting continues. It is not a count of new legal triggers, new claims or independent tradable events; filings are seasonally clustered.",
+    "frequency_measure": "Report qualifyingdistinctcasecount/10-issuers, newlychangedcasecount/10 pairs and unresolvedtriggercount separately. Do not annualize this convenience snapshot into an alpha opportunity rate."
+  },
+  "primary_references": [
+    {
+      "title": "SEC submissions API and timing",
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+    },
+    {
+      "title": "SEC original-document access and fair access",
+      "url": "https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data"
+    },
+    {
+      "title": "Tenaris current full interim financial statements",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326005340/f6k_080526.htm"
+    },
+    {
+      "title": "MasterBrand current issuer presentation stating completed American Woodmark merger",
+      "url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000070/q22026investorpresentati.htm"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "core-daily-diagnostic-v1",
+  "experiment_id": "CORE-delayed-daily-dev-v1",
+  "registered_at": "2026-09-19T00:45:51.762266+00:00",
+  "status": "frozen_before_predictions_and_prices",
+  "selection_sha256": "4324126498e0f6f8f22a9e0acaebe9db6ff3485b7e78b087ce93dfb49d6dd0ac",
+  "prediction_manifest_sha256": "bf208837732c733ff19e871bd674b1559c0087aa3e294ccce84cdc561ce036b6",
+  "document_ids": [
+    "2015-16067",
+    "2015-18125",
+    "2015-28455",
+    "2015-29721",
+    "2016-17557",
+    "2016-20429",
+    "2016-27327",
+    "2017-01272",
+    "2019-12609",
+    "2020-13642",
+    "2021-17793",
+    "2021-26341",
+    "2024-10643",
+    "2025-08163",
+    "2025-21761",
+    "2025-23430",
+    "2026-00191",
+    "2026-00193",
+    "2026-06449",
+    "2026-09903"
+  ],
+  "selected": [
+    {
+      "document_id": "2015-16067",
+      "publication_date": "2015-06-30"
+    },
+    {
+      "document_id": "2015-18125",
+      "publication_date": "2015-07-24"
+    },
+    {
+      "document_id": "2015-28455",
+      "publication_date": "2015-11-06"
+    },
+    {
+      "document_id": "2015-29721",
+      "publication_date": "2015-11-20"
+    },
+    {
+      "document_id": "2016-17557",
+      "publication_date": "2016-07-25"
+    },
+    {
+      "document_id": "2016-20429",
+      "publication_date": "2016-08-25"
+    },
+    {
+      "document_id": "2016-27327",
+      "publication_date": "2016-11-14"
+    },
+    {
+      "document_id": "2017-01272",
+      "publication_date": "2017-01-23"
+    },
+    {
+      "document_id": "2019-12609",
+      "publication_date": "2019-06-14"
+    },
+    {
+      "document_id": "2020-13642",
+      "publication_date": "2020-06-24"
+    },
+    {
+      "document_id": "2021-17793",
+      "publication_date": "2021-08-19"
+    },
+    {
+      "document_id": "2021-26341",
+      "publication_date": "2021-12-06"
+    },
+    {
+      "document_id": "2024-10643",
+      "publication_date": "2024-05-15"
+    },
+    {
+      "document_id": "2025-08163",
+      "publication_date": "2025-05-09"
+    },
+    {
+      "document_id": "2025-21761",
+      "publication_date": "2025-12-02"
+    },
+    {
+      "document_id": "2025-23430",
+      "publication_date": "2025-12-19"
+    },
+    {
+      "document_id": "2026-00191",
+      "publication_date": "2026-01-08"
+    },
+    {
+      "document_id": "2026-00193",
+      "publication_date": "2026-01-08"
+    },
+    {
+      "document_id": "2026-06449",
+      "publication_date": "2026-04-02"
+    },
+    {
+      "document_id": "2026-09903",
+      "publication_date": "2026-05-18"
+    }
+  ],
+  "symbols": [
+    "NUE",
+    "STLD"
+  ],
+  "benchmark": "SPY",
+  "arms": [
+    "jev",
+    "baseline",
+    "always_long",
+    "cash"
+  ],
+  "model_policy": {
+    "request_pack": "research/benchmarks/daily-channel-questions.v1.json",
+    "frozen_input": "data/daily-diagnostic-v1/prediction-manifest.json",
+    "long_rule": "Choose long only when domestic_producer_channel selects positive AND that option has raw probability >= 0.70; all other valid outputs mean cash.",
+    "positive_probability_threshold": 0.7,
+    "threshold_is_calibrated": false,
+    "confidence_statistic_used": false,
+    "failures": "unknown; preserve every source and arm; no automatic uncertain retries",
+    "provider_phase_budget_usd": 2,
+    "source_selection": "Fixed 10,000-byte keyword-neighborhood current-source evidence for both models; no returns, manually transcribed tables or later issuer exposures supplied."
+  },
+  "calendar_policy": "Use SPY daily dates as the observed session calendar. Validate currency and exchange timezone. Entry is the first session close strictly after Federal Register publication date; exit is five sessions after entry. Never move entry because an issuer price is missing.",
+  "horizon_sessions": 5,
+  "primary_cost_bps": 25,
+  "cost_scenarios_bps": [
+    10,
+    25,
+    50
+  ],
+  "cost_interpretation": "Unverified illustrative round-trip equity basket costs, not measured executable spreads or data, broker, hedge or borrow costs. Cash has zero cost.",
+  "return_definition": "Equal-weight mean of NUE and STLD adjusted-close returns. Subtract SPY return for a descriptive market-relative comparison; no hedge position or hedge cost is implied.",
+  "primary_reporting": "Mean contribution across all 20 documents, including valid cash observations as zero. Any required model or price failure makes the primary aggregate inconclusive; means conditional on computable rows are secondary.",
+  "dependence": "Report per-document results and transitive clusters of overlapping windows. Cluster means of document contributions are descriptive, not simulated capital allocations or independent causal episodes. No annualized Sharpe, p-values or compounded portfolio.",
+  "directions": "Long-only primary rule. No short signal, order or borrow claim.",
+  "data_provider": "Yahoo Finance public daily chart responses if accessible. Archive response bytes and URLs. Adjustment documentation: https://help.yahoo.com/kb/SLN28256.html",
+  "price_data_requested": false,
+  "prices_opened": false,
+  "limitations": [
+    "Historical development association proxy, not an as-of strategy backtest or held-out alpha.",
+    "Current archived source versions and contemporary models can contain hindsight.",
+    "Historical issuer exposure and first-public availability are not fully verified.",
+    "Federal Register publication often follows earlier announcements; this tests only the delayed publication window.",
+    "One horizon and fixed threshold, with no modifications after prices. The tiny dependent cohort does not establish general profitability.",
+    "Adjusted closes are not executable quotes; spreads and realistic trading costs remain unverified."
+  ],
+  "interpretation_rule": "Positive Jev results above both controls only earn an independent prospective or larger locked study. Nonpositive primary market-relative Jev contribution after illustrative costs means no financial evidence for this frozen rule. Preserve the result and stop tuning CORE on this sample.",
+  "formatting_revision_of_sha256": "eb73575e6118866adaf82780b0afda7ad454e143dad46b9ed1d9e88219a6fde1"
+}

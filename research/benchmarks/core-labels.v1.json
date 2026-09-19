@@ -1,0 +1,407 @@
+{
+  "schema_version": "benchmark_labels_v1",
+  "created_date": "2026-09-18",
+  "question_pack": "research/jev-core-question-pack.v1.json",
+  "purpose": "Small agent-reviewed development sanity set for evidence interpretation and benchmark plumbing. Not human ground truth, independent validation, a holdout, or financial-outcome labels.",
+  "selection_policy": "Purposive selection from the existing 20 archived evidence packets: straightforward controls plus scheduling, partial rescission, and assessment/deposit distinctions. No market prices or subsequent returns consulted.",
+  "limitations": [
+    "Twelve correlated document-question labels across eight documents do not estimate generalization, precision, calibration, or alpha.",
+    "Labels and the source interpretation were produced by an agent and remain subject to independent domain review.",
+    "Selection used visible documents and question definitions; future tuning against these labels makes them unsuitable as a holdout.",
+    "Underlying archived text was retrieved in 2026; the evidence manifests do not verify that this exact content version was available at historical candidate timestamps.",
+    "Legal interpretation labels do not establish market surprise, economic materiality to an issuer, or profitable execution."
+  ],
+  "excerpt_policy": "Each excerpt consists of exact archived passage text joined with newline characters in the listed passage_id order; source_sha256 is inherited from its archived evidence manifest.",
+  "records": [
+    {
+      "document_id": "2015-16067",
+      "question_id": "decision_finality",
+      "expected": "not_a_decision",
+      "evidence_packet_path": "data/evidence-v2/2015-16067.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/516/067.txt",
+          "source_sha256": "073089f3b31a471f5830651212d53bdae80ee34b412358449501155a305b93c7",
+          "passage_ids": [
+            "073089f3b31a471f:p0005",
+            "073089f3b31a471f:p0006"
+          ],
+          "excerpt": "Certain Corrosion-Resistant Steel Products from the People’s Republic of China, India, Italy, the\nRepublic of Korea, and Taiwan: Initiation of Countervailing Duty Investigations"
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/516/067.txt",
+          "source_sha256": "073089f3b31a471f5830651212d53bdae80ee34b412358449501155a305b93c7",
+          "passage_ids": [
+            "073089f3b31a471f:p0099",
+            "073089f3b31a471f:p0100",
+            "073089f3b31a471f:p0101",
+            "073089f3b31a471f:p0102"
+          ],
+          "excerpt": "As discussed in the preamble to the Department’s regulations,9 we are setting aside a\nperiod for interested parties to raise issues regarding product coverage (scope). The period for\nscope comments is intended to provide the Department with ample opportunity to consider all\ncomments and to consult with parties prior to the issuance of the preliminary determinations. If"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The operative event initiates investigations and opens scope comments before preliminary determinations. Petition allegations and initiation findings are not a final or preliminary merits determination under this question schema."
+    },
+    {
+      "document_id": "2015-18125",
+      "question_id": "document_authority",
+      "expected": "agency_decision",
+      "evidence_packet_path": "data/evidence-v2/2015-18125.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/518/125.txt",
+          "source_sha256": "9307be3ed6447a81608dabcddf0dd13f32e4f50a82bdfce8a18dee22a4779dad",
+          "passage_ids": [
+            "9307be3ed6447a81:p0005",
+            "9307be3ed6447a81:p0006",
+            "9307be3ed6447a81:p0007",
+            "9307be3ed6447a81:p0008",
+            "9307be3ed6447a81:p0009"
+          ],
+          "excerpt": "On the basis of the record1 developed in the subject investigations, the United States\nInternational Trade Commission (“Commission”) determines, pursuant to the Tariff Act of 1930\n(“the Act”), that there is a reasonable indication that an industry in the United States is\nthreatened with material injury by reason of imports of certain corrosion-resistant steel\nproducts from China, India, Italy, Korea, and Taiwan, provided for in subheadings 7210.30.00,"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The Commission states its own reasonable-indication injury determination; allegations about dumping or subsidies are not being labeled as Commerce findings."
+    },
+    {
+      "document_id": "2015-18125",
+      "question_id": "decision_finality",
+      "expected": "preliminary",
+      "evidence_packet_path": "data/evidence-v2/2015-18125.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/518/125.txt",
+          "source_sha256": "9307be3ed6447a81608dabcddf0dd13f32e4f50a82bdfce8a18dee22a4779dad",
+          "passage_ids": [
+            "9307be3ed6447a81:p0001",
+            "9307be3ed6447a81:p0002",
+            "9307be3ed6447a81:p0003",
+            "9307be3ed6447a81:p0004",
+            "9307be3ed6447a81:p0005",
+            "9307be3ed6447a81:p0006",
+            "9307be3ed6447a81:p0007",
+            "9307be3ed6447a81:p0008"
+          ],
+          "excerpt": "INTERNATIONAL TRADE COMMISSION\n[Investigation Nos. 701-TA-534-538 and 731-TA-1274-1278 (Preliminary)]\nCertain Corrosion-Resistant Steel Products from China, India, Italy, Korea, and Taiwan\nDETERMINATIONS\nOn the basis of the record1 developed in the subject investigations, the United States\nInternational Trade Commission (“Commission”) determines, pursuant to the Tariff Act of 1930\n(“the Act”), that there is a reasonable indication that an industry in the United States is\nthreatened with material injury by reason of imports of certain corrosion-resistant steel"
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/518/125.txt",
+          "source_sha256": "9307be3ed6447a81608dabcddf0dd13f32e4f50a82bdfce8a18dee22a4779dad",
+          "passage_ids": [
+            "9307be3ed6447a81:p0017",
+            "9307be3ed6447a81:p0018",
+            "9307be3ed6447a81:p0019",
+            "9307be3ed6447a81:p0020"
+          ],
+          "excerpt": "COMMENCEMENT OF FINAL PHASE INVESTIGATIONS\nPursuant to section 207.18 of the Commission’s rules, the Commission also gives notice\nof the commencement of the final phase of its investigations. The Commission will issue a final\nphase notice of scheduling, which will be published in the Federal Register as provided in"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The investigation is explicitly preliminary and the Commission finds a reasonable indication of threatened injury. Commencement of a final phase does not make this an affirmative final injury determination."
+    },
+    {
+      "document_id": "2015-28455",
+      "question_id": "decision_finality",
+      "expected": "preliminary",
+      "evidence_packet_path": "data/evidence-v2/2015-28455.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/528/455.txt",
+          "source_sha256": "c6cb86af7001a145369d56e4d923142de635d8e69588bdfc99768dab3e250f82",
+          "passage_ids": [
+            "c6cb86af7001a145:p0060",
+            "c6cb86af7001a145:p0061",
+            "c6cb86af7001a145:p0062",
+            "c6cb86af7001a145:p0063",
+            "c6cb86af7001a145:p0064",
+            "c6cb86af7001a145:p0065"
+          ],
+          "excerpt": "For this preliminary determination, we have calculated a de minimis countervailable\nsubsidy rate for each individually investigated producer/exporter of the subject merchandise.\nConsistent with section 703(b)(4)(A) of the Act, we are disregarding these rates and\npreliminarily determine that no countervailable subsides are being provided to\nproducers/exporters of the subject merchandise in Taiwan. Because the rates calculated for the\nindividually investigated companies are de minimis, the all others rate is also de minimis."
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/528/455.txt",
+          "source_sha256": "c6cb86af7001a145369d56e4d923142de635d8e69588bdfc99768dab3e250f82",
+          "passage_ids": [
+            "c6cb86af7001a145:p0097",
+            "c6cb86af7001a145:p0098",
+            "c6cb86af7001a145:p0099",
+            "c6cb86af7001a145:p0100",
+            "c6cb86af7001a145:p0101"
+          ],
+          "excerpt": "Memorandum, we have preliminarily determined that countervailable subsidies are not being\nprovided to producers and exporters of corrosion-resistant steel from Taiwan and, thus, we are\nissuing a preliminary negative countervailing duty determination. Accordingly, we also\npreliminarily determine that critical circumstances do not exist with regard to imports of\ncorrosion-resistant steel from Taiwan."
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The current operative findings are explicitly preliminary and negative. References to critical-circumstances findings do not convert this into a final ruling."
+    },
+    {
+      "document_id": "2015-29721",
+      "question_id": "decision_finality",
+      "expected": "not_a_decision",
+      "evidence_packet_path": "data/evidence-v2/2015-29721.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/529/721.txt",
+          "source_sha256": "9180490b00a0b886cb0e579d4d28cd8a6179fdef7861fdfb5ded51f9b67f4b19",
+          "passage_ids": [
+            "9180490b00a0b886:p0028",
+            "9180490b00a0b886:p0029",
+            "9180490b00a0b886:p0030",
+            "9180490b00a0b886:p0031",
+            "9180490b00a0b886:p0032",
+            "9180490b00a0b886:p0033",
+            "9180490b00a0b886:p0034",
+            "9180490b00a0b886:p0035",
+            "9180490b00a0b886:p0036",
+            "9180490b00a0b886:p0037"
+          ],
+          "excerpt": "Alignment With AD Final Determination\nOn November 10, 2015, in accordance with section 705(a)(1) of the Tariff Act of 1930,\nas amended (“the Act”), United States Steel Corporation; Nucor Corporation; Steel Dynamics,\nInc.; ArcelorMittal USA, LLC; AK Steel Corp.; and, California Steel Industries (collectively,\n“Petitioners”) requested an alignment of the final CVD determinations with the final AD\ndeterminations of corrosion-resistant steel from India, Italy, the PRC, Korea, and Taiwan.\nTherefore, in accordance with section 705(a)(1) of the Act and 19 CFR 351.210(b)(4)(i), we are\naligning the final CVD determinations with the final AD determinations. Consequently, the final\nCVD determinations will be issued on the same date as the final AD determinations, which are\ncurrently scheduled to be issued no later than March 5, 2016, unless postponed.3"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "This notice aligns the dates on which future final determinations will be issued. Repeated use of the word final describes scheduled future decisions, not a current merits determination."
+    },
+    {
+      "document_id": "2015-29721",
+      "question_id": "document_authority",
+      "expected": "procedural_notice",
+      "evidence_packet_path": "data/evidence-v2/2015-29721.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/529/721.txt",
+          "source_sha256": "9180490b00a0b886cb0e579d4d28cd8a6179fdef7861fdfb5ded51f9b67f4b19",
+          "passage_ids": [
+            "9180490b00a0b886:p0028",
+            "9180490b00a0b886:p0029",
+            "9180490b00a0b886:p0030",
+            "9180490b00a0b886:p0031",
+            "9180490b00a0b886:p0032",
+            "9180490b00a0b886:p0033",
+            "9180490b00a0b886:p0034",
+            "9180490b00a0b886:p0035",
+            "9180490b00a0b886:p0036",
+            "9180490b00a0b886:p0037"
+          ],
+          "excerpt": "Alignment With AD Final Determination\nOn November 10, 2015, in accordance with section 705(a)(1) of the Tariff Act of 1930,\nas amended (“the Act”), United States Steel Corporation; Nucor Corporation; Steel Dynamics,\nInc.; ArcelorMittal USA, LLC; AK Steel Corp.; and, California Steel Industries (collectively,\n“Petitioners”) requested an alignment of the final CVD determinations with the final AD\ndeterminations of corrosion-resistant steel from India, Italy, the PRC, Korea, and Taiwan.\nTherefore, in accordance with section 705(a)(1) of the Act and 19 CFR 351.210(b)(4)(i), we are\naligning the final CVD determinations with the final AD determinations. Consequently, the final\nCVD determinations will be issued on the same date as the final AD determinations, which are\ncurrently scheduled to be issued no later than March 5, 2016, unless postponed.3"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The agency grants alignment of determination schedules. The operative content is scheduling rather than substantive subsidy or dumping treatment."
+    },
+    {
+      "document_id": "2015-29721",
+      "question_id": "treatment_time_basis",
+      "expected": "neither",
+      "evidence_packet_path": "data/evidence-v2/2015-29721.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/529/721.txt",
+          "source_sha256": "9180490b00a0b886cb0e579d4d28cd8a6179fdef7861fdfb5ded51f9b67f4b19",
+          "passage_ids": [
+            "9180490b00a0b886:p0028",
+            "9180490b00a0b886:p0029",
+            "9180490b00a0b886:p0030",
+            "9180490b00a0b886:p0031",
+            "9180490b00a0b886:p0032",
+            "9180490b00a0b886:p0033",
+            "9180490b00a0b886:p0034",
+            "9180490b00a0b886:p0035",
+            "9180490b00a0b886:p0036",
+            "9180490b00a0b886:p0037"
+          ],
+          "excerpt": "Alignment With AD Final Determination\nOn November 10, 2015, in accordance with section 705(a)(1) of the Tariff Act of 1930,\nas amended (“the Act”), United States Steel Corporation; Nucor Corporation; Steel Dynamics,\nInc.; ArcelorMittal USA, LLC; AK Steel Corp.; and, California Steel Industries (collectively,\n“Petitioners”) requested an alignment of the final CVD determinations with the final AD\ndeterminations of corrosion-resistant steel from India, Italy, the PRC, Korea, and Taiwan.\nTherefore, in accordance with section 705(a)(1) of the Act and 19 CFR 351.210(b)(4)(i), we are\naligning the final CVD determinations with the final AD determinations. Consequently, the final\nCVD determinations will be issued on the same date as the final AD determinations, which are\ncurrently scheduled to be issued no later than March 5, 2016, unless postponed.3"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The notice changes determination scheduling and states no new forward deposit or retrospective assessment treatment. This label does not assert that procedural timing has no possible market effect."
+    },
+    {
+      "document_id": "2019-12609",
+      "question_id": "document_authority",
+      "expected": "procedural_notice",
+      "evidence_packet_path": "data/evidence-v2/2019-12609.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/201/912/609.txt",
+          "source_sha256": "eea8b587884a721120161ea3d8fe16974c4ac316eb6f63464f40cc2641fe8533",
+          "passage_ids": [
+            "eea8b587884a7211:p0009",
+            "eea8b587884a7211:p0010",
+            "eea8b587884a7211:p0011",
+            "eea8b587884a7211:p0012",
+            "eea8b587884a7211:p0013",
+            "eea8b587884a7211:p0014"
+          ],
+          "excerpt": "SUMMARY: The Department of Commerce (Commerce) received information from U.S.\nCustoms and Border Protection (CBP) relating to the antidumping duty (AD) and\ncountervailing duty (CVD) orders on certain corrosion resistant steel products from the\nRepublic of Korea (Korea). Commerce is providing notice that it is opening a scope segment\nin the proceeding in order to place this information on the record of the case and provide an\nopportunity for interested parties to comment."
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "Commerce opens a scope segment to place CBP information on the record and invite comments. The passage does not itself resolve that scope issue."
+    },
+    {
+      "document_id": "2020-13642",
+      "question_id": "decision_finality",
+      "expected": "final",
+      "evidence_packet_path": "data/evidence-v2/2020-13642.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/013/642.txt",
+          "source_sha256": "c379a0f52bffdb409f2565660d462e6ec65bf047a5c1b2644f5e049163328fd8",
+          "passage_ids": [
+            "c379a0f52bffdb40:p0074"
+          ],
+          "excerpt": "There is now a final court decision with respect to the Trendium Final Scope Ruling."
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/013/642.txt",
+          "source_sha256": "c379a0f52bffdb409f2565660d462e6ec65bf047a5c1b2644f5e049163328fd8",
+          "passage_ids": [
+            "c379a0f52bffdb40:p0090",
+            "c379a0f52bffdb40:p0091",
+            "c379a0f52bffdb40:p0092",
+            "c379a0f52bffdb40:p0093",
+            "c379a0f52bffdb40:p0094",
+            "c379a0f52bffdb40:p0095",
+            "c379a0f52bffdb40:p0096"
+          ],
+          "excerpt": "Therefore, Commerce is amending its scope ruling and finds that the scope of the Orders does\nnot cover the products addressed in the Final Scope Ruling and the Final Remand Results. The\nperiod to appeal the CIT’s ruling expired on May 18, 2020. Because no parties appealed the\nCIT’s ruling, Commerce will instruct CBP to lift suspension of liquidation of the CORE\ncomponents subject to Trendium’s Scope Request and to liquidate such entries without regard to\nantidumping or countervailing duties. In addition, Commerce will instruct CBP to release any\ncash deposits collected pursuant to the Orders on such entries currently awaiting liquidation."
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "Commerce amends its scope ruling following an unappealed final court decision and directs liquidation without duties plus release of deposits for the specified products."
+    },
+    {
+      "document_id": "2026-09903",
+      "question_id": "treatment_time_basis",
+      "expected": "both",
+      "evidence_packet_path": "data/evidence-v2/2026-09903.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/609/903.txt",
+          "source_sha256": "8272d430454d636cce65011707d3d89eed61ff023b11667f97ecfeb37a7ab925",
+          "passage_ids": [
+            "8272d430454d636c:p0117",
+            "8272d430454d636c:p0118",
+            "8272d430454d636c:p0119",
+            "8272d430454d636c:p0120",
+            "8272d430454d636c:p0121",
+            "8272d430454d636c:p0122"
+          ],
+          "excerpt": "Because the respondents’ weighted-average dumping margins or importer-specific\nassessment rates are zero or de minimis in the final results of review, we intend to instruct CBP\nto liquidate entries without regard to antidumping duties.9 The final results of this administrative\nreview shall be the basis for the assessment of antidumping duties on entries of merchandise\ncovered by the final results of this review and for future deposits of estimated duties, where\napplicable.10"
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/609/903.txt",
+          "source_sha256": "8272d430454d636cce65011707d3d89eed61ff023b11667f97ecfeb37a7ab925",
+          "passage_ids": [
+            "8272d430454d636c:p0131",
+            "8272d430454d636c:p0132",
+            "8272d430454d636c:p0133",
+            "8272d430454d636c:p0134",
+            "8272d430454d636c:p0135",
+            "8272d430454d636c:p0136",
+            "8272d430454d636c:p0137"
+          ],
+          "excerpt": "Cash Deposit Requirements\nThe following cash deposit requirements will be effective upon publication of the final\nresults of administrative review for all shipments of subject merchandise entered, or withdrawn\nfrom warehouse, for consumption on, or after, the publication date of the final results of review,\nas provided for by section 751(a)(2)(C) of the Act: (1) the cash deposit rates for the companies\nidentified above in the “Final Results of Review” section will be equal to the company-specific\nweighted-average dumping margin established in the final results of this administrative review;"
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The final results govern assessment on entries covered by the review and future cash deposits for shipments entered on or after publication. This is not exclusively retrospective despite the historical review period."
+    },
+    {
+      "document_id": "2026-09903",
+      "question_id": "exception_limits_headline",
+      "expected": true,
+      "evidence_packet_path": "data/evidence-v2/2026-09903.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/609/903.txt",
+          "source_sha256": "8272d430454d636cce65011707d3d89eed61ff023b11667f97ecfeb37a7ab925",
+          "passage_ids": [
+            "8272d430454d636c:p0117",
+            "8272d430454d636c:p0118",
+            "8272d430454d636c:p0119",
+            "8272d430454d636c:p0120",
+            "8272d430454d636c:p0121",
+            "8272d430454d636c:p0122",
+            "8272d430454d636c:p0123",
+            "8272d430454d636c:p0124",
+            "8272d430454d636c:p0125",
+            "8272d430454d636c:p0126",
+            "8272d430454d636c:p0127"
+          ],
+          "excerpt": "Because the respondents’ weighted-average dumping margins or importer-specific\nassessment rates are zero or de minimis in the final results of review, we intend to instruct CBP\nto liquidate entries without regard to antidumping duties.9 The final results of this administrative\nreview shall be the basis for the assessment of antidumping duties on entries of merchandise\ncovered by the final results of this review and for future deposits of estimated duties, where\napplicable.10\nIn accordance with Commerce’s “automatic assessment” practice, for entries of subject\nmerchandise during the POR produced by the respondents for which they did not know that the\nmerchandise was destined for the United States, we will instruct CBP to liquidate such entries at\nthe all-others rate of 11.04 percent11 if there is no rate for the intermediate company(ies)\ninvolved in the transaction.12"
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/609/903.txt",
+          "source_sha256": "8272d430454d636cce65011707d3d89eed61ff023b11667f97ecfeb37a7ab925",
+          "passage_ids": [
+            "8272d430454d636c:p0149",
+            "8272d430454d636c:p0150",
+            "8272d430454d636c:p0151",
+            "8272d430454d636c:p0152",
+            "8272d430454d636c:p0153",
+            "8272d430454d636c:p0154",
+            "8272d430454d636c:p0155"
+          ],
+          "excerpt": "company-specific rate published for the most recent period; (3) if the exporter is not a firm\ncovered in this review, a prior review, or the original investigation, but the producer has been\ncovered in a prior complete segment of this proceeding, then the cash deposit rate will be the rate\nestablished for the most recent period for the producer of the merchandise; (4) the cash deposit\nrate for all other manufacturers or exporters will continue to be 11.04 percent,13 the all-others\nrate from the Third Amended Final Determination. These cash deposit requirements, when\nimposed, shall remain in effect until further notice."
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The apparent zero/de-minimis result for reviewed respondents is not a universal zero rate: the source describes an automatic-assessment exception for certain entries and preserves the 11.04 percent all-others deposit rate. Materiality here means narrowing the legal rate applicability, not proving material company earnings exposure."
+    },
+    {
+      "document_id": "2026-00193",
+      "question_id": "decision_finality",
+      "expected": "mixed",
+      "evidence_packet_path": "data/evidence-v2/2026-00193.json",
+      "evidence": [
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/600/193.txt",
+          "source_sha256": "5311c4f37cb098dd6a21f7c0458e49cd3a5b7adadac1a326cc06bb02245789f3",
+          "passage_ids": [
+            "5311c4f37cb098dd:p0010",
+            "5311c4f37cb098dd:p0011",
+            "5311c4f37cb098dd:p0012",
+            "5311c4f37cb098dd:p0013"
+          ],
+          "excerpt": "SUMMARY: The U.S. Department of Commerce (Commerce) preliminarily determines that\ncertain corrosion-resistant steel products (CORE) from Taiwan are not being sold in the United\nStates at below normal value during the period of review (POR), July 1, 2023, through June 30,\n2024. We invite interested parties to comment on these preliminary results."
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/600/193.txt",
+          "source_sha256": "5311c4f37cb098dd6a21f7c0458e49cd3a5b7adadac1a326cc06bb02245789f3",
+          "passage_ids": [
+            "5311c4f37cb098dd:p0095",
+            "5311c4f37cb098dd:p0096"
+          ],
+          "excerpt": "respect to these six companies. As a result, we are rescinding this review, in part, with respect to\nthe six companies which had no entries during the POR."
+        },
+        {
+          "source_url": "https://www.federalregister.gov/public-inspection/raw_text/202/600/193.txt",
+          "source_sha256": "5311c4f37cb098dd6a21f7c0458e49cd3a5b7adadac1a326cc06bb02245789f3",
+          "passage_ids": [
+            "5311c4f37cb098dd:p0222",
+            "5311c4f37cb098dd:p0223",
+            "5311c4f37cb098dd:p0224"
+          ],
+          "excerpt": "For the six companies rescinded from review, antidumping duties shall be assessed at a\nrate equal to the cash deposit of estimated antidumping duties required at the time of entry, or\nwithdrawal from warehouse, for consumption, in accordance with 19 CFR 351.212(c)(1)(i)."
+        }
+      ],
+      "label_origin": "agent_reviewed",
+      "split": "development",
+      "rationale": "The document invites comment on preliminary results for reviewed companies while currently rescinding review for six others and specifying their assessment treatment. The different operative parts therefore have different finalities."
+    }
+  ]
+}

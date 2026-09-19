@@ -1,0 +1,62 @@
+{
+  "schema_version": "bounded-family-census-v1",
+  "retrieved_at": "2026-09-19T00:16:31.610044+00:00",
+  "source": "https://www.federalregister.gov/api/v1/documents.json",
+  "query": {
+    "term": "\"oil country tubular goods\"",
+    "publication_date_gte": "2024-01-01",
+    "publication_date_lte": "2026-09-18",
+    "per_page": 1000
+  },
+  "raw_snapshot": "research/data/octg-fr-discovery-2026-09-18.json",
+  "raw_sha256": "0dfb0ede4baaac20e517ef8b5a9ecc567588ca27f79c40a019b18ad092a00744",
+  "count": 116,
+  "title_exact_phrase_count": 57,
+  "argentina_or_mexico_title_count": 6,
+  "candidate_documents": [
+    {
+      "document_number": "2024-11726",
+      "title": "Oil Country Tubular Goods From Argentina, Mexico, and Russia",
+      "publication_date": "2024-05-29",
+      "html_url": "https://www.federalregister.gov/documents/2024/05/29/2024-11726/oil-country-tubular-goods-from-argentina-mexico-and-russia"
+    },
+    {
+      "document_number": "2024-28476",
+      "title": "Certain Oil Country Tubular Goods From Mexico: Preliminary Results and Recission, In Part, of Antidumping Duty Administrative Review; 2022-2023",
+      "publication_date": "2024-12-05",
+      "html_url": "https://www.federalregister.gov/documents/2024/12/05/2024-28476/certain-oil-country-tubular-goods-from-mexico-preliminary-results-and-recission-in-part-of"
+    },
+    {
+      "document_number": "2024-28859",
+      "title": "Oil Country Tubular Goods From Argentina: Preliminary Results of Antidumping Duty Administrative Review; 2022-2023",
+      "publication_date": "2024-12-09",
+      "html_url": "https://www.federalregister.gov/documents/2024/12/09/2024-28859/oil-country-tubular-goods-from-argentina-preliminary-results-of-antidumping-duty-administrative"
+    },
+    {
+      "document_number": "2025-10654",
+      "title": "Oil Country Tubular Goods From Argentina: Final Results of Antidumping Duty Administrative Review; 2022-2023",
+      "publication_date": "2025-06-12",
+      "html_url": "https://www.federalregister.gov/documents/2025/06/12/2025-10654/oil-country-tubular-goods-from-argentina-final-results-of-antidumping-duty-administrative-review"
+    },
+    {
+      "document_number": "2025-17071",
+      "title": "Certain Oil Country Tubular Goods From Mexico: Final Results of Antidumping Duty Administrative Review; 2022-2023",
+      "publication_date": "2025-09-05",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/05/2025-17071/certain-oil-country-tubular-goods-from-mexico-final-results-of-antidumping-duty-administrative"
+    },
+    {
+      "document_number": "2026-09464",
+      "title": "Certain Oil Country Tubular Goods From Mexico: Preliminary Results and Recission, in Part, of Antidumping Duty Administrative Review; 2023-2024",
+      "publication_date": "2026-05-13",
+      "html_url": "https://www.federalregister.gov/documents/2026/05/13/2026-09464/certain-oil-country-tubular-goods-from-mexico-preliminary-results-and-recission-in-part-of"
+    }
+  ],
+  "complete_for_query": true,
+  "complete_for_economic_family": false,
+  "limitations": [
+    "Full-text query also includes procedural omnibus notices; titles miss some relevant events.",
+    "Country rows and stage notices are not independent economic episodes.",
+    "No source earliest-public timing or company cash-flow materiality review completed by this census.",
+    "No market returns inspected."
+  ]
+}

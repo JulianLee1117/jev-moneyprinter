@@ -1,0 +1,182 @@
+{
+  "schema_version": "readthrough-synthetic-fixtures-v1",
+  "synthetic": true,
+  "purpose": "Offline preparation example containing only invented companies, dates, budgets and original source text. Not historical evidence, model performance data, financial signals or an alpha experiment.",
+  "source_notice": "All example.invalid URLs are intentional placeholders and must not be fetched. Expected labels and route outcomes illustrate the schema; they are not observed model answers.",
+  "fixtures": [
+    {
+      "fixture_id": "synthetic-new-wfe-increase",
+      "issuer": "Invented Example Foundry A (not a real company)",
+      "sources": [
+        {
+          "source_id": "synthetic-a-prior",
+          "url": "https://example.invalid/foundry-a/prior-guidance",
+          "date": "2025-01-15",
+          "role": "prior",
+          "excerpt": "SYNTHETIC EXAMPLE. For fiscal 2025 we plan gross capital purchases of USD 12 billion: USD 9 billion for wafer-fabrication equipment and USD 3 billion for factory construction. These are planned gross purchases before subtracting grants or partner reimbursements. This is our complete guidance for these categories."
+        },
+        {
+          "source_id": "synthetic-a-current",
+          "url": "https://example.invalid/foundry-a/revised-guidance",
+          "date": "2025-04-15",
+          "role": "current",
+          "excerpt": "SYNTHETIC EXAMPLE. We are revising our fiscal 2025 gross capital-purchase plan from the January guidance. Total purchases rise to USD 14 billion. Wafer-fabrication equipment purchases rise from USD 9 billion to USD 11 billion, while factory construction remains USD 3 billion. The equipment increase is newly approved and was not included in the January plan; no intervening revision was announced. Both releases use the same gross-purchase basis, without offsets for grants or reimbursements. We do not identify equipment suppliers or their revenue schedules."
+        }
+      ],
+      "questions": {
+        "same_period_and_basis": {
+          "type": "choice",
+          "instructions": "Do the prior and current capital-purchase plans cover the same fiscal year and gross-purchase basis?",
+          "criteria": {
+            "yes": "The sources explicitly establish the same period and basis.",
+            "no": "The sources explicitly establish different periods or bases.",
+            "unknown": "The comparison is not established."
+          }
+        },
+        "headline_revision": {
+          "type": "choice",
+          "instructions": "What direction of revision to total capital purchases does the current source explicitly state relative to the prior plan?",
+          "criteria": {
+            "increase": "Total capital purchases increase.",
+            "decrease": "Total capital purchases decrease.",
+            "unchanged": "Total capital purchases remain unchanged.",
+            "unknown": "The direction is not established."
+          }
+        },
+        "wfe_revision": {
+          "type": "choice",
+          "instructions": "What direction of revision to wafer-fabrication equipment purchases does the current source explicitly state relative to the prior plan?",
+          "criteria": {
+            "increase": "Wafer-fabrication equipment purchases increase.",
+            "decrease": "Wafer-fabrication equipment purchases decrease.",
+            "unchanged": "Wafer-fabrication equipment purchases remain unchanged.",
+            "unknown": "The direction is not established."
+          }
+        },
+        "new_revision": {
+          "type": "choice",
+          "instructions": "Does the supplied current source explicitly identify this equipment-plan change as newly announced since the prior source, with no intervening revision?",
+          "criteria": {
+            "yes": "The supplied source explicitly identifies a newly announced revision.",
+            "no": "The supplied source says the equipment-plan change was already announced.",
+            "unknown": "Novelty in the supplied history is not established."
+          }
+        }
+      },
+      "expected": {
+        "same_period_and_basis": "yes",
+        "headline_revision": "increase",
+        "wfe_revision": "increase",
+        "new_revision": "yes"
+      },
+      "routes": [
+        {
+          "route_id": "new-positive-wfe-revision",
+          "conditions": {
+            "same_period_and_basis": "yes",
+            "wfe_revision": "increase",
+            "new_revision": "yes"
+          },
+          "expected_status": "supported"
+        },
+        {
+          "route_id": "headline-rise-but-wfe-falls",
+          "conditions": {
+            "same_period_and_basis": "yes",
+            "headline_revision": "increase",
+            "wfe_revision": "decrease"
+          },
+          "expected_status": "rejected"
+        }
+      ],
+      "limitation": "Even the supported route establishes only the meaning of invented spending guidance. It establishes no supplier exposure, market surprise, trade or return."
+    },
+    {
+      "fixture_id": "synthetic-construction-rise-wfe-fall",
+      "issuer": "Invented Example Foundry B (not a real company)",
+      "sources": [
+        {
+          "source_id": "synthetic-b-prior",
+          "url": "https://example.invalid/foundry-b/prior-guidance",
+          "date": "2025-01-20",
+          "role": "prior",
+          "excerpt": "SYNTHETIC EXAMPLE. Our fiscal 2025 gross capital-purchase plan is USD 10 billion. It includes USD 8 billion of wafer-fabrication equipment and USD 2 billion of factory construction. The plan is measured before any grants or reimbursements."
+        },
+        {
+          "source_id": "synthetic-b-current",
+          "url": "https://example.invalid/foundry-b/revised-guidance",
+          "date": "2025-04-20",
+          "role": "current",
+          "excerpt": "SYNTHETIC EXAMPLE. We now raise fiscal 2025 total gross capital purchases from USD 10 billion to USD 13 billion. Factory construction rises from USD 2 billion to USD 7 billion, while wafer-fabrication equipment purchases fall from USD 8 billion to USD 6 billion. This is a newly announced revision to our January plan; there has been no intervening guidance change. The fiscal period and gross-purchase basis are unchanged: both plans measure purchases before subtracting grants or reimbursements. No supplier-specific revenue effect is disclosed."
+        }
+      ],
+      "questions": {
+        "same_period_and_basis": {
+          "type": "choice",
+          "instructions": "Do the prior and current capital-purchase plans cover the same fiscal year and gross-purchase basis?",
+          "criteria": {
+            "yes": "The sources explicitly establish the same period and basis.",
+            "no": "The sources explicitly establish different periods or bases.",
+            "unknown": "The comparison is not established."
+          }
+        },
+        "headline_revision": {
+          "type": "choice",
+          "instructions": "What direction of revision to total capital purchases does the current source explicitly state relative to the prior plan?",
+          "criteria": {
+            "increase": "Total capital purchases increase.",
+            "decrease": "Total capital purchases decrease.",
+            "unchanged": "Total capital purchases remain unchanged.",
+            "unknown": "The direction is not established."
+          }
+        },
+        "wfe_revision": {
+          "type": "choice",
+          "instructions": "What direction of revision to wafer-fabrication equipment purchases does the current source explicitly state relative to the prior plan?",
+          "criteria": {
+            "increase": "Wafer-fabrication equipment purchases increase.",
+            "decrease": "Wafer-fabrication equipment purchases decrease.",
+            "unchanged": "Wafer-fabrication equipment purchases remain unchanged.",
+            "unknown": "The direction is not established."
+          }
+        },
+        "new_revision": {
+          "type": "choice",
+          "instructions": "Does the supplied current source explicitly identify this equipment-plan change as newly announced since the prior source, with no intervening revision?",
+          "criteria": {
+            "yes": "The supplied source explicitly identifies a newly announced revision.",
+            "no": "The supplied source says the equipment-plan change was already announced.",
+            "unknown": "Novelty in the supplied history is not established."
+          }
+        }
+      },
+      "expected": {
+        "same_period_and_basis": "yes",
+        "headline_revision": "increase",
+        "wfe_revision": "decrease",
+        "new_revision": "yes"
+      },
+      "routes": [
+        {
+          "route_id": "new-positive-wfe-revision",
+          "conditions": {
+            "same_period_and_basis": "yes",
+            "wfe_revision": "increase",
+            "new_revision": "yes"
+          },
+          "expected_status": "rejected"
+        },
+        {
+          "route_id": "headline-rise-but-wfe-falls",
+          "conditions": {
+            "same_period_and_basis": "yes",
+            "headline_revision": "increase",
+            "wfe_revision": "decrease"
+          },
+          "expected_status": "supported"
+        }
+      ],
+      "limitation": "This invented example illustrates why a higher total budget does not establish higher equipment purchases. It supplies no market expectations, supplier exposure or financial outcome."
+    }
+  ]
+}

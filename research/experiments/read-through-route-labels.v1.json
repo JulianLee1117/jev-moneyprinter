@@ -1,0 +1,86 @@
+{
+  "schema_version": "read-through-route-labels-v1",
+  "created_date": "2026-09-18",
+  "label_origin": "independent_agent_review_of_registered_fixture_labels",
+  "source_requirement": "Merge only after the source reviewer verifies that the complete submitted excerpts support every constituent categorical label. The original compact excerpts do not meet that requirement.",
+  "purpose": "Source-interpretation and three-valued routing challenges only. Supported means the stated interpretation follows from the conditions; it is not a supplier trade signal, forecast, profit probability or alpha claim.",
+  "expected_status_semantics": "Expected statuses apply to the registered gold categories treated as determinate categorical answers. For native responses, insufficient confidence in any otherwise determinate condition can appropriately turn a supported or rejected route into unresolved. These expected labels must not enter model requests.",
+  "unknown_categories": ["unknown", "not_stated"],
+  "fixtures": [
+    {
+      "fixture_id": "tsmc-2022-q2-q3-timing-capacity",
+      "routes": [
+        {
+          "route_id": "same-year-cut-has-mixed-causes-and-prior-timing-disclosure",
+          "conditions": {
+            "same_period": "yes",
+            "total_revision": "decrease",
+            "reduction_cause": "mixed",
+            "timing_novelty": "yes"
+          },
+          "expected_status": "supported",
+          "expected_condition_states": {
+            "same_period": "true",
+            "total_revision": "true",
+            "reduction_cause": "true",
+            "timing_novelty": "true"
+          },
+          "rationale": "A same-year headline cut is compatible with a mixture of capacity changes and a delivery-timing problem already disclosed. It does not quantify an equipment supplier's lost orders."
+        }
+      ]
+    },
+    {
+      "fixture_id": "micron-2023-q3-q4-construction-wfe-reiteration",
+      "routes": [
+        {
+          "route_id": "higher-total-spending-establishes-new-positive-wfe-demand",
+          "conditions": {
+            "headline_yoy": "up",
+            "wfe_yoy": "up",
+            "supplier_new_demand": "yes"
+          },
+          "expected_status": "rejected",
+          "expected_condition_states": {
+            "headline_yoy": "true",
+            "wfe_yoy": "false",
+            "supplier_new_demand": "false"
+          },
+          "rationale": "The positive total-spending premise is present, but the tools direction and alleged new positive demand inference contradict the registered source interpretation."
+        }
+      ]
+    },
+      {
+      "fixture_id": "intel-2022-q1-q2-net-versus-physical-capex",
+      "routes": [
+        {
+          "route_id": "net-guidance-cut-and-exact-four-billion-wfe-procurement-cut",
+          "conditions": {
+            "net_revision": "down",
+            "physical_wfe_cut": "yes"
+          },
+          "expected_status": "unresolved",
+          "expected_condition_states": {
+            "net_revision": "true",
+            "physical_wfe_cut": "unknown"
+          },
+          "rationale": "The net funding measure falls, but the source does not establish the specified physical WFE procurement reduction. Absence of that evidence must remain unknown."
+        },
+        {
+          "route_id": "net-funding-cut-necessarily-equals-exact-supplier-order-cut",
+          "conditions": {
+            "net_revision": "down",
+            "net_equals_demand": "yes",
+            "physical_wfe_cut": "yes"
+          },
+          "expected_status": "rejected",
+          "expected_condition_states": {
+            "net_revision": "true",
+            "net_equals_demand": "false",
+            "physical_wfe_cut": "unknown"
+          },
+          "rationale": "The necessity claim is contradicted even though the exact procurement amount remains unknown. This specifically tests that one established false condition rejects a conjunction containing another unknown condition."
+        }
+      ]
+    }
+  ]
+}

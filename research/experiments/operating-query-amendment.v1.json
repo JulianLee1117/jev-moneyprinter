@@ -1,0 +1,13 @@
+{
+  "schema_version": "operating-query-amendment-v1",
+  "registered_on": "2026-09-18",
+  "protocol": "operating-changes-protocol.v1.json",
+  "prior_capture": "data/operating-changes-v1/capture.v1.json",
+  "trigger": "The initial redundant full-state query exceeded Scry's raw-work ceiling before returning any source records.",
+  "change": "Use the source text index for whole-token product aliases. Hacker News items already supplies current FINAL rows. Reddit first discovers bounded candidate IDs, folds their available states, then rechecks the current product mention before deterministic hash selection.",
+  "sample_rules_unchanged": ["vendors", "source_quotas", "date_window", "hash_seed", "no_action_word_filter", "no_score_filter"],
+  "matcher_clarification": "Aliases match product tokens, not substrings inside unrelated words. This correction precedes the first collected cohort and all model answers.",
+  "automatic_retry": false,
+  "failed_cost_reservations_retained": true,
+  "alpha_proven": false
+}

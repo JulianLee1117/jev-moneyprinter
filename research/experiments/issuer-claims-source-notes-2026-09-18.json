@@ -1,0 +1,437 @@
+{
+  "schema_version": "issuer-claims-source-scout-v1",
+  "recorded_at": "2026-09-19T00:57:54.325227+00:00",
+  "as_of_local_date": "2026-09-18",
+  "classification": "source_scouting_not_registered_cohort_ground_truth",
+  "selection": "Convenience seeds TS/MBC/BXC and requested industry-control candidates LPX/UFPI; outcomes not selected by price returns.",
+  "source_read_coverage": "Selected relevant sections of latest and prior comparable periodic filings; not complete source census.",
+  "filing_dates_source": "Local SEC submissions metadata data/issuer-claims-v1/CIK##########.json",
+  "first_public_intraday_verified": false,
+  "no_price_series_requested": true,
+  "paid_calls": 0,
+  "orders": 0,
+  "issuers": [
+    {
+      "symbol": "TS",
+      "selection_role": "convenience_seed",
+      "source_ids": [
+        "TS-latest",
+        "TS-prior"
+      ],
+      "summary": "Mexico OCTG and mechanical-pipe proceedings remain unresolved but importer denominators are missing. Argentina first-review cash was collected March 2026, already stated in prior quarter. The latest filing adds the known 1.62% preliminary Mexican rate and favorable July mechanical-scope proposal. Retain as a known evidence case, not a fresh positive signal.",
+      "claims": [
+        {
+          "id": "TS-mx-octg",
+          "mechanism": "forward deposits and historical assessments",
+          "amount_usd": null,
+          "status_latest": "pending_final_or_litigation_by_episode",
+          "future_trigger": "new applicable final or liquidation instruction",
+          "public_trigger_time_verified": false,
+          "current_dollars_unknown": true
+        },
+        {
+          "id": "TS-mechanical-scope",
+          "mechanism": "avoid contingent past duty liability; potential post2025 deposit recovery",
+          "historical_claim_usd": 49600000,
+          "past_claim_period": "2022-2024",
+          "recorded_provision_usd": 0,
+          "post2025_deposit_balance_usd": null,
+          "status_latest": "favorable_preliminary_not_final",
+          "future_trigger": "final nonappealable scope result and CBP implementation",
+          "expected_final_month_from_filing": "2026-12",
+          "historical_claim_is_refund": false
+        },
+        {
+          "id": "TS-ar-first-review",
+          "mechanism": "past antidumping refund",
+          "status_latest": "received_March2026",
+          "status_prior": "received_March2026",
+          "outstanding_future_amount_for_this_refund_usd": 0,
+          "realized_gain_already_reported": true
+        },
+        {
+          "id": "TS-CSN-Usiminas",
+          "mechanism": "potential indemnity payable by Confab after Brazilian litigation",
+          "prior_potential_usd": 125300000,
+          "latest_potential_usd": 130500000,
+          "prior_potential_brl": 654000000,
+          "latest_potential_brl": 675700000,
+          "amount_change_is_new_legal_ruling": false,
+          "amount_change_context": "monetary adjustment and period-end exchange conversion; liability ceiling conditional on CSN prevailing",
+          "latest_state": "Supreme Federal Tribunal extraordinary-appeal admissibility not yet ruled on according to filing",
+          "scheduled_next_decision_located": false,
+          "separate_from_trade_remedy_claims": true
+        },
+        {
+          "id": "TS-ENARSA",
+          "mechanism": "gas-price litigation against Siderca",
+          "newly_disclosed_in_latest_comparable_filing": true,
+          "served_date": "2026-05-21",
+          "principal_claim_usd": 25400000,
+          "aggregate_adverse_case_usd": 48000000,
+          "excludes_legal_fees": true,
+          "defence_filed_date": "2026-06-23",
+          "scheduled_next_decision_located": false,
+          "issuer_materiality_assessment": "Company believes unfavorable loss would not be material",
+          "recorded_loss_reserve_for_case_usd": null,
+          "not_current_payable_or_expected_loss": true
+        }
+      ],
+      "future_signal_eligible": false,
+      "scope_limit": "Selected duty matters and CSN/ENARSA legal claims; other legal/government matters not exhaustively evaluated."
+    },
+    {
+      "symbol": "MBC",
+      "selection_role": "convenience_seed_successor",
+      "source_ids": [
+        "MBC-latest",
+        "MBC-prior"
+      ],
+      "summary": "The legacy American Woodmark AD deposits were refunded before the merger. A distinct combined IEEPA claim remains partly uncollected in the filing, but subsequent receipts shrink the quarter-end remainder materially. Mexican SAT relief was already granted in 2024; the residual proceeding seeks finality and does not create a new refund equal to the original assessment.",
+      "succession": {
+        "acquisition_close": "2026-05-28",
+        "surviving_legal_entity": "American Woodmark Corporation",
+        "parent_after_close": "MasterBrand, Inc.",
+        "explicit_claim_attribution": "Latest MBC filing includes $3.2m American Woodmark IEEPA tariffs within combined $14.9m; confirms legacy AD refund before merger.",
+        "successor_mapping_verified_for_reported_claims": true
+      },
+      "claims": [
+        {
+          "id": "MBC-ieepa",
+          "mechanism": "potential refund of previously paid tariffs",
+          "prior_parent_paid_usd": 11700000,
+          "prior_receivable_recognized_usd": 0,
+          "combined_paid_usd": 14900000,
+          "includes_premerger_AMWD_paid_usd": 3200000,
+          "cash_received_in_q2_usd": 1200000,
+          "q2_interest_received_usd": 100000,
+          "quarter_end_unrecognized_remaining_usd": 13700000,
+          "subsequent_cash_received_disclosed_in_same_filing_usd": 9200000,
+          "subsequent_interest_usd": 400000,
+          "arithmetic_uncollected_remainder_at_disclosure_usd": 4500000,
+          "remainder_is_verified_current_sep18_balance": false,
+          "remainder_excludes_interest": true,
+          "future_trigger": "further CBP administrative approval/collection; issuer applies realized-or-realizable gain policy",
+          "first_public_future_trigger_source_located": false,
+          "not_recurring_income": true
+        },
+        {
+          "id": "MBC-legacy-amwd-ad",
+          "mechanism": "Vietnam plywood vendor certification deposits",
+          "original_deposit_usd": 3800000,
+          "received_before_merger_usd": 3800000,
+          "status_latest": "fully_resolved",
+          "outstanding_usd": 0,
+          "legacy_loss_usd": 4900000,
+          "loss_not_same_as_refund": true
+        },
+        {
+          "id": "MBC-mexican-sat",
+          "mechanism": "tax assessment finality",
+          "assessment_mxn": 944800000,
+          "usd_equivalent_prior": 52100000,
+          "usd_equivalent_latest": 54000000,
+          "annulled_date": "2024-01-11",
+          "remaining_action": "declare annulment final",
+          "reserve": "immaterial_not_quantified",
+          "management_additional_loss_assessment": "remote_and_not_estimable",
+          "refund_value_usd": null,
+          "future_dated_catalyst_located": false
+        }
+      ],
+      "future_signal_eligible": false,
+      "scope_limit": "Potential IEEPA remainder is a source-scouting lead only; subsequent filings, exact administrative status, customer offsets and materiality need review."
+    },
+    {
+      "symbol": "BXC",
+      "selection_role": "convenience_seed",
+      "source_ids": [
+        "BXC-latest",
+        "BXC-prior"
+      ],
+      "summary": "The $8m classification liability persists. A distinct prior $0-4m plywood origin contingency is closed in the latest filing. IEEPA cash refunds of $7.2m are already recognized; a remaining refund balance is not quantified in the reviewed section.",
+      "claims": [
+        {
+          "id": "BXC-classification",
+          "mechanism": "underpaid import duties",
+          "liability_prior_usd": 8000000,
+          "liability_latest_usd": 8000000,
+          "amount_excludes_interest": true,
+          "accounting": "other_current_liabilities",
+          "future_trigger": "CBP resolution or settlement of prior disclosure",
+          "trigger_date_or_public_docket_located": false
+        },
+        {
+          "id": "BXC-vietnam-origin",
+          "mechanism": "possible additional plywood duties",
+          "prior_range_usd": [
+            0,
+            4000000
+          ],
+          "prior_accrual_usd": 0,
+          "status_latest": "notice_closed_no_further_action",
+          "outstanding_related_claim_usd": 0
+        },
+        {
+          "id": "BXC-ieepa",
+          "mechanism": "refund of past tariffs",
+          "prior_unrecognized_potential_amount_usd": null,
+          "cash_received_and_recognized_q2_usd": 7200000,
+          "latest_remaining_usd": null,
+          "remaining_not_found_is_not_zero": true,
+          "future_trigger": "additional administrative refund approvals or receipts if any",
+          "dated_catalyst_located": false
+        },
+        {
+          "id": "BXC-2025-ad-refunds",
+          "mechanism": "wood moulding antidumping true-up",
+          "historical_2025_gain_usd": 2400000,
+          "historical_interest_usd": 500000,
+          "status": "already_recognized_historical_comparator",
+          "future_claim": false
+        }
+      ],
+      "future_signal_eligible": false,
+      "scope_limit": "Reviewed duty sections; no issuer-wide negative label."
+    },
+    {
+      "symbol": "LPX",
+      "selection_role": "industry_control_candidate_not_assumed_negative",
+      "source_ids": [
+        "LPX-latest",
+        "LPX-prior"
+      ],
+      "summary": "Environmental reserves are $27m in both quarters. No named timed government resolution was located in the reviewed contingency section. Ordinary tax receivables do not establish a contested refund catalyst. This supports a local no-timed-catalyst finding, not an issuer-wide absence label.",
+      "claims": [
+        {
+          "id": "LPX-environmental",
+          "mechanism": "environmental remediation reserve",
+          "prior_usd": 27000000,
+          "latest_usd": 27000000,
+          "current_portion_usd": 1000000,
+          "long_term_portion_usd": 26000000,
+          "accounting": "undiscounted_loss_reserve",
+          "named_resolution_or_date_located": false,
+          "contingent_upside_refund_established": false
+        }
+      ],
+      "future_signal_eligible": false,
+      "scope_limit": "Notes 6/9 and receivables reviewed; full annual litigation history and all agencies not searched."
+    },
+    {
+      "symbol": "UFPI",
+      "selection_role": "industry_control_candidate_with_positive_claim_evidence",
+      "source_ids": [
+        "UFPI-latest",
+        "UFPI-prior"
+      ],
+      "summary": "UFPI is not a clean negative: prior filing discloses a ~$20m unrecognized IEEPA request. Latest quarter reports $3m received plus a $20m receivable, with $11m owed customers on full recovery; another ~$18m was received after quarter-end. These figures require netting and an information-date rollforward, not a gross $23m future-gain alert.",
+      "claims": [
+        {
+          "id": "UFPI-ieepa",
+          "mechanism": "tariff refund with contractual customer pass-through",
+          "prior_request_usd": 20000000,
+          "prior_recognized_receivable_usd": 0,
+          "prior_request_acknowledged_not_approved": true,
+          "latest_quarter_cash_received_usd": 3000000,
+          "latest_quarter_receivable_including_interest_usd": 20000000,
+          "gross_full_recovery_reference_usd": 23000000,
+          "customer_refund_liability_usd": 11000000,
+          "recognized_net_operating_income_increase_usd": 9000000,
+          "portion_for_prior_quarter_products_usd": 3000000,
+          "subsequent_receipts_including_interest_usd": 18000000,
+          "arithmetic_remaining_receivable_usd": 2000000,
+          "remaining_is_approximate": true,
+          "remaining_is_verified_current_sep18_balance": false,
+          "customer_payments_to_date_usd": null,
+          "incremental_gain_from_receivable_collection_usd": 0,
+          "incremental_gain_assumption": "Collection at carrying amount; ignores changes in estimates and further interest.",
+          "future_trigger": "remaining administrative collection; new external legal increment not located",
+          "customer_liability_must_not_be_subtracted_again_from_recognized_net_income": true
+        }
+      ],
+      "future_signal_eligible": false,
+      "scope_limit": "Tariff MD&A and contingency sections reviewed; no full issuer-wide adjudication."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "TS-latest",
+      "issuer": "TS",
+      "role": "latest",
+      "cik": "0001190723",
+      "form": "6-K",
+      "accession": "0001171843-26-005340",
+      "filing_date": "2026-08-07",
+      "report_date": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326005340/f6k_080526.htm",
+      "section_reviewed": "Note 18: U.S. antidumping; CSN/Usiminas; latest additionally ENARSA",
+      "short_excerpt": "During March 2026, Tenaris collected these refunds.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Issuer document dated August 5; SEC filing date August 7. Earlier-public issuer posting not verified here.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "TS-prior",
+      "issuer": "TS",
+      "role": "prior",
+      "cik": "0001190723",
+      "form": "6-K",
+      "accession": "0001171843-26-003164",
+      "filing_date": "2026-05-07",
+      "report_date": "2026-03-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1190723/000117184326003164/f6k_050626fs.htm",
+      "section_reviewed": "Note 18: U.S. antidumping; CSN/Usiminas; latest additionally ENARSA",
+      "short_excerpt": "The amount of such deposits is reflected in Tenaris’s costs.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Issuer document dated May 6; SEC filing date May 7.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "MBC-latest",
+      "issuer": "MBC",
+      "role": "latest",
+      "cik": "0001941365",
+      "form": "10-Q",
+      "accession": "0001941365-26-000072",
+      "filing_date": "2026-08-05",
+      "report_date": "2026-06-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000072/mbc-20260628.htm",
+      "section_reviewed": "Note 1 Tariffs; Note 3 Acquisition; Note 14 Contingencies",
+      "short_excerpt": "Subsequent to June 28, 2026, MasterBrand received $9.2 million of refunds",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Do not stop at quarter-end balance; subsequent receipts are in the same filing.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "MBC-prior",
+      "issuer": "MBC",
+      "role": "prior",
+      "cik": "0001941365",
+      "form": "10-Q",
+      "accession": "0001941365-26-000056",
+      "filing_date": "2026-05-06",
+      "report_date": "2026-03-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/1941365/000194136526000056/mbc-20260329.htm",
+      "section_reviewed": "Note 1 Tariffs; Note 14 Contingencies",
+      "short_excerpt": "No receivable has been recognized as of March 29, 2026",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Prior issuer perimeter excludes American Woodmark before merger.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BXC-latest",
+      "issuer": "BXC",
+      "role": "latest",
+      "cik": "0001301787",
+      "form": "10-Q",
+      "accession": "0001628280-26-052605",
+      "filing_date": "2026-08-04",
+      "report_date": "2026-07-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026052605/bxc-20260704.htm",
+      "section_reviewed": "Note 9 Regulatory Matters and Matters Regarding Certain Tariffs on Imported Goods",
+      "short_excerpt": "has closed the proposed notice of action",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Closed origin case is separate from the continuing $8m classification liability.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "BXC-prior",
+      "issuer": "BXC",
+      "role": "prior",
+      "cik": "0001301787",
+      "form": "10-Q",
+      "accession": "0001628280-26-030607",
+      "filing_date": "2026-05-05",
+      "report_date": "2026-04-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1301787/000162828026030607/bxc-20260404.htm",
+      "section_reviewed": "Note 9 Regulatory Matters",
+      "short_excerpt": "could range from zero to $4 million",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Previously contingent origin case; not current open amount.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "LPX-latest",
+      "issuer": "LPX",
+      "role": "latest",
+      "cik": "0000060519",
+      "form": "10-Q",
+      "accession": "0000060519-26-000036",
+      "filing_date": "2026-08-05",
+      "report_date": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000036/lpx-20260630.htm",
+      "section_reviewed": "Note 9 Commitments and Contingencies; Note 6 Taxes; receivables",
+      "short_excerpt": "Environmental reserves",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Table reports $27m, unchanged from December. No named near-term resolution in this section.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "LPX-prior",
+      "issuer": "LPX",
+      "role": "prior",
+      "cik": "0000060519",
+      "form": "10-Q",
+      "accession": "0000060519-26-000021",
+      "filing_date": "2026-05-06",
+      "report_date": "2026-03-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000021/lpx-20260331.htm",
+      "section_reviewed": "Note 9 Commitments and Contingencies",
+      "short_excerpt": "Environmental reserves",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Table reports $27m, unchanged from December.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "UFPI-latest",
+      "issuer": "UFPI",
+      "role": "latest",
+      "cik": "0000912767",
+      "form": "10-Q",
+      "accession": "0001104659-26-090859",
+      "filing_date": "2026-08-05",
+      "report_date": "2026-06-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926090859/ufpi-20260627x10q.htm",
+      "section_reviewed": "MD&A Impact of Tariffs on Our Operating Results; Note E",
+      "short_excerpt": "Subsequent to June 27, 2026, we received approximately $18 million of the tariff refund receivable",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "Subsequent receipt and customer obligations qualify gross refund figures.",
+      "comprehensive_document_review": false
+    },
+    {
+      "source_id": "UFPI-prior",
+      "issuer": "UFPI",
+      "role": "prior",
+      "cik": "0000912767",
+      "form": "10-Q",
+      "accession": "0001104659-26-056076",
+      "filing_date": "2026-05-06",
+      "report_date": "2026-03-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/912767/000110465926056076/ufpi-20260328x10q.htm",
+      "section_reviewed": "MD&A Impact of Tariffs on Our Operating Results",
+      "short_excerpt": "we have not accrued any receivable relating to these potential refunds.",
+      "excerpt_whitespace_normalized": true,
+      "retrieval": "public web tool; relevant section text reviewed; no raw SEC curl download",
+      "note": "CBP acknowledgement is explicitly not approval.",
+      "comprehensive_document_review": false
+    }
+  ],
+  "recommendation": "Use these cases for gross/net, past/future, accrual/cash, succession and subsequent-event evaluations. No case here clears a prospective trade signal gate. Investigate remaining MBC IEEPA administrative rights only after intervening-source refresh; do not claim a $13.7m fresh opportunity.",
+  "limitations": [
+    "Period-end amounts are not information-date outstanding amounts.",
+    "Company disclosures describe legal status; independent court/CBP docket confirmation not completed here.",
+    "Shared IEEPA court news would correlate issuers; do not count them as independent policy events.",
+    "Future refund receipt can be balance-sheet conversion rather than new earnings.",
+    "Notes are agent-reviewed feasibility evidence, not blinded labels."
+  ]
+}

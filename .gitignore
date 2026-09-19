@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+data/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Local evidence and provider-output artifacts stay private. Public reports and
+# protocols describe them without distributing source bodies or API envelopes.
+research/experiments/*-review-*.json
+research/experiments/live-development-check-*.json
+research/experiments/transition-development-results-*.json
+research/experiments/read-through-prospective-prior*.json
+research/experiments/read-through-development-fixtures*.json
+research/experiments/issuer-claims-body-capture*.json
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm

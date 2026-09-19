@@ -1,0 +1,390 @@
+{
+  "schema_version": "transition-spec-v1",
+  "created_before_this_transition_inference": true,
+  "episode_id": "CORE-Taiwan-A583856-2023-2024-review",
+  "event_channel_date": "2026-05-15",
+  "documents": [
+    {
+      "document_id": "2026-09903",
+      "source_sha256": "8272d430454d636cce65011707d3d89eed61ff023b11667f97ecfeb37a7ab925",
+      "passage_ids": [
+        "8272d430454d636c:p0020",
+        "8272d430454d636c:p0021",
+        "8272d430454d636c:p0022",
+        "8272d430454d636c:p0023",
+        "8272d430454d636c:p0024",
+        "8272d430454d636c:p0046",
+        "8272d430454d636c:p0047",
+        "8272d430454d636c:p0048",
+        "8272d430454d636c:p0049",
+        "8272d430454d636c:p0050",
+        "8272d430454d636c:p0080",
+        "8272d430454d636c:p0081",
+        "8272d430454d636c:p0082",
+        "8272d430454d636c:p0083",
+        "8272d430454d636c:p0088",
+        "8272d430454d636c:p0089",
+        "8272d430454d636c:p0090",
+        "8272d430454d636c:p0091",
+        "8272d430454d636c:p0092",
+        "8272d430454d636c:p0093",
+        "8272d430454d636c:p0094",
+        "8272d430454d636c:p0095",
+        "8272d430454d636c:p0096",
+        "8272d430454d636c:p0097",
+        "8272d430454d636c:p0098",
+        "8272d430454d636c:p0099",
+        "8272d430454d636c:p0100",
+        "8272d430454d636c:p0101",
+        "8272d430454d636c:p0102",
+        "8272d430454d636c:p0103",
+        "8272d430454d636c:p0104",
+        "8272d430454d636c:p0105",
+        "8272d430454d636c:p0106",
+        "8272d430454d636c:p0107",
+        "8272d430454d636c:p0127",
+        "8272d430454d636c:p0128",
+        "8272d430454d636c:p0129",
+        "8272d430454d636c:p0130",
+        "8272d430454d636c:p0131",
+        "8272d430454d636c:p0132",
+        "8272d430454d636c:p0133",
+        "8272d430454d636c:p0134",
+        "8272d430454d636c:p0135",
+        "8272d430454d636c:p0136",
+        "8272d430454d636c:p0137",
+        "8272d430454d636c:p0138",
+        "8272d430454d636c:p0139",
+        "8272d430454d636c:p0149",
+        "8272d430454d636c:p0150",
+        "8272d430454d636c:p0151",
+        "8272d430454d636c:p0152",
+        "8272d430454d636c:p0153",
+        "8272d430454d636c:p0154",
+        "8272d430454d636c:p0155"
+      ],
+      "roles": [
+        "current"
+      ]
+    },
+    {
+      "document_id": "2026-00193",
+      "source_sha256": "5311c4f37cb098dd6a21f7c0458e49cd3a5b7adadac1a326cc06bb02245789f3",
+      "passage_ids": [
+        "5311c4f37cb098dd:p0119",
+        "5311c4f37cb098dd:p0120",
+        "5311c4f37cb098dd:p0121",
+        "5311c4f37cb098dd:p0122",
+        "5311c4f37cb098dd:p0123",
+        "5311c4f37cb098dd:p0124",
+        "5311c4f37cb098dd:p0125",
+        "5311c4f37cb098dd:p0126",
+        "5311c4f37cb098dd:p0127",
+        "5311c4f37cb098dd:p0128",
+        "5311c4f37cb098dd:p0129",
+        "5311c4f37cb098dd:p0130",
+        "5311c4f37cb098dd:p0131",
+        "5311c4f37cb098dd:p0132",
+        "5311c4f37cb098dd:p0133",
+        "5311c4f37cb098dd:p0134",
+        "5311c4f37cb098dd:p0227",
+        "5311c4f37cb098dd:p0228",
+        "5311c4f37cb098dd:p0229",
+        "5311c4f37cb098dd:p0230",
+        "5311c4f37cb098dd:p0231",
+        "5311c4f37cb098dd:p0232",
+        "5311c4f37cb098dd:p0233",
+        "5311c4f37cb098dd:p0234",
+        "5311c4f37cb098dd:p0235",
+        "5311c4f37cb098dd:p0236",
+        "5311c4f37cb098dd:p0237",
+        "5311c4f37cb098dd:p0238",
+        "5311c4f37cb098dd:p0239",
+        "5311c4f37cb098dd:p0240",
+        "5311c4f37cb098dd:p0241",
+        "5311c4f37cb098dd:p0242",
+        "5311c4f37cb098dd:p0243",
+        "5311c4f37cb098dd:p0244"
+      ],
+      "roles": [
+        "preliminary"
+      ]
+    },
+    {
+      "document_id": "2025-07962",
+      "source_sha256": "1228ba2f204da8ee14ec2f6d09f92fede76f8bc4637622dd8008935129ccd1f0",
+      "passage_ids": [
+        "1228ba2f204da8ee:p0076",
+        "1228ba2f204da8ee:p0077",
+        "1228ba2f204da8ee:p0078",
+        "1228ba2f204da8ee:p0079",
+        "1228ba2f204da8ee:p0087",
+        "1228ba2f204da8ee:p0088",
+        "1228ba2f204da8ee:p0089",
+        "1228ba2f204da8ee:p0090",
+        "1228ba2f204da8ee:p0091",
+        "1228ba2f204da8ee:p0092",
+        "1228ba2f204da8ee:p0093",
+        "1228ba2f204da8ee:p0094",
+        "1228ba2f204da8ee:p0095",
+        "1228ba2f204da8ee:p0096",
+        "1228ba2f204da8ee:p0097",
+        "1228ba2f204da8ee:p0098",
+        "1228ba2f204da8ee:p0135",
+        "1228ba2f204da8ee:p0136",
+        "1228ba2f204da8ee:p0137",
+        "1228ba2f204da8ee:p0138",
+        "1228ba2f204da8ee:p0139",
+        "1228ba2f204da8ee:p0140",
+        "1228ba2f204da8ee:p0141",
+        "1228ba2f204da8ee:p0142",
+        "1228ba2f204da8ee:p0149",
+        "1228ba2f204da8ee:p0150",
+        "1228ba2f204da8ee:p0151",
+        "1228ba2f204da8ee:p0152",
+        "1228ba2f204da8ee:p0153"
+      ],
+      "roles": [
+        "earlier_operative_deposit"
+      ]
+    }
+  ],
+  "rate_candidates": [
+    {
+      "candidate_id": "great_grandeul_samoa",
+      "current": {
+        "document_id": "2026-09903",
+        "entity_id": "great_grandeul_samoa",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.99",
+        "passage_ids": [
+          "8272d430454d636c:p0090",
+          "8272d430454d636c:p0101"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "preliminary": {
+        "document_id": "2026-00193",
+        "entity_id": "great_grandeul_samoa",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.00",
+        "passage_ids": [
+          "5311c4f37cb098dd:p0124",
+          "5311c4f37cb098dd:p0134"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "operative_history_complete": false,
+      "earlier_operative_deposit": {
+        "document_id": "2025-07962",
+        "entity_id": "great_grandeul_samoa",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2022-2023",
+        "percent": "0.99",
+        "passage_ids": [
+          "1228ba2f204da8ee:p0087",
+          "1228ba2f204da8ee:p0098",
+          "1228ba2f204da8ee:p0141"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution",
+        "legal_effect": "final_deposit"
+      }
+    },
+    {
+      "candidate_id": "prosperity_tieh",
+      "current": {
+        "document_id": "2026-09903",
+        "entity_id": "prosperity_tieh",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.00",
+        "passage_ids": [
+          "8272d430454d636c:p0090",
+          "8272d430454d636c:p0101"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "preliminary": {
+        "document_id": "2026-00193",
+        "entity_id": "prosperity_tieh",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.00",
+        "passage_ids": [
+          "5311c4f37cb098dd:p0124",
+          "5311c4f37cb098dd:p0134"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "operative_history_complete": false,
+      "earlier_operative_deposit": {
+        "document_id": "2025-07962",
+        "entity_id": "prosperity_tieh",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2022-2023",
+        "percent": "0.99",
+        "passage_ids": [
+          "1228ba2f204da8ee:p0087",
+          "1228ba2f204da8ee:p0098",
+          "1228ba2f204da8ee:p0141"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution",
+        "legal_effect": "final_deposit"
+      }
+    },
+    {
+      "candidate_id": "sheng_yu",
+      "current": {
+        "document_id": "2026-09903",
+        "entity_id": "sheng_yu",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.00",
+        "passage_ids": [
+          "8272d430454d636c:p0090",
+          "8272d430454d636c:p0101"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "preliminary": {
+        "document_id": "2026-00193",
+        "entity_id": "sheng_yu",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2023-2024",
+        "percent": "0.00",
+        "passage_ids": [
+          "5311c4f37cb098dd:p0124",
+          "5311c4f37cb098dd:p0134"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution"
+      },
+      "operative_history_complete": false,
+      "earlier_operative_deposit": {
+        "document_id": "2025-07962",
+        "entity_id": "sheng_yu",
+        "case_id": "A-583-856",
+        "rate_type": "AD_weighted_average_margin",
+        "review_period": "2022-2023",
+        "percent": "0.00",
+        "passage_ids": [
+          "1228ba2f204da8ee:p0087",
+          "1228ba2f204da8ee:p0098",
+          "1228ba2f204da8ee:p0141"
+        ],
+        "transcription_status": "agent_reviewed_table_observation_not_legal_resolution",
+        "legal_effect": "final_deposit"
+      }
+    }
+  ],
+  "issuer_exposures": [
+    {
+      "issuer_id": "SEC:0000073309",
+      "symbol": "NUE",
+      "valid_from": "2026-02-26T00:00:00-05:00",
+      "literal_supporting_excerpt": "All of our sheet mills are equipped with galvanizing lines",
+      "facility_links": [
+        "Six sheet mills including 51%-controlled California Steel Industries; all six have galvanizing lines.",
+        "51%-owned Nucor-JFE galvanized plant in central Mexico."
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption",
+          "evidence": "Steel products businesses consume steel; internal transfer pricing cannot be treated as incremental consolidated profit.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "foreign_production",
+          "evidence": "NJSM targets Mexican automotive demand; evidence does not establish imports from NJSM into the United States.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "contract_repricing_lag",
+          "evidence": "Sheet contracts generally adjust monthly or quarterly using indices or raw-material costs; typical terms six to twelve months.",
+          "event_effect": "timing_and_pass_through_unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing CORE imports could improve domestic price or volume; the sign and consolidated magnitude require more evidence."
+      },
+      "source_available_date": "2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526071575/nue-20251231.htm",
+      "coverage": "Selected annual business disclosure, not exhaustive history"
+    },
+    {
+      "issuer_id": "SEC:0001022671",
+      "symbol": "STLD",
+      "valid_from": "2026-02-28T00:00:00-05:00",
+      "literal_supporting_excerpt": "we had annual flat roll galvanizing capability of 5.5 million tons",
+      "facility_links": [
+        "Butler, Columbus, Sinton; The Techs and Heartland downstream coating."
+      ],
+      "offsetting_channels": [
+        {
+          "channel": "downstream_consumption_and_distribution",
+          "evidence": "Fabrication and processing coexist with steel production; price pass-through and external input volumes must be reviewed.",
+          "event_effect": "unknown"
+        },
+        {
+          "channel": "export_sales",
+          "evidence": "Foreign steel customers create demand and policy exposure. Export share is not the share of imports or foreign manufacture.",
+          "event_effect": "unknown"
+        }
+      ],
+      "magnitude": {
+        "status": "product_scale_known_event_earnings_impact_unknown",
+        "core_revenue_share": null,
+        "subject_country_competition_share": null,
+        "earnings_sensitivity": null,
+        "conditional_hypothesis": "A binding unexpected restriction on competing coated imports could benefit domestic steel operations; mixed downstream channels prevent an automatic equity sign."
+      },
+      "source_available_date": "2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926021395/stld-20251231x10k.htm",
+      "coverage": "Selected annual business disclosure, not exhaustive history"
+    }
+  ],
+  "timing": {
+    "event_channel_date": "2026-05-15",
+    "channel_timestamp": "2026-05-15T08:45:00-04:00",
+    "publication_date": "2026-05-18",
+    "earliest_public_verified": false,
+    "unresolved": [
+      "May 8 decision memorandum availability",
+      "intervening operative instructions",
+      "historical text version timing"
+    ]
+  },
+  "development_expected": {
+    "summary_detail_consistency": "conflicting",
+    "decision_finality": "final",
+    "preliminary_margin_direction": "increase",
+    "operative_history_sufficiency": "partial",
+    "cash_deposit_start": "later_publication",
+    "margin_equals_stock_return": "not_established",
+    "market_surprise": "unknown",
+    "first_public_time": "unverified",
+    "nue_product_overlap": "supported",
+    "stld_product_overlap": "supported",
+    "nue_earnings_effect": "unknown",
+    "stld_earnings_effect": "unknown"
+  },
+  "limitations": [
+    "Targeted difficult case selected after reading documents; not independent held-out recall or alpha test.",
+    "Model inputs include manual reviewed table transcription; numeric comparison alone is implementable without Jev.",
+    "No return series inspected or used; incidental price snippets elsewhere in research were not fully avoidable.",
+    "Great Grandeul change vs preliminary is not an increase vs prior final deposit."
+  ]
+}
