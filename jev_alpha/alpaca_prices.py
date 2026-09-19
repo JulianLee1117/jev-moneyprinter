@@ -279,7 +279,11 @@ def _records(payload: dict, query: dict, page: int) -> tuple[list[dict], str | N
         if kind == "quotes":
             item.update(bid=row.get("bp"), ask=row.get("ap"), bid_size=row.get("bs"), ask_size=row.get("as"),
                         bid_exchange=row.get("bx"), ask_exchange=row.get("ax"), conditions=row.get("c"), tape=row.get("z"),
-                        size_unit="provider_round_lots; lot size not inferred")
+                        # Alpaca's dated CTA/UTP change applies from Nov 3,
+                        # 2025. Preserve raw sizes; never multiply them by 100.
+                        size_unit=("shares" if timestamp[:10] >= "2025-11-03"
+                                   else "provider_round_lots; lot size not inferred"),
+                        size_unit_source_url="https://docs.alpaca.markets/us/v1.1/changelog/marketdata-bid-and-ask-size-display-change")
             if not _positive(item["bid"]) or not _positive(item["ask"]):
                 flags.append("invalid_or_nonpositive_quote")
             elif item["bid"] > item["ask"]:

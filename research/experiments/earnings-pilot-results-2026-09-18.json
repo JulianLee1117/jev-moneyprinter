@@ -1,0 +1,1379 @@
+{
+  "schema_version": "earnings-pilot-public-results-v1",
+  "created_at": "2026-09-19T05:41:40.158043+00:00",
+  "alpha_established": false,
+  "orders": false,
+  "cohort_count": 12,
+  "paired_sources": 8,
+  "source_failures": 4,
+  "valid_model_calls": 16,
+  "entry_eligible": 10,
+  "eligible_model_complete": 6,
+  "daily_returns_computed": 12,
+  "quote_price_only_returns_computed": 11,
+  "eligible_complete_negative_excess_count": 6,
+  "mean_eligible_complete_daily_excess": -0.03578288179057041,
+  "mean_eligible_complete_quote_price_only_excess": -0.05732060666666661,
+  "model_costs_usd": {
+    "jev": 0.002293746,
+    "compact": 0.03450075
+  },
+  "records": [
+    {
+      "event_id": "tndm-2026-05-07",
+      "symbol": "TNDM",
+      "entry_date": "2026-05-11",
+      "exit_date": "2026-05-18",
+      "scores": {
+        "jev_native": 0.19375,
+        "jev_category": 0.125,
+        "compact": 0.625
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.14143094841930115,
+        "benchmark_return": -0.009146020955251077,
+        "excess_return": -0.13228492746405007,
+        "start_date": "2026-05-06",
+        "end_date": "2026-05-08"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.08395396073121197,
+        "benchmark_return": -0.03279208199781625,
+        "excess_return": -0.05116187873339573
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.55875,
+      "quote_price_only_stock_account_return": -0.14453819999999984,
+      "quote_price_only_excess_account_return": -0.12052109,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "brsp-2026-04-28",
+      "symbol": "BRSP",
+      "entry_date": "2026-04-30",
+      "exit_date": "2026-05-07",
+      "scores": {
+        "jev_native": null,
+        "jev_category": null,
+        "compact": null
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.04445952825386046,
+        "benchmark_return": -0.01824049898462421,
+        "excess_return": -0.02621902926923625,
+        "start_date": "2026-04-27",
+        "end_date": "2026-04-29"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": 0.02237613212573253,
+        "benchmark_return": 0.015438012943345791,
+        "excess_return": 0.006938119182386737
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": false,
+      "mean_jev_unknown_mass": null,
+      "quote_price_only_stock_account_return": 0.010600800000000188,
+      "quote_price_only_excess_account_return": -0.024460160000000064,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "rgco-2026-05-06",
+      "symbol": "RGCO",
+      "entry_date": "2026-05-08",
+      "exit_date": "2026-05-15",
+      "scores": {
+        "jev_native": 0.32,
+        "jev_category": 0.375,
+        "compact": 0.125
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": 0.017787418655097698,
+        "benchmark_return": -0.0010314778587940943,
+        "excess_return": 0.018818896513891792,
+        "start_date": "2026-05-05",
+        "end_date": "2026-05-07"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.04519774011299449,
+        "benchmark_return": -0.023129155467534135,
+        "excess_return": -0.022068584645460354
+      },
+      "eligibility": "ineligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.61125,
+      "quote_price_only_stock_account_return": null,
+      "quote_price_only_excess_account_return": null,
+      "quote_display_size_support": {
+        "stock": null,
+        "benchmark": null
+      }
+    },
+    {
+      "event_id": "agco-2026-05-05",
+      "symbol": "AGCO",
+      "entry_date": "2026-05-07",
+      "exit_date": "2026-05-14",
+      "scores": {
+        "jev_native": 0.05250000000000001,
+        "jev_category": 0.25,
+        "compact": 0.25
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.00870574579222283,
+        "benchmark_return": 0.03207956600361661,
+        "excess_return": -0.04078531179583944,
+        "start_date": "2026-05-04",
+        "end_date": "2026-05-06"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.0030756087142246313,
+        "benchmark_return": 0.007761874243395361,
+        "excess_return": -0.010837482957619993
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.37875,
+      "quote_price_only_stock_account_return": -0.0508239199999998,
+      "quote_price_only_excess_account_return": -0.038936199999999865,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "byd-2026-04-23",
+      "symbol": "BYD",
+      "entry_date": "2026-04-27",
+      "exit_date": "2026-05-04",
+      "scores": {
+        "jev_native": 0.13625,
+        "jev_category": 0.25,
+        "compact": 0.375
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.026361833663828382,
+        "benchmark_return": 0.0005815855475990173,
+        "excess_return": -0.0269434192114274,
+        "start_date": "2026-04-22",
+        "end_date": "2026-04-24"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.0529276693455798,
+        "benchmark_return": 0.002683492892370243,
+        "excess_return": -0.05561116223795004
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.645,
+      "quote_price_only_stock_account_return": -0.03519283999999978,
+      "quote_price_only_excess_account_return": -0.036091869999999804,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "crox-2026-04-30",
+      "symbol": "CROX",
+      "entry_date": "2026-05-04",
+      "exit_date": "2026-05-11",
+      "scores": {
+        "jev_native": 0.33625,
+        "jev_category": 0.375,
+        "compact": 0.625
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": 0.03734771320151786,
+        "benchmark_return": 0.026447013629815608,
+        "excess_return": 0.010900699571702255,
+        "start_date": "2026-04-29",
+        "end_date": "2026-05-01"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.010445407962160091,
+        "benchmark_return": 0.02679927667269455,
+        "excess_return": -0.03724468463485464
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.63,
+      "quote_price_only_stock_account_return": -0.01174428999999999,
+      "quote_price_only_excess_account_return": -0.02591277000000014,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "mvst-2026-05-11",
+      "symbol": "MVST",
+      "entry_date": "2026-05-13",
+      "exit_date": "2026-05-20",
+      "scores": {
+        "jev_native": -0.0825,
+        "jev_category": 0.0,
+        "compact": 0.375
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.3380281690140845,
+        "benchmark_return": -0.005658508982882893,
+        "excess_return": -0.3323696600312016,
+        "start_date": "2026-05-08",
+        "end_date": "2026-05-12"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.17763157894736847,
+        "benchmark_return": -0.00988409301002624,
+        "excess_return": -0.16774748593734223
+      },
+      "eligibility": "ineligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.53625,
+      "quote_price_only_stock_account_return": -0.1816963199999999,
+      "quote_price_only_excess_account_return": -0.1553293400000001,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "hgv-2026-04-30",
+      "symbol": "HGV",
+      "entry_date": "2026-05-04",
+      "exit_date": "2026-05-11",
+      "scores": {
+        "jev_native": null,
+        "jev_category": null,
+        "compact": null
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": 0.05852534562211975,
+        "benchmark_return": 0.026447013629815608,
+        "excess_return": 0.03207833199230414,
+        "start_date": "2026-04-29",
+        "end_date": "2026-05-01"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": 0.015214994487320777,
+        "benchmark_return": 0.02679927667269455,
+        "excess_return": -0.011584282185373773
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": false,
+      "mean_jev_unknown_mass": null,
+      "quote_price_only_stock_account_return": 0.024749780000000055,
+      "quote_price_only_excess_account_return": 0.010581299999999905,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "iff-2026-05-05",
+      "symbol": "IFF",
+      "entry_date": "2026-05-07",
+      "exit_date": "2026-05-14",
+      "scores": {
+        "jev_native": 0.0625,
+        "jev_category": 0.0,
+        "compact": 0.625
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": 0.18331171638564636,
+        "benchmark_return": 0.03207956600361661,
+        "excess_return": 0.15123215038202975,
+        "start_date": "2026-05-04",
+        "end_date": "2026-05-06"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.02774909654104296,
+        "benchmark_return": 0.007761874243395361,
+        "excess_return": -0.03551097078443832
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.5599999999999999,
+      "quote_price_only_stock_account_return": -0.06506487999999977,
+      "quote_price_only_excess_account_return": -0.053177159999999835,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "mcs-2026-04-30",
+      "symbol": "MCS",
+      "entry_date": "2026-05-04",
+      "exit_date": "2026-05-11",
+      "scores": {
+        "jev_native": null,
+        "jev_category": null,
+        "compact": null
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.07377919320594484,
+        "benchmark_return": 0.026447013629815608,
+        "excess_return": -0.10022620683576045,
+        "start_date": "2026-04-29",
+        "end_date": "2026-05-01"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": 0.031121550205519544,
+        "benchmark_return": 0.02679927667269455,
+        "excess_return": 0.004322273532824994
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": false,
+      "mean_jev_unknown_mass": null,
+      "quote_price_only_stock_account_return": 0.001499840000000141,
+      "quote_price_only_excess_account_return": -0.012668640000000009,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "gabc-2026-04-27",
+      "symbol": "GABC",
+      "entry_date": "2026-04-29",
+      "exit_date": "2026-05-06",
+      "scores": {
+        "jev_native": null,
+        "jev_category": null,
+        "compact": null
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": -0.006983240223463749,
+        "benchmark_return": -0.009881207541686199,
+        "excess_return": 0.0028979673182224497,
+        "start_date": "2026-04-24",
+        "end_date": "2026-04-28"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": 0.01601130209559698,
+        "benchmark_return": 0.05407601669560069,
+        "excess_return": -0.03806471460000371
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": false,
+      "mean_jev_unknown_mass": null,
+      "quote_price_only_stock_account_return": -0.004893779999999737,
+      "quote_price_only_excess_account_return": -0.03683708000000019,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    },
+    {
+      "event_id": "grnd-2026-05-07",
+      "symbol": "GRND",
+      "entry_date": "2026-05-11",
+      "exit_date": "2026-05-18",
+      "scores": {
+        "jev_native": 0.34875,
+        "jev_category": 0.25,
+        "compact": 0.375
+      },
+      "pre_entry_reaction": {
+        "status": "computed_proxy",
+        "scope": "pre_entry_adjusted_close_reaction_control_not_earnings_surprise",
+        "stock_return": 0.11860637509266114,
+        "benchmark_return": -0.009146020955251077,
+        "excess_return": 0.12775239604791222,
+        "start_date": "2026-05-06",
+        "end_date": "2026-05-08"
+      },
+      "daily_five_session_proxy": {
+        "status": "computed_proxy",
+        "scope": "adjusted_daily_close_proxy_not_execution",
+        "stock_return": -0.05712319339298,
+        "benchmark_return": -0.03279208199781625,
+        "excess_return": -0.02433111139516375
+      },
+      "eligibility": "eligible",
+      "source_and_models_available": true,
+      "mean_jev_unknown_mass": 0.60375,
+      "quote_price_only_stock_account_return": -0.09330165999999984,
+      "quote_price_only_excess_account_return": -0.06928455,
+      "quote_display_size_support": {
+        "stock": true,
+        "benchmark": true
+      }
+    }
+  ],
+  "descriptive_pearson": {
+    "all_8_complete_sources": {
+      "jev_native": {
+        "n": 8,
+        "pearson_with_daily_excess": 0.6343974903896088
+      },
+      "jev_category": {
+        "n": 8,
+        "pearson_with_daily_excess": 0.597836728404829
+      },
+      "compact": {
+        "n": 8,
+        "pearson_with_daily_excess": -0.07869215031805107
+      }
+    },
+    "6_eligible_complete_sources": {
+      "jev_native": {
+        "n": 6,
+        "pearson_with_daily_excess": -0.07871827583139683
+      },
+      "jev_category": {
+        "n": 6,
+        "pearson_with_daily_excess": 0.15558563136400394
+      },
+      "compact": {
+        "n": 6,
+        "pearson_with_daily_excess": -0.5250685079975912
+      }
+    }
+  },
+  "descriptive_association_warning": "Tiny overlapping development observations; no significance, independence, fitted model or incremental-alpha claim. All-source correlation includes ineligible stocks.",
+  "conditional_price_only_simulations": {
+    "jev_native": {
+      "10": {
+        "status": "complete",
+        "arm": "jev_native",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.77568999999998,
+            "exit_effective": 82.66725,
+            "entry_spend": 943.5325899999998,
+            "exit_proceeds_after_fee": 908.33975,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 964.8071600000002,
+            "pnl_usd": -35.19283999999982,
+            "account_return": -0.03519283999999978,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.13625,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 11,
+            "entry_effective": 82.04195999999999,
+            "exit_effective": 76.70322,
+            "entry_spend": 902.4615599999998,
+            "exit_proceeds_after_fee": 842.73542,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 905.0810200000003,
+            "pnl_usd": -59.72613999999987,
+            "account_return": -0.06190474374174404,
+            "event_id": "iff-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.0625,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 905.0810200000003,
+        "pnl_usd": -94.91897999999969,
+        "account_return": -0.09491897999999965,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 905.0810200000003,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.002293746,
+        "pnl_after_model_cost_usd": -94.9212737459997,
+        "final_equity_after_model_cost_usd": 905.0787262540003
+      },
+      "25": {
+        "status": "complete",
+        "arm": "jev_native",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.904225,
+            "exit_effective": 82.543125,
+            "entry_spend": 944.946475,
+            "exit_proceeds_after_fee": 906.974375,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 962.0279,
+            "pnl_usd": -37.972099999999955,
+            "account_return": -0.03797209999999995,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.13625,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 11,
+            "entry_effective": 82.16489999999999,
+            "exit_effective": 76.58805000000001,
+            "entry_spend": 903.8138999999999,
+            "exit_proceeds_after_fee": 841.46855,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 899.6825500000002,
+            "pnl_usd": -62.345349999999826,
+            "account_return": -0.06480617661920185,
+            "event_id": "iff-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.0625,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 899.6825500000002,
+        "pnl_usd": -100.31744999999978,
+        "account_return": -0.10031744999999981,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 899.6825500000002,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.002293746,
+        "pnl_after_model_cost_usd": -100.31974374599979,
+        "final_equity_after_model_cost_usd": 899.6802562540003
+      }
+    },
+    "jev_category": {
+      "10": {
+        "status": "complete",
+        "arm": "jev_category",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.77568999999998,
+            "exit_effective": 82.66725,
+            "entry_spend": 943.5325899999998,
+            "exit_proceeds_after_fee": 908.33975,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 964.8071600000002,
+            "pnl_usd": -35.19283999999982,
+            "account_return": -0.03519283999999978,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.25,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 7,
+            "entry_effective": 122.11198999999998,
+            "exit_effective": 115.884,
+            "entry_spend": 854.7839299999998,
+            "exit_proceeds_after_fee": 810.188,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 920.2112300000003,
+            "pnl_usd": -44.59592999999984,
+            "account_return": -0.046222635827039116,
+            "event_id": "agco-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.25,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 920.2112300000003,
+        "pnl_usd": -79.78876999999966,
+        "account_return": -0.07978876999999962,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 920.2112300000003,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.002293746,
+        "pnl_after_model_cost_usd": -79.79106374599967,
+        "final_equity_after_model_cost_usd": 920.2089362540004
+      },
+      "25": {
+        "status": "complete",
+        "arm": "jev_category",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.904225,
+            "exit_effective": 82.543125,
+            "entry_spend": 944.946475,
+            "exit_proceeds_after_fee": 906.974375,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 962.0279,
+            "pnl_usd": -37.972099999999955,
+            "account_return": -0.03797209999999995,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.25,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 7,
+            "entry_effective": 122.294975,
+            "exit_effective": 115.71000000000001,
+            "entry_spend": 856.0648249999999,
+            "exit_proceeds_after_fee": 808.97,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 914.9330750000001,
+            "pnl_usd": -47.0948249999999,
+            "account_return": -0.04895369978355091,
+            "event_id": "agco-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.25,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 914.9330750000001,
+        "pnl_usd": -85.06692499999986,
+        "account_return": -0.0850669249999999,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 914.9330750000001,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.002293746,
+        "pnl_after_model_cost_usd": -85.06921874599986,
+        "final_equity_after_model_cost_usd": 914.9307812540002
+      }
+    },
+    "compact": {
+      "10": {
+        "status": "complete",
+        "arm": "compact",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.77568999999998,
+            "exit_effective": 82.66725,
+            "entry_spend": 943.5325899999998,
+            "exit_proceeds_after_fee": 908.33975,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 964.8071600000002,
+            "pnl_usd": -35.19283999999982,
+            "account_return": -0.03519283999999978,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.375,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 11,
+            "entry_effective": 82.04195999999999,
+            "exit_effective": 76.70322,
+            "entry_spend": 902.4615599999998,
+            "exit_proceeds_after_fee": 842.73542,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 905.0810200000003,
+            "pnl_usd": -59.72613999999987,
+            "account_return": -0.06190474374174404,
+            "event_id": "iff-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.625,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 905.0810200000003,
+        "pnl_usd": -94.91897999999969,
+        "account_return": -0.09491897999999965,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 905.0810200000003,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.03450075,
+        "pnl_after_model_cost_usd": -94.9534807499997,
+        "final_equity_after_model_cost_usd": 905.0465192500003
+      },
+      "25": {
+        "status": "complete",
+        "arm": "compact",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.904225,
+            "exit_effective": 82.543125,
+            "entry_spend": 944.946475,
+            "exit_proceeds_after_fee": 906.974375,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 962.0279,
+            "pnl_usd": -37.972099999999955,
+            "account_return": -0.03797209999999995,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 0.375,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 11,
+            "entry_effective": 82.16489999999999,
+            "exit_effective": 76.58805000000001,
+            "entry_spend": 903.8138999999999,
+            "exit_proceeds_after_fee": 841.46855,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 899.6825500000002,
+            "pnl_usd": -62.345349999999826,
+            "account_return": -0.06480617661920185,
+            "event_id": "iff-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 0.625,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 899.6825500000002,
+        "pnl_usd": -100.31744999999978,
+        "account_return": -0.10031744999999981,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 899.6825500000002,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0.03450075,
+        "pnl_after_model_cost_usd": -100.35195074999979,
+        "final_equity_after_model_cost_usd": 899.6480492500002
+      }
+    },
+    "always_long": {
+      "10": {
+        "status": "complete",
+        "arm": "always_long",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.77568999999998,
+            "exit_effective": 82.66725,
+            "entry_spend": 943.5325899999998,
+            "exit_proceeds_after_fee": 908.33975,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 964.8071600000002,
+            "pnl_usd": -35.19283999999982,
+            "account_return": -0.03519283999999978,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 1,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 7,
+            "entry_effective": 122.11198999999998,
+            "exit_effective": 115.884,
+            "entry_spend": 854.7839299999998,
+            "exit_proceeds_after_fee": 810.188,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 920.2112300000003,
+            "pnl_usd": -44.59592999999984,
+            "account_return": -0.046222635827039116,
+            "event_id": "agco-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 1,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 920.2112300000003,
+        "pnl_usd": -79.78876999999966,
+        "account_return": -0.07978876999999962,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 920.2112300000003,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0,
+        "pnl_after_model_cost_usd": -79.78876999999966,
+        "final_equity_after_model_cost_usd": 920.2112300000003
+      },
+      "25": {
+        "status": "complete",
+        "arm": "always_long",
+        "force_long": false,
+        "hypothetical": true,
+        "is_fill": false,
+        "initial_cash_usd": 1000,
+        "cash_control_final_equity_usd": 1000,
+        "trades": [
+          {
+            "shares": 11,
+            "entry_effective": 85.904225,
+            "exit_effective": 82.543125,
+            "entry_spend": 944.946475,
+            "exit_proceeds_after_fee": 906.974375,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 962.0279,
+            "pnl_usd": -37.972099999999955,
+            "account_return": -0.03797209999999995,
+            "event_id": "byd-2026-04-23",
+            "entry_date": "2026-04-27",
+            "exit_date": "2026-05-04",
+            "settlement_date": "2026-05-05",
+            "score": 1,
+            "dividend_receivable_usd": 0
+          },
+          {
+            "shares": 7,
+            "entry_effective": 122.294975,
+            "exit_effective": 115.71000000000001,
+            "entry_spend": 856.0648249999999,
+            "exit_proceeds_after_fee": 808.97,
+            "fee_allowance_applied": 1,
+            "final_equity_usd": 914.9330750000001,
+            "pnl_usd": -47.0948249999999,
+            "account_return": -0.04895369978355091,
+            "event_id": "agco-2026-05-05",
+            "entry_date": "2026-05-07",
+            "exit_date": "2026-05-14",
+            "settlement_date": "2026-05-15",
+            "score": 1,
+            "dividend_receivable_usd": 0
+          }
+        ],
+        "decisions": [
+          {
+            "event_id": "byd-2026-04-23",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "gabc-2026-04-27",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "brsp-2026-04-28",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "crox-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "hgv-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "mcs-2026-04-30",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "iff-2026-05-05",
+            "status": "lower_same_entry_priority"
+          },
+          {
+            "event_id": "agco-2026-05-05",
+            "status": "hypothetical_long"
+          },
+          {
+            "event_id": "grnd-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          },
+          {
+            "event_id": "tndm-2026-05-07",
+            "status": "capital_unavailable_until_settlement"
+          }
+        ],
+        "final_equity_usd": 914.9330750000001,
+        "pnl_usd": -85.06692499999986,
+        "account_return": -0.0850669249999999,
+        "dividend_policy": "receivable_not_reinvested",
+        "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+        "final_settled_cash_usd": 914.9330750000001,
+        "dividend_receivable_usd": 0.0,
+        "scope": "Conditional price-only simulation assuming no in-window corporate actions; current source versions and historical quotes do not prove executable historical alpha.",
+        "model_cost_usd": 0,
+        "pnl_after_model_cost_usd": -85.06692499999986,
+        "final_equity_after_model_cost_usd": 914.9330750000001
+      }
+    }
+  },
+  "cash_pnl_usd": 0,
+  "decision": "Do not deploy, invert or tune the fixed positive-mean semantic score. Next work is broader controlled return prediction with numeric/price baselines and chronological separation, then prospective confirmation.",
+  "private_provenance_sha256": {
+    "sources/cohort.v1.json": "9c852e598c1b80c7f169f82c1e3040b148079366e0f5255d9e75a6e2054aa15a",
+    "sources/source-pairs.v2.json": "0856c7c7c61929e02eaaa2b5382aff5d6a7cfcfc467240c1ea19b148f25e3ad9",
+    "feature-inputs.v1.json": "6863809c4aa26d38acc7039b0a91c6532a205e60b7a38f98fe529410db4b2649",
+    "features.v1.json": "f95843e9195e91bce936b4de574f07e18f37b6ec71f08adbf159b9c8c6174aae",
+    "market/collection-summary.v1.json": "e43bd93bc93b3529f61043ab3e061f1e4233a7eec146396246d1a20dffc27e62",
+    "market-analysis.v1.json": "bce4f48d836a619f8cdb3ef27b194c4031e69639f6f9611f62c0713ea1668420",
+    "independent-result-check.v1.json": "ea1b975fe34dfb1f9c699117bdab640fff383202b0b533fa908e2eb07d2a82ae"
+  },
+  "initial_action_unresolved_ledgers": {
+    "jev_native": {
+      "status": "unknown",
+      "arm": "jev_native",
+      "force_long": false,
+      "hypothetical": true,
+      "is_fill": false,
+      "initial_cash_usd": 1000,
+      "cash_control_final_equity_usd": 1000,
+      "trades": [],
+      "decisions": [],
+      "final_equity_usd": null,
+      "pnl_usd": null,
+      "account_return": null,
+      "dividend_policy": "receivable_not_reinvested",
+      "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+      "unknown_event_id": "byd-2026-04-23",
+      "unknown_reason": "selected_corporate_actions_unresolved_or_unsupported",
+      "known_settled_cash_usd": 1000.0,
+      "dividend_receivable_usd": 0.0
+    },
+    "jev_category": {
+      "status": "unknown",
+      "arm": "jev_category",
+      "force_long": false,
+      "hypothetical": true,
+      "is_fill": false,
+      "initial_cash_usd": 1000,
+      "cash_control_final_equity_usd": 1000,
+      "trades": [],
+      "decisions": [],
+      "final_equity_usd": null,
+      "pnl_usd": null,
+      "account_return": null,
+      "dividend_policy": "receivable_not_reinvested",
+      "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+      "unknown_event_id": "byd-2026-04-23",
+      "unknown_reason": "selected_corporate_actions_unresolved_or_unsupported",
+      "known_settled_cash_usd": 1000.0,
+      "dividend_receivable_usd": 0.0
+    },
+    "compact": {
+      "status": "unknown",
+      "arm": "compact",
+      "force_long": false,
+      "hypothetical": true,
+      "is_fill": false,
+      "initial_cash_usd": 1000,
+      "cash_control_final_equity_usd": 1000,
+      "trades": [],
+      "decisions": [],
+      "final_equity_usd": null,
+      "pnl_usd": null,
+      "account_return": null,
+      "dividend_policy": "receivable_not_reinvested",
+      "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+      "unknown_event_id": "byd-2026-04-23",
+      "unknown_reason": "selected_corporate_actions_unresolved_or_unsupported",
+      "known_settled_cash_usd": 1000.0,
+      "dividend_receivable_usd": 0.0
+    },
+    "always_long": {
+      "status": "unknown",
+      "arm": "always_long",
+      "force_long": false,
+      "hypothetical": true,
+      "is_fill": false,
+      "initial_cash_usd": 1000,
+      "cash_control_final_equity_usd": 1000,
+      "trades": [],
+      "decisions": [],
+      "final_equity_usd": null,
+      "pnl_usd": null,
+      "account_return": null,
+      "dividend_policy": "receivable_not_reinvested",
+      "fees": "fixed_round_trip_allowance_not_verified_actual_broker_fees",
+      "unknown_event_id": "byd-2026-04-23",
+      "unknown_reason": "selected_corporate_actions_unresolved_or_unsupported",
+      "known_settled_cash_usd": 1000.0,
+      "dividend_receivable_usd": 0.0
+    }
+  },
+  "current_history_action_review": {
+    "status": "selected_three_stocks_and_two_IWM_windows_corroborated",
+    "private_path": "data/earnings-study-v1/action-review.v2.json",
+    "sha256": "279c589769ec80c787e6ea257f55b0e5d5b14a08d02725f5544b3f171b947719",
+    "interpretation": "Issuer distribution records, broad processed provider history and stable adjustment ratios corroborate no holding-window adjustment for selected trades. This does not prove original source-version availability or executable fills."
+  }
+}

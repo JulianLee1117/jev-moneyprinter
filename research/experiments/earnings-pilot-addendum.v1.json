@@ -1,0 +1,17 @@
+{
+  "schema_version": "earnings-pilot-addendum-v1",
+  "frozen_at": "2026-09-19T05:33:26.682386+00:00",
+  "before_features_and_event_prices": true,
+  "daily_window_clarification": "Entry-session adjusted close to the SAME frozen exit-session adjusted close, exactly five sessions later. Protocol exit+5 wording meant entry+5, not ten sessions.",
+  "source_fallback": "Same twelve frozen issuers; eight complete current-version original release pairs, four unavailable. Earlier source fallback amendment governs. No as-filed version or first-public novelty proof.",
+  "evidence_selection": "Fixed earnings-keyword-neighborhood-v1 whole original passages, 8000 serialized bytes per release. Scores: forward/outlook/guidance terms 5, business-dimension terms 3, first four passages 4. Greedy score-descending, index-tiebroken neighboring passages, retain source order. Full original text and every omission archived. Same inputs both models. Retrieval recall unvalidated.",
+  "quote_policy": "First chronological positive noncrossed unlocked two-sided quote in [09:35,09:36) with conditions exactly R and positive numeric sizes. Never skip to a later quote for a better price or larger size. Require first quote displayed relevant share size to cover actual modeled account quantity; unsupported sizes leave execution unknown. Dated 2026 sizes in shares.",
+  "size_source": "https://docs.alpaca.markets/us/v1.1/changelog/marketdata-bid-and-ask-size-display-change",
+  "condition_source": "https://www.nyse.com/publicdocs/nyse/data/Daily_TAQ_Client_Spec_v4.3.pdf",
+  "entry_universe": "Before ranking, require raw close of last session before entry >=5 USD and arithmetic mean(raw close * volume) over exactly twenty preceding exchange sessions >=1000000 USD. Missing control data remains eligibility unknown. Publish all twelve outcomes and controls, including ineligible cases.",
+  "always_long": "Constant score1 for every eligible event, event_id ties; no Jev score ranking.",
+  "action_quality": "Action query complete only means HTTP/pagination complete, not proven absence. Current processed history may contain revisions and omissions. Display quote-only price diagnostic separately; primary executable historical return remains unknown if event action status cannot be independently verified.",
+  "probabilities": "Preserve adapter-approved raw category masses including bounded two-decimal rounding, never renormalize. Native score subtracts raw adverse mass from raw favourable mass; not a return probability.",
+  "primary_no_fit": true,
+  "orders_enabled": false
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "earnings-return-pilot-protocol-v1",
+  "frozen_at": "2026-09-19T05:24:20.094049+00:00",
+  "status": "before_model_outputs_and_event_prices",
+  "purpose": "Complete the full disclosure-to-net-return pipeline; this small development cohort cannot establish alpha or train a predictive model.",
+  "cohort": "Source agent freezes a deterministic hash-ordered maximum12issuer sample from cached official2026Q2SEC8Kindex, currentoperatingNYSE/Nasdaqmetadata,latest2.02filing2026Apr-Jun and immediatelyprior2.02. Max32metadata checks; stoponce12selected; no replacements afterbodyfailures. FirsttickerlistGET403preserved; samplingframeamendmentbeforemetadata. Size/survivorship constraints are unverified for this pilot, not a representative smallcapbacktest.",
+  "source_clock": "Original SEC acceptance header in US Eastern where available; preserve submissions API timestamp separately. Entry after conservative SECavailabilitydate; no first-public-noveltyclaim. Earlierissuerrelease andinterveningguidance mayexist.",
+  "panel": "earnings-semantic-panel.v1.json",
+  "models": {
+    "jev": "typesafe/jev-1.13",
+    "compact": "openai/gpt-5.4-mini"
+  },
+  "phase_budget_usd": 2,
+  "retries": 0,
+  "inputs_then_prices": "Freeze all source requests, feature outputs/failures and numerical-control rules before opening event prices. Source failures remain in denominator. Model failure does not become cash.",
+  "market_data": {
+    "feed": "AlpacaSIP",
+    "entry": "09:35America/New_York second fullregularsession afterSECacceptanceNYdate, excludingacceptanceday",
+    "exit": "09:35five regularsessions afterentry; nootherhorizonsselected",
+    "quotes": "Firstvalidnoncrossedunlockedquote in fixed60secondwindow; retainconditions/displayedsize. Quotesarehypotheticalexecutionevidence, notfills. Max2pages1000records/window; no widening/retries basedonprice.",
+    "corporate_actions": "Collectbounded fullsupportedprocessedactionhistory per symbol. Apply verifiedcashdividend entitlement. Unsupported split/merger/spinoff or incompleteactiondata leavesprimary outcomeunknown, neverexcludes event exante.",
+    "daily_secondary": "Fullyadjusteddailyclose return fromentrysessionclose toexit+5sessionclose minus IWM. Separateproxy: adjustedbarsare not09:35fills; preserveevenwhenprimaryquote/actions fail.",
+    "pre_entry_controls": "20priorregularsessiondollarvolume fromrawclose*volume; adjustedreturn fromlastclosebeforeSECdate tocloseofsessionbeforeentry. No consensus-surprise claim.",
+    "benchmark": "IWM samewindows; cash0.0"
+  },
+  "costs": {
+    "capital_usd": 1000,
+    "whole_shares": true,
+    "adverse_slippage_bps_per_side": 10,
+    "fee_allowance_usd_roundtrip": 1,
+    "fee_allowance_is_assumption_not_broker_quote": true,
+    "secondary_adverse_slippage_bps_per_side": 25,
+    "model_fees": "Show providerfee and subtracteacharmactualinferencecost once from finalsimulatedcash; categoriesreuseJevoutputs so same costbasis, notanadditionalpaidcall."
+  },
+  "portfolios": "Onepositionatmost; firstchronologicaleligiblepositiveevent, sameentrydatehighestscoretiesevent_id; allcapitalavailabletowholeshareslessfeeallowance. Exitcashavailableonlyfollowingregularsession. Selectedmissingprice/action/modelstatesremainexplicitunknown; no futureoutcomefilter. Comparealwayslongdeterministicevent_idtie andcash; pairwiseconditionalanalysis disclosed.",
+  "primary_diagnostic": "Continuousfeatures versus samewindowprice/benchmarkreturns and illustrativelong-cashaccountP&L; no causalalphaorcalibrationclaim, no statisticalsignificanceclaimfrom12.",
+  "broad_stage": "Only afterpipelinecompletes: freezehundreds/thousandsofeligibleoriginaldisclosures, liquidity/sizecriteria, numericalbaselineandchronologicalpurgedtrain/validation/testboundaries; compareequallyregularizednumeric+priceonly,compactfeatures,Jevcategories,Jevdistributions. No returnmodel fit onthispilot. HistoricalLLMmemory requiresprospectiveconfirmation.",
+  "orders_enabled": false,
+  "subscriptions_purchased": false,
+  "models_started": false,
+  "event_prices_seen": false
+}

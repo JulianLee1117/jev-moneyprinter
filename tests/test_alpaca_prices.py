@@ -122,6 +122,19 @@ class AlpacaCaptureTests(unittest.TestCase):
             self.assertIn("invalid_or_empty_size", records[3]["quality_flags"])
             self.assertTrue(all(not r["is_fill"] for r in records))
 
+    def test_quote_size_units_follow_dated_provider_change_without_scaling_raw_sizes(self):
+        for day, offset, hour, expected in (("2025-10-31", "-04:00", "14", "provider_round_lots; lot size not inferred"),
+                                            ("2025-11-03", "-05:00", "15", "shares")):
+            request = query()
+            request.update(start=f"{day}T{hour}:00:00Z", end=f"{day}T{hour}:01:00Z", asof=day)
+            request["calendar"].update(date=day, open=f"{day}T09:30:00{offset}", close=f"{day}T16:00:00{offset}")
+            with self.subTest(day=day), TemporaryDirectory() as root, Store(Path(root) / "archive") as store:
+                receipt, records, _ = self.run_capture(root, store, [response([quote(t=request["start"])])], request)
+                self.assertEqual(receipt["status"], "captured")
+                self.assertEqual(records[0]["size_unit"], expected)
+                self.assertEqual((records[0]["bid_size"], records[0]["ask_size"]), (2, 3))
+                self.assertIn("bid-and-ask-size-display-change", records[0]["size_unit_source_url"])
+
     def test_exact_fifteen_minute_boundary_is_allowed_but_one_nanosecond_newer_is_rejected(self):
         request = query()
         request.update(start="2026-09-18T14:44:00Z", end="2026-09-18T14:45:00Z")
