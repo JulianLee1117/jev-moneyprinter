@@ -20,6 +20,8 @@ The latest CORE test completed twenty Jev judgments and nineteen valid baseline 
 
 The Jev treatment is a panel of atomic evidence decisions with native uncertainty, followed by deterministic economic-condition propagation. Compare it with numeric rules, conventional models and Jev's own categorical outputs. These methods are also possible with older models; incremental decision quality and post-alert returns must be demonstrated. Model confidence is not a profit probability. See [PLAN.md](PLAN.md).
 
+The [premise review](research/experiments/jev-alpha-premise-review-2026-09-18.md) limits the next stage to a bounded incremental-information test. Jev is a candidate feature extractor, not an assumed edge. A competitive conventional-model probability baseline is now required before any Jev-specific claim; published automation benchmarks do not establish financial calibration.
+
 ## Run locally
 
 Python 3.11 or newer; no runtime packages, API keys or installation needed for offline commands. Run from the repository root. `python -m jev_alpha --help` lists commands. An optional `pip install -e .` exposes `jev-alpha`, but is unnecessary.

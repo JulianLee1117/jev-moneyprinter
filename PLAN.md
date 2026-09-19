@@ -2,6 +2,14 @@
 
 Status: first earnings return diagnostic completed, September 18, 2026. Objective: trading alpha using Jev through OpenRouter. The frozen simple semantic rule lost money in the current-history illustration. No live orders, background schedules or demonstrated profitable strategy.
 
+## Premise decision after the return pilot
+
+There is weak but testable potential for Jev to improve the measurement of economically useful language. There is no evidence that its new interface itself creates stock alpha. Continue one bounded, model-agnostic test of incremental return information; keep Jev as a candidate component. The [premise review](research/experiments/jev-alpha-premise-review-2026-09-18.md) records the evidence, alternative explanation and stopping decisions.
+
+The next comparison must include a competitive conventional model producing full probability features on the same evidence, in addition to numerical/price controls and categorical ablations. The previous compact hard-label control cannot isolate a Jev-specific probability advantage. An untrained positive-language score is retired. Dated sources and numerical context come before further model calls; model selection, economic effect size, evaluation precision and chronological splits must be registered before holdout prices. Historical improvement alone cannot clear the prospective confirmation requirement.
+
+If semantic features add no useful return information, stop this family. If they help but Jev does not add value, stop requiring Jev and keep the financially useful method if independently validated. Inconclusive results do not authorize an unlimited search across families. No new orders, subscriptions or schedules.
+
 ## Latest result and next work
 
 The [earnings return pilot](research/experiments/earnings-pilot-review-2026-09-18.md) completed the full disclosure-to-price chain. Twelve frozen issuers produced eight usable source pairs and sixteen valid model calls before price capture. Six model-complete cases passed pre-entry liquidity/price criteria; all six underperformed IWM. The conditional $1,000 account lost about $94.92 using Jev probabilities, versus $79.79 using Jev categories. Native Jev and the conventional model selected the same two trades. This is a small current-history diagnostic, not executable historical alpha.
