@@ -1,8 +1,26 @@
 # Jev profit-validation MVP
 
-Status: active experimental research, September 18, 2026. Objective: a repeatable profitable edge using Jev through OpenRouter. No live orders or background schedules. Public data availability is a design constraint.
+Status: strategic reset, September 18, 2026. Objective: profitable use of Jev through OpenRouter. No live orders or background schedules. No profitable strategy or paying customer has been established.
 
-## Current decision: close aggregate-WFE test; check finite cash-tender opportunity supply
+## Current decision: trading only; validate incremental post-disclosure returns
+
+The user clarified that the objective is trading alpha specifically. No business-service pivot. Stop the proposed tender expansion and further isolated extraction benchmarks. Prior runs chiefly tested source feasibility and interpretation; none measured event-trading returns. Their negative gates do not prove Jev cannot help predict returns. The semiconductor panel's all-negative primary references cannot measure opportunity detection, and its native probability threshold added no primary decision benefit. Sparse odd-lot offers are a weak flagship for Jev's parallel decision capabilities.
+
+The recommended research direction is a broad, fixed cohort of earnings/guidance disclosures for liquid smaller U.S. companies, with a small prespecified panel describing changes in demand, pricing, margin pressures, orders and management guidance. Treat these as graded semantic features. Do not require every positive judgment to clear an arbitrary conjunction before studying whether the features contain economic information. This is a research judgment about fit, not evidence of a high-probability profitable strategy.
+
+The economic hypothesis is incomplete incorporation of economically informative language beyond numerical news and the already observed price response. Historical research motivates testing it but does not establish current alpha. Prefer direct issuer effects first; supplier graphs add unverified exposure relationships and more degrees of freedom. Quantities, dates, accounting comparisons and returns stay in code. Jev evaluates a few precise semantic questions in parallel, preserving full distributions. Their predictive value and calibration must be tested against observed outcomes rather than assumed.
+
+Next milestone: one complete financial diagnostic using existing components. First verify a small chronological sample has as-available original disclosures, prior evidence and valid delayed entry/exit prices. Original SEC filing exhibits and their availability timestamps can supply a conservative observation clock even when the issuer announced earlier; do not claim first-public novelty or require proof of it merely to test returns after our documented availability. Then freeze a much broader cohort, features, realistic execution rule, accounting, costs and chronological development/validation/test boundaries before fitting or viewing holdout results. Compare numerical and price controls, those controls plus conventional-model semantic features, Jev categories and Jev full distributions with comparable model capacity. Use a simple regularized return model; no large feature/threshold search. Evaluate the actual whole-share $1,000 long-only account constraints separately from unconstrained cross-sectional ranking. Include cash, market exposure and an ordinary earnings-drift control. No prices are requested under an unrelated older protocol.
+
+Research motivation: [Federal Reserve research on earnings-release language](https://www.federalreserve.gov/pubs/ifdp/2008/951/ifdp951.htm) and [PEAD.txt](https://gerbil.life/papers/pead_jfqa.pdf) document historical text-related drift. Their old samples, data access and portfolio assumptions do not establish profitability today or in our account. [TypeSafe documents](https://docs.typesafe.ai/introduction) support the parallel structured-feature design, not a trading-return claim.
+
+Historical use of a current language model remains a diagnostic because model training may include historical outcomes. Require prospective paper confirmation after a locked research pass before any claim of usable alpha. New paid data access may be the relevant resource; do not purchase subscriptions without user authorization or substitute incomplete free data silently. No live orders or background monitoring.
+
+Keep existing fast regression tests: the audit found no clear duplicate bodies worth deleting, and all 385 run in about seven seconds. Add tests for consequential behavior only. Test counts, source-page counts and API savings are not profitability milestones. Reuse the existing adapters and accounting; build only what blocks measuring net returns.
+
+The sections below preserve prior plans and evidence. Their "next" steps are historical and do not supersede this reset. Frozen protocols and raw results remain unchanged.
+
+## Previous proposed direction: aggregate-WFE closure and cash-tender census
 
 **The 13-event semiconductor comparison is complete.** Jev matched 121/139 unambiguous atomic references versus 78/139 for the compact control. It correctly rejected all 13 unsupported aggregate-WFE claims; compact incorrectly supported three. Native probability routing changed zero primary decisions versus categorical Jev. Every primary reference was rejected, so an always-reject diagnostic also matches 13/13 and positive sensitivity is unmeasurable. No returns were tested. See [the closed comparison review](research/experiments/read-through-closed-review-2026-09-18.md) and [aggregate results](research/experiments/read-through-closed-results-2026-09-18.json).
 
