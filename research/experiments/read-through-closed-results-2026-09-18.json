@@ -1,0 +1,366 @@
+{
+  "schema_version": "read-through-closed-public-summary-v1",
+  "created_at": "2026-09-19T04:52:59.770867+00:00",
+  "local_research_date": "2026-09-18",
+  "suite_sha256": "e2faef065b6c4196ab27820cf4f2dcfd9fa841fd0b8d6ffd31506906694f4168",
+  "protocol_sha256": "a4ff301921c062ee40ccc373dff3043d0c9ce37f483ecca8523597bcbe202cb3",
+  "panel_sha256": "e62bb9622b208e74740081db68cc7c06a78be96d7b051e13a667ca2e6da8361c",
+  "plan_sha256": [
+    "a9b74c5a4cb8857fe4d0951cb0b4aeb78e7dddd96c5d0045a67124f26f346823",
+    "6268f4efd8c4f1c40b75bfd7582d2cb3f2e29442b8c01ce0efa0bba0acf4968e"
+  ],
+  "private_result_sha256": "5fdfdd84629847621b087e62054e45c459e776845e5a161ce57994125c7a609f",
+  "reference_sensitivity_sha256": "61263edcdbb3efc192410666240ac7ba996fcd630e7ae19aaec304641f721f0e",
+  "events": 13,
+  "valid_calls": 26,
+  "attempts": 26,
+  "failures": 0,
+  "retries": 0,
+  "models": {
+    "jev_serving": "typesafe/jev-1.13-20260917",
+    "conventional_serving": "openai/gpt-5.4-mini"
+  },
+  "atomic": {
+    "jev": {
+      "registered": 156,
+      "valid": 156,
+      "excluded_ambiguous": 17,
+      "unambiguous_correct": 121,
+      "unambiguous_total": 139,
+      "unambiguous_accuracy": 0.8705035971223022,
+      "event_macro_agreement": 0.8774669774669774,
+      "all_reference_correct_secondary": 127
+    },
+    "baseline": {
+      "registered": 156,
+      "valid": 156,
+      "excluded_ambiguous": 17,
+      "unambiguous_correct": 78,
+      "unambiguous_total": 139,
+      "unambiguous_accuracy": 0.5611510791366906,
+      "event_macro_agreement": 0.5567599067599067,
+      "all_reference_correct_secondary": 87
+    }
+  },
+  "routes": {
+    "supported_same_year_wfe_demand_increase_in_supplied_pair": {
+      "metrics": {
+        "jev": {
+          "route_count": 13,
+          "exact_reference_matches": 13,
+          "correctly_supported": 0,
+          "unsupported_positive_claims": 0,
+          "missed_supported_references": 0,
+          "statuses": {
+            "rejected": 13
+          }
+        },
+        "jev_categorical": {
+          "route_count": 13,
+          "exact_reference_matches": 13,
+          "correctly_supported": 0,
+          "unsupported_positive_claims": 0,
+          "missed_supported_references": 0,
+          "statuses": {
+            "rejected": 13
+          }
+        },
+        "baseline": {
+          "route_count": 13,
+          "exact_reference_matches": 10,
+          "correctly_supported": 0,
+          "unsupported_positive_claims": 3,
+          "missed_supported_references": 0,
+          "statuses": {
+            "rejected": 10,
+            "supported": 3
+          }
+        }
+      },
+      "native_changes": [],
+      "event_count": 13,
+      "route_observations_are_independent": false,
+      "alpha_established": false,
+      "reference_statuses": {
+        "rejected": 13
+      },
+      "confusion_counts": {
+        "jev": {
+          "rejected->rejected": 13
+        },
+        "jev_categorical": {
+          "rejected->rejected": 13
+        },
+        "baseline": {
+          "rejected->rejected": 10,
+          "rejected->supported": 3
+        }
+      },
+      "positive_sensitivity_estimable_against_raw_labels": false,
+      "positive_sensitivity_estimable_on_robust_references": false,
+      "metric_reference_basis": "Frozen categorical references before ambiguity propagation; see reference_ambiguity_sensitivity for robust-reference counts."
+    },
+    "headline_increase_explained_only_by_non_front_end": {
+      "metrics": {
+        "jev": {
+          "route_count": 13,
+          "exact_reference_matches": 6,
+          "correctly_supported": 0,
+          "unsupported_positive_claims": 0,
+          "missed_supported_references": 1,
+          "statuses": {
+            "rejected": 6,
+            "unresolved": 7
+          }
+        },
+        "jev_categorical": {
+          "route_count": 13,
+          "exact_reference_matches": 11,
+          "correctly_supported": 1,
+          "unsupported_positive_claims": 1,
+          "missed_supported_references": 0,
+          "statuses": {
+            "rejected": 10,
+            "supported": 2,
+            "unresolved": 1
+          }
+        },
+        "baseline": {
+          "route_count": 13,
+          "exact_reference_matches": 12,
+          "correctly_supported": 1,
+          "unsupported_positive_claims": 1,
+          "missed_supported_references": 0,
+          "statuses": {
+            "rejected": 11,
+            "supported": 2
+          }
+        }
+      },
+      "native_changes": [
+        {
+          "event_id": "micron-fy2026-q1",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "rejected",
+          "categorical": "supported",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": false,
+          "avoids_unsupported_positive": true,
+          "loses_supported_positive": false
+        },
+        {
+          "event_id": "micron-fy2026-q2",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "supported",
+          "categorical": "supported",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": true,
+          "avoids_unsupported_positive": false,
+          "loses_supported_positive": true
+        },
+        {
+          "event_id": "tsmc-2024-q4",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "rejected",
+          "categorical": "rejected",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": true,
+          "avoids_unsupported_positive": false,
+          "loses_supported_positive": false
+        },
+        {
+          "event_id": "tsmc-2025-q3",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "rejected",
+          "categorical": "rejected",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": true,
+          "avoids_unsupported_positive": false,
+          "loses_supported_positive": false
+        },
+        {
+          "event_id": "tsmc-2026-q1",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "rejected",
+          "categorical": "rejected",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": true,
+          "avoids_unsupported_positive": false,
+          "loses_supported_positive": false
+        },
+        {
+          "event_id": "tsmc-2026-q2",
+          "route_id": "headline_increase_explained_only_by_non_front_end",
+          "reference": "rejected",
+          "categorical": "rejected",
+          "native": "unresolved",
+          "improves_exact_match": false,
+          "worsens_exact_match": true,
+          "avoids_unsupported_positive": false,
+          "loses_supported_positive": false
+        }
+      ],
+      "event_count": 13,
+      "route_observations_are_independent": false,
+      "alpha_established": false,
+      "reference_statuses": {
+        "rejected": 12,
+        "supported": 1
+      },
+      "confusion_counts": {
+        "jev": {
+          "rejected->unresolved": 6,
+          "rejected->rejected": 6,
+          "supported->unresolved": 1
+        },
+        "jev_categorical": {
+          "rejected->rejected": 10,
+          "rejected->supported": 1,
+          "supported->supported": 1,
+          "rejected->unresolved": 1
+        },
+        "baseline": {
+          "rejected->supported": 1,
+          "rejected->rejected": 11,
+          "supported->supported": 1
+        }
+      },
+      "positive_sensitivity_estimable_against_raw_labels": true,
+      "positive_sensitivity_estimable_on_robust_references": false,
+      "metric_reference_basis": "Frozen categorical references before ambiguity propagation; see reference_ambiguity_sensitivity for robust-reference counts."
+    }
+  },
+  "reference_ambiguity_sensitivity": {
+    "supported_same_year_wfe_demand_increase_in_supplied_pair": {
+      "robust_reference_count": 13,
+      "robust_supported_reference_count": 0,
+      "robust_positive_sensitivity_estimable": false,
+      "exact_matches_on_robust_references": {
+        "jev": 13,
+        "jev_categorical": 13,
+        "baseline": 10
+      },
+      "non_robust_events": []
+    },
+    "headline_increase_explained_only_by_non_front_end": {
+      "robust_reference_count": 9,
+      "robust_supported_reference_count": 0,
+      "robust_positive_sensitivity_estimable": false,
+      "exact_matches_on_robust_references": {
+        "jev": 5,
+        "jev_categorical": 8,
+        "baseline": 8
+      },
+      "non_robust_events": [
+        "micron-fy2026-q1",
+        "tsmc-2025-q4",
+        "micron-fy2026-q2",
+        "tsmc-2026-q2"
+      ]
+    }
+  },
+  "numeric_control": {
+    "rows": [
+      {
+        "event_id": "tsmc-2024-q4",
+        "direction": "unknown",
+        "status": "unresolved",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2025-q2",
+        "direction": "unchanged",
+        "status": "rejected",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2025-q1",
+        "direction": "unchanged",
+        "status": "rejected",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2025-q3",
+        "direction": "unchanged",
+        "status": "rejected",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2025-q2",
+        "direction": "unchanged",
+        "status": "rejected",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2025-q4",
+        "direction": "unknown",
+        "status": "unresolved",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2025-q3",
+        "direction": "increase",
+        "status": "supported",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2026-q1",
+        "direction": "increase",
+        "status": "supported",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2025-q4",
+        "direction": "unknown",
+        "status": "unresolved",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2026-q2",
+        "direction": "unknown",
+        "status": "unresolved",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2026-q1",
+        "direction": "unchanged",
+        "status": "rejected",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "micron-fy2026-q3",
+        "direction": "unknown",
+        "status": "unresolved",
+        "reference": "rejected"
+      },
+      {
+        "event_id": "tsmc-2026-q2",
+        "direction": "increase",
+        "status": "supported",
+        "reference": "rejected"
+      }
+    ],
+    "statuses": {
+      "unresolved": 5,
+      "rejected": 5,
+      "supported": 3
+    },
+    "exact_reference_matches": 5,
+    "unsupported_positive_claims": 3,
+    "reviewed_number_heuristic_not_automatic_parser": true
+  },
+  "registered_specificity_comparison_threshold_met": true,
+  "material_native_benefit_met": false,
+  "always_reject_primary_matches_diagnostic": 13,
+  "always_reject_is_post_result_context_not_a_new_registered_arm": true,
+  "accounted_phase_usd": 0.039585924,
+  "profitability_established": false,
+  "returns_evaluated": false,
+  "decision": "Close this aggregate-WFE source/rule combination as an opportunity-generating experiment: zero robust supported positives. Preserve the narrow negative-claim filtering improvement versus this compact control. No native-probability benefit demonstrated.",
+  "public_replay_limit": "Evidence, reference details, full distributions and raw model responses are local ignored data; the public checkout cannot independently reproduce these live scores."
+}

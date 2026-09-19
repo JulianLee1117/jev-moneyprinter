@@ -1,0 +1,65 @@
+{
+  "schema_version": "read-through-closed-comparison-protocol-v1",
+  "registered_at": "2026-09-19T04:17:32.320192+00:00",
+  "status": "registered_before_model_outputs",
+  "objective": "Falsify or support incremental economic document interpretation and useful native probability routing across the fixed13-event census; no prices or trading claims.",
+  "census_path": "research/experiments/read-through-event-census.v1.json",
+  "census_canonical_sha256": "75d4f946f525b4e8580a04e238f8c8ffef862350d76df9a9cb3ee5d9e3e8dffb",
+  "event_ids_in_order": [
+    "tsmc-2024-q4",
+    "micron-fy2025-q2",
+    "tsmc-2025-q1",
+    "micron-fy2025-q3",
+    "tsmc-2025-q2",
+    "micron-fy2025-q4",
+    "tsmc-2025-q3",
+    "micron-fy2026-q1",
+    "tsmc-2025-q4",
+    "micron-fy2026-q2",
+    "tsmc-2026-q1",
+    "micron-fy2026-q3",
+    "tsmc-2026-q2"
+  ],
+  "source_scope": "Current-version original capital-spending excerpts from each current and immediately preceding main earnings document. Exact source hashes, offsets, selection omissions and after-call amendments remain recorded. Missing interim disclosures prevent first-public-novelty conclusions.",
+  "relationship_to_financial_protocol": "Separate closed-document interpretation diagnostic. Does not change frozen financial protocol, economic rule, source requirements or authorize event prices.",
+  "inputs_frozen_before_calls": "All13 evidence pairs, uniform question panel, source-grounded agent-reviewed labels and numeric annotations, routes, two prepared plans and complete suite hash.",
+  "batching": "Chronological first12 then last1 solely to reuse the existing development runner max12 fixture guard. Both batches freeze together; shared Store and phase budget. Stop before batch2 if any failure in batch1.",
+  "models": {
+    "jev": "typesafe/jev-1.13",
+    "conventional": "openai/gpt-5.4-mini"
+  },
+  "phase_budget_usd": 2,
+  "retries": 0,
+  "probability_threshold": 0.8,
+  "threshold_definition": "Chosen-category native probability, not provider confidence statistic and not profit probability.",
+  "controls": [
+    "same original evidence and questions with compact categorical conventional model",
+    "Jev chosen categories without probability threshold",
+    "independently reviewed annual total-capex numbers plus deterministic midpoint arithmetic"
+  ],
+  "numeric_control": "Use only same target annual forecast period and accounting basis with finite prior/current interval bounds. Compare interval midpoints; unavailable/open bounds or incomparable periods remain unknown. Reviewed number selection is disclosed; this is not an automatic raw-document parser.",
+  "evaluation_unit": "13 earnings episodes. Atomic questions and multiple routes are dependent diagnostics, not additional independent financial observations.",
+  "primary_metrics": [
+    "source-supported positive routes retained",
+    "unsupported positive routes emitted",
+    "ternary route match",
+    "incremental correct route decisions versus conventional control",
+    "native probability changes that prevent unsupported categorical positives",
+    "native probability changes that lose supported categorical positives"
+  ],
+  "secondary_metrics": [
+    "atomic answer match versus frozen agent-reviewed labels",
+    "chosen-category probability and ambiguity/error inspection"
+  ],
+  "reference_limit": "Agent-reviewed development labels, not human gold or a blind independent market holdout. Surface ambiguities without relabeling the frozen result or rerunning after outputs.",
+  "stopping_rules": {
+    "no_incremental_route_information": "Stop expanding this Jev-specific mechanism if it never improves an economic route decision beyond conventional and total-headline controls.",
+    "no_native_routing_benefit": "Do not claim native-probability advantage if thresholds never change decisions helpfully, or only discard supported decisions.",
+    "no_supported_variation": "Treat the financial rule as untestable on this population if the source references show no relevant variation; no lowering thresholds to manufacture signals.",
+    "small_positive": "At most justifies a prospective paper test with observable source timestamps. Does not establish profitable alpha.",
+    "historical_eligibility": "Unknown complete prior public state or exact source-version availability remains unknown; no executable-P&L claim."
+  },
+  "model_outputs_seen": false,
+  "event_prices_used": false,
+  "orders_enabled": false
+}
