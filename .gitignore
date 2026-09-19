@@ -9,6 +9,8 @@ build/
 dist/
 *.egg-info/
 .pytest_cache/
+tmp/pdfs/
+tmp/procurement-*.json
 
 # Local evidence and provider-output artifacts stay private. Public reports and
 # protocols describe them without distributing source bodies or API envelopes.

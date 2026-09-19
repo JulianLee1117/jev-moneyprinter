@@ -1,5 +1,7 @@
 # Public snapshot and reproducibility
 
+The project is paused by user direction as of September 19, 2026. This snapshot preserves completed work; publishing it does not restart research, collection or model spending. The reopening conditions in [PLAN.md](PLAN.md) supersede historical recommendations and runbook instructions.
+
 This repository publishes the project implementation, offline tests, authored research summaries, registered experiment protocols and synthetic examples. It is a research system, with no order-submission implementation and no demonstrated profitable strategy.
 
 The synthetic read-through example works from a clean checkout without credentials, market data or downloaded documents. The offline test suite uses synthetic inputs and the public Federal Register question pack. Historical result summaries describe local experiments; the public checkout does not include everything needed to reproduce the original model runs.

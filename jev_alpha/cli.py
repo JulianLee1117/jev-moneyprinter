@@ -146,6 +146,7 @@ def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser(description="Evidence-first Jev alpha research. No trading orders.")
     root.add_argument("--data-dir", type=Path, default=Path("data"), help="Local ignored archive directory")
     commands = root.add_subparsers(dest="command", required=True)
+    commands.add_parser("procurement", help="Bounded procurement census, model comparison and return simulation (procurement --help)")
     commands.add_parser("init", help="Initialize local archive")
     imp = commands.add_parser("import-discovery", help="Import recorded discovery metadata offline")
     imp.add_argument("path", type=Path)
@@ -302,6 +303,10 @@ def parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    supplied = list(sys.argv[1:] if argv is None else argv)
+    if supplied and supplied[0] == "procurement":
+        from .procurement import main as procurement_main
+        return procurement_main(supplied[1:])
     args = parser().parse_args(argv)
     try:
         with Store(args.data_dir) as store:

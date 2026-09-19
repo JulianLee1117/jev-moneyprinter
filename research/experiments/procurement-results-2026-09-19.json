@@ -1,0 +1,1135 @@
+{
+  "schema_version": "procurement-public-results-v1",
+  "created_at": "2026-09-19T09:27:46.587747+00:00",
+  "decision": "stop_or_inconclusive_no_expansion",
+  "contribution_status": "inconclusive",
+  "proven_alpha": false,
+  "prospective_authorized": false,
+  "orders_enabled": false,
+  "scope": {
+    "symbols": [
+      "GVA",
+      "ROAD",
+      "STRL",
+      "TPC",
+      "PRIM",
+      "ORN"
+    ],
+    "sources": 10,
+    "period": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "holdout": [
+      "2025-10-01",
+      "2025-12-31"
+    ],
+    "initial_cash_usd": 1000,
+    "max_model_spending_usd": 50
+  },
+  "coverage": {
+    "catalogued_document_records": 5771,
+    "unique_raw_hashes": 5501,
+    "prepared_documents": 5085,
+    "prepared_packets": 64015,
+    "represented_targets": 293561,
+    "model_required_packets": 50,
+    "development_required": 37,
+    "holdout_required": 13,
+    "required_source_documents": 8,
+    "inference_exempt_packets": 63965,
+    "preparation_failures": 686,
+    "coverage_complete": false,
+    "source_record_counts": {
+      "broward": 1000,
+      "scvwd": 629,
+      "metro": 412,
+      "san_antonio": 0,
+      "king_county": 1000,
+      "seattle": 1000,
+      "port_tampa": 310,
+      "port_seattle": 856,
+      "txdot": 167,
+      "fdot": 397
+    }
+  },
+  "independent_review": {
+    "packets": 140,
+    "documents": 89,
+    "source_signal_counts": {
+      "ineligible": 133,
+      "unresolved": 7
+    },
+    "reviewed_qualifying_projects": 0,
+    "reviewed_qualifying_issuers": 0,
+    "reviewers": "Independent source-review agents, with raw evidence and selected PDF layout checks; no model outputs or prices supplied for categorical labeling."
+  },
+  "quality": {
+    "rules": {
+      "reviewed_packets": 140,
+      "missing_reviewed_predictions": 0,
+      "exact_match_scored_packets": 50,
+      "all_reviewed_categories_match": 0,
+      "categories": {
+        "recipient": {
+          "reviewed": 50,
+          "matched": 29,
+          "missing": 0
+        },
+        "stage": {
+          "reviewed": 50,
+          "matched": 0,
+          "missing": 0
+        },
+        "amount": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        },
+        "amount_kind": {
+          "reviewed": 50,
+          "matched": 25,
+          "missing": 0
+        },
+        "scope": {
+          "reviewed": 50,
+          "matched": 0,
+          "missing": 0
+        },
+        "conditions": {
+          "reviewed": 50,
+          "matched": 12,
+          "missing": 0
+        },
+        "prior_known": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        }
+      },
+      "expected_packets": 64015,
+      "reported_packets": 64015,
+      "missing_required_results": 0,
+      "frozen_inference_exemption_status_counts": {
+        "unknown": 51401,
+        "no_signal": 12564
+      },
+      "frozen_inference_exemption_reason_counts": {
+        "no_target_amount": 38320,
+        "unverified_units_below_numeric_materiality_floor": 6481,
+        "amount_below_all_six_materiality_floors": 10631,
+        "no_verified_alias_in_supplied_evidence": 4505,
+        "source_amount_unresolved": 2095,
+        "source_explicitly_bid_only": 1933
+      },
+      "status_counts": {
+        "missing_result": 0
+      },
+      "cached_rows": 0,
+      "fresh_latency_rows": 0,
+      "fresh_end_to_end_ms": [],
+      "reviewed_qualifying_projects": 0,
+      "recalled_qualifying_projects": 0,
+      "qualifying_project_recall": null,
+      "false_positive_reviewed_projects": 0,
+      "unresolved_source_signal_labels": 7
+    },
+    "nano": {
+      "reviewed_packets": 140,
+      "missing_reviewed_predictions": 0,
+      "exact_match_scored_packets": 50,
+      "all_reviewed_categories_match": 0,
+      "categories": {
+        "recipient": {
+          "reviewed": 50,
+          "matched": 29,
+          "missing": 0
+        },
+        "stage": {
+          "reviewed": 50,
+          "matched": 19,
+          "missing": 0
+        },
+        "amount": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        },
+        "amount_kind": {
+          "reviewed": 50,
+          "matched": 28,
+          "missing": 0
+        },
+        "scope": {
+          "reviewed": 50,
+          "matched": 12,
+          "missing": 0
+        },
+        "conditions": {
+          "reviewed": 50,
+          "matched": 19,
+          "missing": 0
+        },
+        "prior_known": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        }
+      },
+      "expected_packets": 64015,
+      "reported_packets": 64015,
+      "missing_required_results": 0,
+      "frozen_inference_exemption_status_counts": {
+        "unknown": 51401,
+        "no_signal": 12564
+      },
+      "frozen_inference_exemption_reason_counts": {
+        "no_target_amount": 38320,
+        "unverified_units_below_numeric_materiality_floor": 6481,
+        "amount_below_all_six_materiality_floors": 10631,
+        "no_verified_alias_in_supplied_evidence": 4505,
+        "source_amount_unresolved": 2095,
+        "source_explicitly_bid_only": 1933
+      },
+      "status_counts": {
+        "not_required": 63965,
+        "completed": 50,
+        "missing_result": 0
+      },
+      "cached_rows": 37,
+      "fresh_latency_rows": 13,
+      "fresh_end_to_end_ms": [
+        1691.4658999885432,
+        1337.4681000132114,
+        1729.96399999829,
+        1388.166300021112,
+        1649.2750000325032,
+        1403.5527000087313,
+        2014.2329999944195,
+        1572.7848000242375,
+        3342.1945000300184,
+        3306.661000009626,
+        3361.8577999877743,
+        3299.2926000151783,
+        3158.6429000017233
+      ],
+      "reviewed_qualifying_projects": 0,
+      "recalled_qualifying_projects": 0,
+      "qualifying_project_recall": null,
+      "false_positive_reviewed_projects": 4,
+      "unresolved_source_signal_labels": 7
+    },
+    "mini": {
+      "reviewed_packets": 140,
+      "missing_reviewed_predictions": 9,
+      "exact_match_scored_packets": 50,
+      "all_reviewed_categories_match": 3,
+      "categories": {
+        "recipient": {
+          "reviewed": 50,
+          "matched": 19,
+          "missing": 9
+        },
+        "stage": {
+          "reviewed": 50,
+          "matched": 19,
+          "missing": 9
+        },
+        "amount": {
+          "reviewed": 50,
+          "matched": 41,
+          "missing": 9
+        },
+        "amount_kind": {
+          "reviewed": 50,
+          "matched": 26,
+          "missing": 9
+        },
+        "scope": {
+          "reviewed": 50,
+          "matched": 14,
+          "missing": 9
+        },
+        "conditions": {
+          "reviewed": 50,
+          "matched": 21,
+          "missing": 9
+        },
+        "prior_known": {
+          "reviewed": 50,
+          "matched": 41,
+          "missing": 9
+        }
+      },
+      "expected_packets": 64015,
+      "reported_packets": 64015,
+      "missing_required_results": 0,
+      "frozen_inference_exemption_status_counts": {
+        "unknown": 51401,
+        "no_signal": 12564
+      },
+      "frozen_inference_exemption_reason_counts": {
+        "no_target_amount": 38320,
+        "unverified_units_below_numeric_materiality_floor": 6481,
+        "amount_below_all_six_materiality_floors": 10631,
+        "no_verified_alias_in_supplied_evidence": 4505,
+        "source_amount_unresolved": 2095,
+        "source_explicitly_bid_only": 1933
+      },
+      "status_counts": {
+        "not_required": 63965,
+        "prior_attempt_blocked": 9,
+        "completed": 41,
+        "missing_result": 0
+      },
+      "cached_rows": 20,
+      "fresh_latency_rows": 21,
+      "fresh_end_to_end_ms": [
+        1380.5711000459269,
+        2977.839800005313,
+        4405.351300025359,
+        5623.415100038983,
+        7023.455400019884,
+        8141.451700008474,
+        9073.942000046372,
+        9978.82290004054,
+        1405.1904000225477,
+        3138.917800039053,
+        4413.63339999225,
+        5560.545600019395,
+        6723.840899998322,
+        8043.945999990683,
+        9412.848200008739,
+        10616.253399988636,
+        11793.348700040951,
+        13111.618000024464,
+        14813.234400004148,
+        16087.549599993508,
+        17643.928800011054
+      ],
+      "reviewed_qualifying_projects": 0,
+      "recalled_qualifying_projects": 0,
+      "qualifying_project_recall": null,
+      "false_positive_reviewed_projects": 2,
+      "unresolved_source_signal_labels": 7
+    },
+    "jev": {
+      "reviewed_packets": 140,
+      "missing_reviewed_predictions": 0,
+      "exact_match_scored_packets": 50,
+      "all_reviewed_categories_match": 2,
+      "categories": {
+        "recipient": {
+          "reviewed": 50,
+          "matched": 35,
+          "missing": 0
+        },
+        "stage": {
+          "reviewed": 50,
+          "matched": 3,
+          "missing": 0
+        },
+        "amount": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        },
+        "amount_kind": {
+          "reviewed": 50,
+          "matched": 33,
+          "missing": 0
+        },
+        "scope": {
+          "reviewed": 50,
+          "matched": 16,
+          "missing": 0
+        },
+        "conditions": {
+          "reviewed": 50,
+          "matched": 25,
+          "missing": 0
+        },
+        "prior_known": {
+          "reviewed": 50,
+          "matched": 50,
+          "missing": 0
+        }
+      },
+      "expected_packets": 64015,
+      "reported_packets": 64015,
+      "missing_required_results": 0,
+      "frozen_inference_exemption_status_counts": {
+        "unknown": 51401,
+        "no_signal": 12564
+      },
+      "frozen_inference_exemption_reason_counts": {
+        "no_target_amount": 38320,
+        "unverified_units_below_numeric_materiality_floor": 6481,
+        "amount_below_all_six_materiality_floors": 10631,
+        "no_verified_alias_in_supplied_evidence": 4505,
+        "source_amount_unresolved": 2095,
+        "source_explicitly_bid_only": 1933
+      },
+      "status_counts": {
+        "not_required": 63965,
+        "completed": 50,
+        "missing_result": 0
+      },
+      "cached_rows": 37,
+      "fresh_latency_rows": 13,
+      "fresh_end_to_end_ms": [
+        324.6011000010185,
+        369.3511000019498,
+        429.94699999690056,
+        328.7807999877259,
+        328.1363999703899,
+        390.7825999776833,
+        348.69269997579977,
+        338.9249999891035,
+        848.5835999599658,
+        902.4612999637611,
+        911.565599963069,
+        859.2353999847546,
+        905.9939999715425
+      ],
+      "reviewed_qualifying_projects": 0,
+      "recalled_qualifying_projects": 0,
+      "qualifying_project_recall": null,
+      "false_positive_reviewed_projects": 1,
+      "unresolved_source_signal_labels": 7
+    }
+  },
+  "holdout_processing": {
+    "jev": {
+      "workers": 8,
+      "fresh_latency_observations": 13,
+      "fresh_execution_wall_ms": 929.4630999793299,
+      "total_processing_wall_ms": 44130.50100003602,
+      "request_preparation_ms": 41290.237199980766,
+      "latency_ms_p50": 390.7825999776833,
+      "all_completed": true
+    },
+    "nano": {
+      "workers": 8,
+      "fresh_latency_observations": 13,
+      "fresh_execution_wall_ms": 3374.934400024358,
+      "total_processing_wall_ms": 60652.62870001607,
+      "request_preparation_ms": 54861.51349998545,
+      "latency_ms_p50": 1729.96399999829,
+      "all_completed": true
+    },
+    "mini": {
+      "workers": 1,
+      "fresh_latency_observations": 13,
+      "fresh_execution_wall_ms": 17656.700999999885,
+      "total_processing_wall_ms": 75768.39969999855,
+      "request_preparation_ms": 54816.52439996833,
+      "latency_ms_p50": 9412.848200008739,
+      "all_completed": true
+    }
+  },
+  "signal_projects": {
+    "rules": 0,
+    "jev": 1,
+    "nano": 4,
+    "mini": 2
+  },
+  "model_accounting": {
+    "unique_attempts": 150,
+    "successful_attempts": 141,
+    "uncertain_attempts": 9,
+    "http_429_attempts": 9,
+    "provider_reported_cost_usd": 0.310882576,
+    "unresolved_reservation_usd": 0.4663065,
+    "conservative_accounted_total_usd": 0.777189076,
+    "actual_total_model_operating_cost_usd": null,
+    "actual_total_cost_status": "unknown_failed_attempt_billing",
+    "budget_limit_usd": 50,
+    "conservative_budget_headroom_usd": 49.222810924,
+    "cached_reuses": 94,
+    "incremental_charge_for_cache_reuse_usd": 0.0
+  },
+  "recurring_full_corpus_inference_usd": {
+    "rules": 0.0,
+    "nano": 0.07158489999999999,
+    "mini": null,
+    "jev": 0.019746425999999997
+  },
+  "recurring_split_inference_usd": {
+    "development": {
+      "rules": 0.0,
+      "nano": 0.05209925,
+      "mini": null,
+      "jev": 0.014439558000000002
+    },
+    "holdout": {
+      "rules": 0.0,
+      "nano": 0.01948565,
+      "mini": 0.07301774999999999,
+      "jev": 0.005306867999999999
+    }
+  },
+  "market_capture": {
+    "requests": 57,
+    "quote_window_statuses": {
+      "captured": 35,
+      "truncated": 6,
+      "empty": 1
+    },
+    "action_review": {
+      "required_intervals": 21,
+      "resolved_intervals": 21,
+      "unresolved_intervals": 0
+    }
+  },
+  "manual_accounts": {
+    "jev|manual|all": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.019746425999999997,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51401,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.019746425999999997,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51401,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "jev|manual|development": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.014439558000000002,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22613,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.014439558000000002,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22613,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "jev|manual|holdout": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0.005306867999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -0.005306867999999999,
+        "final_equity_after_operating_cost_usd": 999.994693132,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28788,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0.005306867999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -0.005306867999999999,
+        "final_equity_after_operating_cost_usd": 999.994693132,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28788,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      }
+    },
+    "mini|manual|all": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": null,
+        "cost_status": "unknown",
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 9,
+        "model_execution_coverage": "incomplete",
+        "unmapped_unknown_count": 51417,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": null,
+        "cost_status": "unknown",
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 9,
+        "model_execution_coverage": "incomplete",
+        "unmapped_unknown_count": 51417,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "mini|manual|development": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": null,
+        "cost_status": "unknown",
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 9,
+        "model_execution_coverage": "incomplete",
+        "unmapped_unknown_count": 22623,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": null,
+        "cost_status": "unknown",
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 9,
+        "model_execution_coverage": "incomplete",
+        "unmapped_unknown_count": 22623,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "mini|manual|holdout": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0.07301774999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -0.07301774999999999,
+        "final_equity_after_operating_cost_usd": 999.92698225,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28794,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0.07301774999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -0.07301774999999999,
+        "final_equity_after_operating_cost_usd": 999.92698225,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28794,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      }
+    },
+    "nano|manual|all": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.07158489999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51412,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.07158489999999999,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51412,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "nano|manual|development": {
+      "10": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.05209925,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22619,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "unknown",
+        "reason": "entry_quote_size_unit_ambiguous_first_sufficient",
+        "pnl_usd": null,
+        "operating_cost_usd": 0.05209925,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": null,
+        "final_equity_after_operating_cost_usd": null,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22619,
+        "computed_trades": 0,
+        "inference_cost_only": false
+      }
+    },
+    "nano|manual|holdout": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": -18.0473599999998,
+        "operating_cost_usd": 0.01948565,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -18.0668456499998,
+        "final_equity_after_operating_cost_usd": 981.9331543500002,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28793,
+        "computed_trades": 1,
+        "inference_cost_only": false
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": -20.81839999999977,
+        "operating_cost_usd": 0.01948565,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": -20.83788564999977,
+        "final_equity_after_operating_cost_usd": 979.1621143500003,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28793,
+        "computed_trades": 1,
+        "inference_cost_only": false
+      }
+    },
+    "rules|manual|all": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51401,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 51401,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      }
+    },
+    "rules|manual|development": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22613,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 22613,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      }
+    },
+    "rules|manual|holdout": {
+      "10": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28788,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      },
+      "25": {
+        "status": "complete",
+        "reason": null,
+        "pnl_usd": 0.0,
+        "operating_cost_usd": 0,
+        "cost_status": null,
+        "pnl_after_operating_cost_usd": 0.0,
+        "final_equity_after_operating_cost_usd": 1000.0,
+        "model_execution_failures": 0,
+        "model_execution_coverage": "complete",
+        "unmapped_unknown_count": 28788,
+        "computed_trades": 0,
+        "inference_cost_only": true
+      }
+    }
+  },
+  "decisions_by_arm": {
+    "jev": {
+      "decision": "descriptive_insufficient_sample",
+      "census_projects": 0,
+      "census_issuers": 0,
+      "projects": 0,
+      "issuers": 0,
+      "census_basis": "price_blind_independently_reviewed_qualifying_projects",
+      "reviewed_census_complete": false,
+      "census_is_lower_bound": true,
+      "arm_full_period_projects": 1,
+      "holdout_projects": 0,
+      "holdout_issuers": 0,
+      "holdout_independent_weeks": 0,
+      "primary_benchmark": "IWM",
+      "base_holdout_mean_iwm_excess": null,
+      "stress_holdout_mean_iwm_excess": null,
+      "base_holdout_mean_peer_excess": null,
+      "stress_holdout_mean_peer_excess": null,
+      "base_holdout_account_pnl_after_operating_cost_usd": -0.005306867999999999,
+      "stress_holdout_account_pnl_after_operating_cost_usd": -0.005306867999999999,
+      "model_execution_failures": 0,
+      "holdout_model_execution_failures": 0,
+      "holdout_uncertainty": "A sparse holdout cannot establish profitable performance even if the full census meets its size target.",
+      "proven_alpha": false,
+      "live_trading_authorized": false
+    },
+    "mini": {
+      "decision": "descriptive_insufficient_sample",
+      "census_projects": 0,
+      "census_issuers": 0,
+      "projects": 0,
+      "issuers": 0,
+      "census_basis": "price_blind_independently_reviewed_qualifying_projects",
+      "reviewed_census_complete": false,
+      "census_is_lower_bound": true,
+      "arm_full_period_projects": 2,
+      "holdout_projects": 0,
+      "holdout_issuers": 0,
+      "holdout_independent_weeks": 0,
+      "primary_benchmark": "IWM",
+      "base_holdout_mean_iwm_excess": null,
+      "stress_holdout_mean_iwm_excess": null,
+      "base_holdout_mean_peer_excess": null,
+      "stress_holdout_mean_peer_excess": null,
+      "base_holdout_account_pnl_after_operating_cost_usd": -0.07301774999999999,
+      "stress_holdout_account_pnl_after_operating_cost_usd": -0.07301774999999999,
+      "model_execution_failures": 9,
+      "holdout_model_execution_failures": 0,
+      "holdout_uncertainty": "A sparse holdout cannot establish profitable performance even if the full census meets its size target.",
+      "proven_alpha": false,
+      "live_trading_authorized": false
+    },
+    "nano": {
+      "decision": "descriptive_insufficient_sample",
+      "census_projects": 0,
+      "census_issuers": 0,
+      "projects": 1,
+      "issuers": 1,
+      "census_basis": "price_blind_independently_reviewed_qualifying_projects",
+      "reviewed_census_complete": false,
+      "census_is_lower_bound": true,
+      "arm_full_period_projects": 4,
+      "holdout_projects": 1,
+      "holdout_issuers": 1,
+      "holdout_independent_weeks": 1,
+      "primary_benchmark": "IWM",
+      "base_holdout_mean_iwm_excess": 0.0028138840191390055,
+      "stress_holdout_mean_iwm_excess": 4.284401913903432e-05,
+      "base_holdout_mean_peer_excess": 0.024858115316948953,
+      "stress_holdout_mean_peer_excess": 0.022087075316948982,
+      "base_holdout_account_pnl_after_operating_cost_usd": -18.0668456499998,
+      "stress_holdout_account_pnl_after_operating_cost_usd": -20.83788564999977,
+      "model_execution_failures": 0,
+      "holdout_model_execution_failures": 0,
+      "holdout_uncertainty": "A sparse holdout cannot establish profitable performance even if the full census meets its size target.",
+      "proven_alpha": false,
+      "live_trading_authorized": false
+    },
+    "rules": {
+      "decision": "descriptive_insufficient_sample",
+      "census_projects": 0,
+      "census_issuers": 0,
+      "projects": 0,
+      "issuers": 0,
+      "census_basis": "price_blind_independently_reviewed_qualifying_projects",
+      "reviewed_census_complete": false,
+      "census_is_lower_bound": true,
+      "arm_full_period_projects": 0,
+      "holdout_projects": 0,
+      "holdout_issuers": 0,
+      "holdout_independent_weeks": 0,
+      "primary_benchmark": "IWM",
+      "base_holdout_mean_iwm_excess": null,
+      "stress_holdout_mean_iwm_excess": null,
+      "base_holdout_mean_peer_excess": null,
+      "stress_holdout_mean_peer_excess": null,
+      "base_holdout_account_pnl_after_operating_cost_usd": 0.0,
+      "stress_holdout_account_pnl_after_operating_cost_usd": 0.0,
+      "model_execution_failures": 0,
+      "holdout_model_execution_failures": 0,
+      "holdout_uncertainty": "A sparse holdout cannot establish profitable performance even if the full census meets its size target.",
+      "proven_alpha": false,
+      "live_trading_authorized": false
+    }
+  },
+  "uncertainty": {
+    "rules": {
+      "iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      }
+    },
+    "jev": {
+      "iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      }
+    },
+    "nano": {
+      "iwm_excess": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0028138840191390055,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null,
+        "independent_weeks": 1
+      },
+      "peer_excess": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.024858115316948953,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null,
+        "independent_weeks": 1
+      },
+      "stress_iwm_excess": {
+        "n": 1,
+        "missing": 0,
+        "mean": 4.284401913903432e-05,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null,
+        "independent_weeks": 1
+      },
+      "stress_peer_excess": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.022087075316948982,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null,
+        "independent_weeks": 1
+      }
+    },
+    "mini": {
+      "iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_iwm_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      },
+      "stress_peer_excess": {
+        "n": 0,
+        "missing": 0,
+        "mean": null,
+        "week_block_bootstrap_95": null,
+        "leave_one_issuer_out": {},
+        "leave_one_event_out_min": null
+      }
+    }
+  },
+  "interpretation": [
+    "Incomplete bounded census; zero reviewed eligible projects is not a full-universe no-opportunity proof.",
+    "Proposed model trades were source-ineligible; source review did not repair predictions.",
+    "Current historical bytes lack trustworthy availability clocks; computed returns are association diagnostics.",
+    "Pre-November quote size uncertainty leaves earlier model account outcomes unknown; no convenient replacement quote or zero outcome was inserted.",
+    "The single calculable holdout trade is a nano false positive; its account loss and insufficient source sample do not support continuation.",
+    "Jev batch speed is measured; useful discovery and achievable entry advantage are not.",
+    "Only model inference is priced as recurring cost; collection infrastructure, review labor and maintenance are not priced.",
+    "Superseded review/quality artifacts and original implementation snapshot remain archived; pre-price identity/size corrections and post-run summary-counter fix are documented."
+  ],
+  "bindings": {
+    "inputs_sha256": "a98bb715d321199ee6965af8075b9f17bc43f59f22cf3d5c86c1bcb2b396302b",
+    "protocol_sha256": "db750379686e387670cb4533c089d2b29a8910c004df8f608961edfe96559247",
+    "review_sha256": "1b1f4f2de547cea829aed651f2457c74e5df0fdca23fd68fffee54ce18d712b9",
+    "signals_sha256": "481ed1fcfba5b240054a654e16ed19a0f16dec23f43c483c5a19fea64239d496",
+    "profile_sha256": "3a250b584817213ab6c7499956daa3ab41a65b81564d9fdc683280c9c6868ec5",
+    "quality_sha256": "7526181c4d6e3cf4be6cb6ca921152264ae2e9905ef7a0bac944fc8a6ae4c745",
+    "market_reviewed_sha256": "015697eb8f79f66638beccf1ff455f66715ed0122d9b0f9a826041053c38046b",
+    "decision_sha256": "cc21315d38a68f5396f60e38087e677f09a92f85778b57a5b1da542cd32e84ae",
+    "accounting_sha256": "af372afa3745f7498943877da02e18d7164f5f22480960dae1355faccfb8db4f"
+  },
+  "local_artifacts": {
+    "root": "data/procurement-v1",
+    "review": "final-review.v2.json",
+    "quality": "quality.v2.json",
+    "signals": "signals.json",
+    "market": "market-reviewed.json",
+    "returns": "returns.json",
+    "contribution_review": "contribution-review.json",
+    "decision": "decision.json"
+  },
+  "verification": {
+    "full_integrated_suite_tests": 469,
+    "full_integrated_suite_runs": 1,
+    "subsequent_source_driven_focused_checks": true,
+    "final_model_reporting_tests_passed": 34,
+    "final_return_tests_passed": 17,
+    "independent_source_and_contribution_reviews_completed": true,
+    "independent_selected_quote_arithmetic_matches": true
+  }
+}

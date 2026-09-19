@@ -1,8 +1,39 @@
 # Jev profit-validation MVP
 
-Status: first earnings return diagnostic completed, September 18, 2026. Objective: trading alpha using Jev through OpenRouter. The frozen simple semantic rule lost money in the current-history illustration. No live orders, background schedules or demonstrated profitable strategy.
+**Project status: paused by user direction, September 19, 2026.** Preserve the experiment records, immutable archives and reusable code. No new development, experiments, broad searches or research spending are authorized by the earlier plans. Do not expand into another venue or information source merely because an API exists or Jev can classify its content. Do not start a collector, scheduler or prospective checkpoint.
 
-## Premise decision after the return pilot
+Reopen only when both conditions are supported by specific evidence:
+
+1. A concrete, independently checkable economic opportunity exists.
+2. There is a specific reason that inference cost, coverage or latency prevents simpler methods from exploiting that opportunity, and Jev could address that limitation.
+
+API availability, classification ability, lower inference prices or faster responses alone do not satisfy these conditions. The present evidence does not justify further broad search allocation. This project-wide pause supersedes all earlier recommendations and next steps below and in the runbooks; those remain historical records, not authorization to resume.
+
+Last completed experiment: the approved procurement workflow and its bounded historical pilot are complete, September 19, 2026. Independent source review found zero verified eligible projects; the available holdout trade diagnostic lost money. The decision is **stop this pilot without expanding the roster or starting a prospective checkpoint**. Jev's faster API processing did not establish a useful trading contribution. See the [completed review](research/experiments/procurement-review-2026-09-19.md) and [results](research/experiments/procurement-results-2026-09-19.json). No live orders or demonstrated profitable strategy.
+
+## Completed experiment: procurement discovery
+
+The [frozen protocol](research/experiments/procurement-protocol.v1.json) and [runbook](research/experiments/procurement-runbook.md) supersede the broader recommendations below. Scope is six issuers, ten named portals, July–December 2025, a chronological October–December holdout, a $50 combined model cap, and a $1,000 long-only whole-share simulation. The default entry is the next session at 09:45 ET with a five-session exit. No orders or recurring collection have been enabled.
+
+Implemented stages cover immutable collection, point-in-time issuer/revenue mapping, source-linked amount preparation, independent review, four-arm classification, development concurrency selection, frozen signals, read-only quote capture, corporate-action assessment and financial/quality reporting. Actual source checks identified viewer shells, truncated/scanned documents, malformed/scaled monetary tables and post-event attachments. These stay visible as failures or unresolved evidence. Known report headers dated after their associated event are quarantined before model input. Current download/meeting dates cannot certify historical availability; without independent historical clocks, returns are association diagnostics only.
+
+The census retains every event-item title, uses a recorded broad procurement screen for attachments and staff text, and archives full agendas/minutes when available. Four workers honor per-host throttles. The 10,000-document maximum is allocated across the ten sources; package order is hash-based across both periods. Caps, title-screen exclusions, inaccessible material and incomplete historical inventories remain coverage limitations, never filled by a replacement source. An independent, source-balanced hash sample of 100 captured documents checks extraction feasibility before inference; its population and selection are saved separately from final census membership.
+
+Seven dated annual-revenue observations and 57 verified legal/trade/subsidiary aliases are recorded. The map is explicitly incomplete; uncertain ownership and project-JV shares remain unresolved. Native Jev distributions are preserved, while all arms' primary rules use categories and deterministic arithmetic. Conditions and prior-known information are descriptive features, not extra surprise/funding gates. Semantic unknowns cause explicit abstention; failed model execution prevents a completed-arm claim, and missing selected prices/actions never become zero-return trades.
+
+The deliverable is complete: a bounded incomplete census, independently reviewed classification comparison, available costed quote diagnostic, and a bound stop/no-expansion decision. Jev and mini had no holdout trades; nano's false-positive PRIM trade lost $18.07 after costs ($20.84 under stress). Earlier model account outcomes remain unknown due to historical quote-size units, and mini retains nine uncertain development-call costs. The required 30 eligible projects across four issuers were not found. The optional prospective recorder remains gated and inactive.
+
+## Previous recommendation: test whether broader source coverage creates useful discovery
+
+The user clarified that Jev's main advantage is speed and cost. A few earnings classifications followed by delayed entry do not establish a use for those advantages. The [coverage opportunity review](research/experiments/jev-coverage-opportunities-2026-09-18.md) recommends one bounded census of local/state procurement and infrastructure decisions affecting listed contractors. Two agency-to-issuer announcement examples motivate investigation, but both involve Orion and earlier bids may already reveal the economics. No returns were examined for this source family.
+
+Freeze an issuer/buyer map, 10–20 agency portals and one six-month period before prices. Count every procurement item, including private winners, tiny awards, repeats and failures. Establish earlier public bid information, legal award stage, incremental funded amount, listed-parent/JV attribution, prior company disclosures and document availability. Compare deterministic filtering, a conventional model and Jev at equal coverage, then compare useful coverage under equal realistic cost and review-time budgets. Include collection, OCR, verification and actual OpenRouter throughput; do not create an artificial inference bottleneck.
+
+Advance only if repeated material events and a credible economic mechanism survive. Freeze the signal and evaluation policy before holdout returns; test realistic delayed whole-share entries, costs and sector controls against simple award rules and waiting for issuer news. Current mutable archives cannot alone prove historical availability, so prospective first-seen document capture is needed for stronger claims. Stop if novelty, density, Jev's incremental useful coverage or delayed net-return value fails. This is a research recommendation, not authorization for trading or an automated monitor.
+
+This recommendation supersedes the earnings-expansion ordering below. Earlier plans and results remain historical context; broad filing changes and industrial disruption reports are alternatives, not parallel builds.
+
+## Previous premise decision after the return pilot
 
 There is weak but testable potential for Jev to improve the measurement of economically useful language. There is no evidence that its new interface itself creates stock alpha. Continue one bounded, model-agnostic test of incremental return information; keep Jev as a candidate component. The [premise review](research/experiments/jev-alpha-premise-review-2026-09-18.md) records the evidence, alternative explanation and stopping decisions.
 

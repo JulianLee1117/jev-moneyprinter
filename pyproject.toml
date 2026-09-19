@@ -9,6 +9,9 @@ description = "Source-grounded experiments for Jev-assisted financial research"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+procurement = ["pypdf>=4"]
+
 [project.scripts]
 jev-alpha = "jev_alpha.cli:main"
 
